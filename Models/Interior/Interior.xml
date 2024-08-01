@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ 	<path>Interior.ac</path>
+
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PILOTS -->
+  <!-- Civilian Pilot -->
+  <model>
+    <name>Pilot-civ1</name>
+    <path>Aircraft/aw139/Models/Interior/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.1562 </x-m>
+      <y-m>  0.6050 </y-m>
+      <z-m> -0.6722 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Pilot-civ2</name>
+    <path>Aircraft/aw139/Models/Interior/Pilot/copilot.xml</path>
+    <offsets>
+      <x-m> -2.1562 </x-m>
+      <y-m> -0.6050 </y-m>
+      <z-m> -0.6722 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Pilot-civ2</object-name>
+    <condition>
+      <property>sim/model/show-copilot</property>
+    </condition>
+  </animation>
+
+  <!-- Military Pilot -->
+  <model>
+    <name>Pilot-mil1</name>
+    <path>Aircraft/aw139/Models/Interior/Pilot/mil-pilot.xml</path>
+    <offsets>
+      <x-m> -1.8773 </x-m>
+      <y-m>  0.5893 </y-m>
+      <z-m> -0.5391 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Pilot-mil2</name>
+    <path>Aircraft/aw139/Models/Interior/Pilot/mil-pilot.xml</path>
+    <offsets>
+      <x-m> -1.8773 </x-m>
+      <y-m> -0.5893 </y-m>
+      <z-m> -0.5391 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilot selection based on livery -->
+  <animation>
+    <type>select</type>
+    <object-name>Pilot-mil1</object-name>
+    <object-name>Pilot-mil2</object-name>
+    <condition>
+      <property>sim/model/aw139/Military</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Pilot-civ1</object-name>
+    <object-name>Pilot-civ2</object-name>
+    <condition>
+      <property>sim/model/aw139/Civilian</property>
+    </condition>
+  </animation>
+
+  <!-- Pilot invisible internally -->
+  <animation>
+    <type>select</type>
+    <object-name>Pilot-mil1</object-name>
+    <object-name>Pilot-civ1</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/current-view/view-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- DOORS INTERNAL ANIMATION -->
+  <!-- Left Side Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>door1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.leftSideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>LeftSide</name>
+    <object-name>door1</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftSide</object-name>
+    <property>sim/model/door-positions/leftFrontDoor/position-norm</property>
+    <factor> 0 </factor>
+    <axis>
+      <x1-m> -2.4762 </x1-m>
+      <y1-m> -1.0418 </y1-m>
+      <z1-m> -0.6452 </z1-m>
+      <x2-m> -2.1916 </x2-m>
+      <y2-m> -0.9903 </y2-m>
+      <z2-m>  0.0891 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Right Side Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>door2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.rightSideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>RightSide</name>
+    <object-name>door2</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightSide</object-name>
+    <property>sim/model/door-positions/rightFrontDoor/position-norm</property>
+    <factor> 0 </factor>
+    <axis>
+      <x1-m> -2.4762 </x1-m>
+      <y1-m>  1.0246 </y1-m>
+      <z1-m> -0.6452 </z1-m>
+      <x2-m> -2.1916 </x2-m>
+      <y2-m>  0.9731 </y2-m>
+      <z2-m>  0.0891 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Left Slide Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>door4</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.leftSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>LeftSlide</name>
+    <object-name>door4</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Right Slide Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>door3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.rightSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>RightSlide</name>
+    <object-name>door3</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- BASIC HIGHT DENSITY SEAT CONFIGURATION -->
+  <!-- ROW 1 -->
+  <model>
+    <name>Seat1</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.19310 </x-m>
+      <y-m>  0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat2</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.19310 </x-m>
+      <y-m>  0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat3</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.19310 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.41500 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat4</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.19310 </x-m>
+      <y-m> -0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat5</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.19310 </x-m>
+      <y-m> -0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ROW 2 -->
+  <model>
+    <name>Seat6</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.13796 </x-m>
+      <y-m>  0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Seat7</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.13796 </x-m>
+      <y-m>  0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat8</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.13796 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat9</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.13796 </x-m>
+      <y-m> -0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat10</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.13796 </x-m>
+      <y-m> -0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ROW 3 -->
+  <model>
+    <name>Seat11</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.79815 </x-m>
+      <y-m>  0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Seat12</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.79815 </x-m>
+      <y-m>  0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat13</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.79815 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat14</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.79815 </x-m>
+      <y-m> -0.38922 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat15</name>
+    <path>Aircraft/aw139/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.79815 </x-m>
+      <y-m> -0.78215 </y-m>
+      <z-m> -0.41500 </z-m>
+    </offsets>
+  </model>
+
+  <!-- INTERIORS CONFIGURATIONS -->
+  <!-- Only winch -->
+  <animation>
+    <type>select</type>
+    <object-name>Seat6</object-name>
+    <object-name>Seat7</object-name>
+    <object-name>Seat8</object-name>
+    <object-name>Seat9</object-name>
+    <condition>
+      <not>
+       <property>sim/model/aw139/winch</property>
+      </not>
+    </condition>
+  </animation>
+
+  <!-- HEMS -->
+  <model>
+    <name>Bed</name>
+    <path>Aircraft/aw139/Models/Interior/Equipment/bed.xml</path>
+    <offsets>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.33872 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Bed</object-name>
+    <condition>
+      <property>sim/model/HEMS</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Seat6</object-name>
+    <object-name>Seat7</object-name>
+    <object-name>Seat8</object-name>
+    <object-name>Seat9</object-name>
+    <object-name>Seat13</object-name>
+    <object-name>Seat14</object-name>
+    <condition>
+      <not>
+       <property>sim/model/HEMS</property>
+      </not>
+    </condition>
+  </animation>
+
+  <!-- LAW ENFORCER -->
+  <model>
+    <name>ATOS</name>
+    <path>Aircraft/aw139/Models/Interior/Equipment/ATOS/ATOS.xml</path>
+    <offsets>
+      <x-m> -1.2719 </x-m>
+      <y-m> -0.6171 </y-m>
+      <z-m> -0.2895 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>ATOS</object-name>
+    <condition>
+      <property>sim/model/ATOS</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Seat5</object-name>
+    <object-name>Seat4</object-name>
+    <condition>
+      <not>
+       <property>sim/model/ATOS</property>
+      </not>
+    </condition>
+  </animation>
+
+</PropertyList>
