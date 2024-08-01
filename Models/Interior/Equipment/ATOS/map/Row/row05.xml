@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>row.ac</path>
+
+  <animation>
+    <object-name>case01</object-name>
+    <object-name>case02</object-name>
+    <object-name>case03</object-name>
+    <object-name>case04</object-name>
+    <object-name>case05</object-name>
+    <object-name>case06</object-name>
+    <object-name>case07</object-name>
+    <object-name>case08</object-name>
+    <object-name>case09</object-name>
+    <object-name>case10</object-name>
+    <object-name>case11</object-name>
+    <object-name>case12</object-name>
+    <object-name>case13</object-name>
+    <object-name>case14</object-name>
+    <object-name>case15</object-name>
+    <object-name>case16</object-name>
+    <object-name>case17</object-name>
+    <object-name>case18</object-name>
+    <object-name>case19</object-name>
+    <object-name>case20</object-name>
+    <object-name>case21</object-name>
+    <object-name>case22</object-name>
+    <object-name>case23</object-name>
+    <object-name>case24</object-name>
+    <object-name>case25</object-name>
+    <object-name>case26</object-name>
+    <object-name>case27</object-name>
+    <object-name>case28</object-name>
+    <object-name>case29</object-name>
+    <object-name>case30</object-name>
+    <object-name>case31</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>case01</object-name>
+    <object-name>case02</object-name>
+    <object-name>case03</object-name>
+    <object-name>case04</object-name>
+    <object-name>case05</object-name>
+    <object-name>case06</object-name>
+    <object-name>case07</object-name>
+    <object-name>case08</object-name>
+    <object-name>case09</object-name>
+    <object-name>case10</object-name>
+    <object-name>case11</object-name>
+    <object-name>case12</object-name>
+    <object-name>case13</object-name>
+    <object-name>case14</object-name>
+    <object-name>case15</object-name>
+    <object-name>case16</object-name>
+    <object-name>case17</object-name>
+    <object-name>case18</object-name>
+    <object-name>case19</object-name>
+    <object-name>case20</object-name>
+    <object-name>case21</object-name>
+    <object-name>case22</object-name>
+    <object-name>case23</object-name>
+    <object-name>case24</object-name>
+    <object-name>case25</object-name>
+    <object-name>case26</object-name>
+    <object-name>case27</object-name>
+    <object-name>case28</object-name>
+    <object-name>case29</object-name>
+    <object-name>case30</object-name>
+    <object-name>case31</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>case01</object-name>
+    <object-name>case02</object-name>
+    <object-name>case03</object-name>
+    <object-name>case04</object-name>
+    <object-name>case05</object-name>
+    <object-name>case06</object-name>
+    <object-name>case07</object-name>
+    <object-name>case08</object-name>
+    <object-name>case09</object-name>
+    <object-name>case10</object-name>
+    <object-name>case11</object-name>
+    <object-name>case12</object-name>
+    <object-name>case13</object-name>
+    <object-name>case14</object-name>
+    <object-name>case15</object-name>
+    <object-name>case16</object-name>
+    <object-name>case17</object-name>
+    <object-name>case18</object-name>
+    <object-name>case19</object-name>
+    <object-name>case20</object-name>
+    <object-name>case21</object-name>
+    <object-name>case22</object-name>
+    <object-name>case23</object-name>
+    <object-name>case24</object-name>
+    <object-name>case25</object-name>
+    <object-name>case26</object-name>
+    <object-name>case27</object-name>
+    <object-name>case28</object-name>
+    <object-name>case29</object-name>
+    <object-name>case30</object-name>
+    <object-name>case31</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case01</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[0]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case02</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[1]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case03</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[2]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case04</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[3]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case05</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[4]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case06</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[5]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case07</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[6]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case08</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[7]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case09</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[8]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case10</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[9]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case11</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[10]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case12</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[11]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case13</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[12]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case14</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[13]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case15</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[14]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case16</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[15]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case17</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[16]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case18</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[17]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case19</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[18]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case20</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[19]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case21</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[20]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case22</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[21]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case23</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[22]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case24</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[23]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case25</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[24]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case26</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[25]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case27</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[26]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case28</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[27]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case29</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[28]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case30</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[29]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+  <animation>
+    <type type="string">textranslate</type>
+    <object-name type="string">case31</object-name>
+    <property type="string">/instrumentation/terrain-map/pixels/row[5]/col[30]/elevation-ft</property>
+    <factor type="double">5.5556e-05</factor>
+    <axis>
+      <x type="double">1</x>
+    </axis>
+  </animation>
+
+</PropertyList>

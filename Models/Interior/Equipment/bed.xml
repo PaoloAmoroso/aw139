@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>bed.ac</path>
+  
+<animation>
+<type>material</type>
+<object-name>bed</object-name>
+<emission>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+<red>   0.1 </red>
+<green> 0.1 </green>
+<blue>  0.1 </blue>
+</emission>
+</animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>bed</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+   
+</PropertyList>

@@ -1,0 +1,18 @@
+=========================
+LEONARDO A.T.O.S. System
+=========================
+The A.T.O.S. (Airborne Tactical Observation System), according with Leonardo, is an airborne mission management system that integrates a number of sensors and sub-systems to provide full situational awareness and timely decision making.
+
+===========
+DISCLAIMER:
+
+This "ATOS System", for security reasons, is not an exact reproduction of the real operational A.T.O.S. System by Leonardo, but an adapted version for a simple use on Flightgear, based on public domain information freely avaiable on internet. Surely is not our intention to disclose any classified information.
+This system was developed only for the purpose of increasing, a little, the relism of the simulation, thanks to the author's observations and knowledge of aviation history.
+
+Any reference to a real function, designed by Leonardo, is purely coincidental. The author specifies that this system can be removed from distribution at any time, upon request.
+
+This sistem is, by default, actually limited on a 50 Km range.
+
+=============
+AMOROSO Paolo
+May, 10, 2023

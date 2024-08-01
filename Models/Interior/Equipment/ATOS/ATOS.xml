@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>ATOS.ac</path>
+  
+  <animation>
+    <object-name>ATOS</object-name>
+  </animation>
+
+  <!-- Attitude Indicator -->
+  <model>
+    <name>AI</name>
+    <path>ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.194740 </x-m>
+      <y-m> -0.028565 </y-m>
+      <z-m>  0.190500 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Primary Position Map -->
+  <animation>
+    <type>material</type>
+    <object-name>canvasCadre</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- Ground Radar Map -->
+  <model>
+    <name>Radar_G</name>
+    <path>map/map.xml</path>
+    <offsets>
+      <x-m>  0.16398 </x-m>
+      <y-m> -0.19214 </y-m>
+      <z-m>  0.1218 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 2.554 </x-offset>
+        <y-offset> 2.554 </y-offset>
+        <z-offset> 2.554 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <!-- Radar -->
+  <model>
+    <name>Radar_A</name>
+    <path>radar/nd.xml</path>
+    <offsets>
+      <x-m> 0.16858 </x-m>
+      <y-m> 0.10344 </y-m>
+      <z-m> 0.15052 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>Radar_A</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- MAP Activation (Turn On/Off) -->
+    <animation>
+    <type>select</type>
+    <object-name>AI</object-name>
+    <object-name>canvasCadre</object-name>
+    <object-name>Radar_A</object-name>
+    <object-name>Radar_G</object-name>
+    <condition>
+      <property>sim/model/show-map</property>
+    </condition>
+  </animation>
+
+    <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>manche</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/show-map</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>manche</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+   
+</PropertyList>
