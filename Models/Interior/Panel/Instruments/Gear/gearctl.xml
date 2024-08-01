@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>gearctl.ac</path>
+
+  <animation>
+    <object-name>GearCtl.base</object-name>
+    <object-name>GearCtl.lever</object-name>
+    <object-name>GearCtl.slot</object-name>
+    <object-name>GearCtl.Llamp</object-name>
+    <object-name>GearCtl.Nlamp</object-name>
+    <object-name>GearCtl.Rlamp</object-name>
+
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>GearCtl.base</object-name>
+    <object-name>GearCtl.lever</object-name>
+    <object-name>GearCtl.slot</object-name>
+    <object-name>GearCtl.Llamp</object-name>
+    <object-name>GearCtl.Nlamp</object-name>
+    <object-name>GearCtl.Rlamp</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>GearCtl.Llamp</object-name>
+    <object-name>GearCtl.Nlamp</object-name>
+    <object-name>GearCtl.Rlamp</object-name>
+    <condition>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearCtl.lever</object-name>
+    <property>controls/gear/gear-down</property>
+    <factor>20.0</factor>
+    <center>
+      <x-m> -0.05 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GearCtl.Nlamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GearCtl.Llamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[1]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GearCtl.Rlamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[2]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GearCtl.lever</object-name>
+    <action>
+    <button>0</button>
+    <binding>
+      <command>nasal</command>
+        <script>controls.gearDown(1)</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GearCtl.lever</object-name>
+    <action>
+    <button>1</button>
+    <binding>
+      <command>nasal</command>
+        <script>controls.gearDown(-1)</script>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+

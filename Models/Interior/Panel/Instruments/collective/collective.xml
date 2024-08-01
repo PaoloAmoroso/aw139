@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>collective.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>throttle</object-name>
+    <object-name>idlerelease</object-name>
+    <object-name>starter</object-name>
+    <object-name>collts</object-name>
+    <object-name>collgov</object-name>
+   
+    <!-- Objets transparents -->
+  </animation>
+  
+  <animation>
+    <name>Collective</name>
+    <object-name>throttle</object-name>
+    <object-name>idlerelease</object-name>
+    <object-name>starter</object-name>
+    <object-name>collts</object-name>
+    <object-name>collgov</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Collective</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 50 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

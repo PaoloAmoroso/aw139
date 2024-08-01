@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>clutch_lever.ac</path>
+    
+    <animation>
+       <type>range</type>
+       <min-m>0</min-m>
+       <max-m>10</max-m>
+    </animation>
+ 
+  <animation>
+  <object-name>lever</object-name>
+   <type>material</type>
+     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.50</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+  </animation>
+
+  <!-- <animation>
+        <type>rotate</type>
+        <object-name>lever</object-name>
+       <property>controls/rotor/brake</property>
+		<interpolation>
+			<entry><ind>-100</ind><dep>  0</dep></entry>
+			<entry><ind>   0</ind><dep>  0</dep></entry>
+                        <entry><ind>  15</ind><dep>  100</dep></entry>
+			<entry><ind>  90</ind><dep>  100</dep></entry>
+			<entry><ind>  95</ind><dep>  110</dep></entry>
+		</interpolation>
+      <axis>
+        <x> 0 </x>
+        <y> -1 </y>
+        <z> 0 </z>
+      </axis>
+      <center>
+        <x-m> 0 </x-m>
+        <y-m> 0 </y-m>
+        <z-m> 0 </z-m>  
+      </center>
+    </animation>-->
+
+    <animation>
+        <type>rotate</type>
+       <object-name>lever</object-name>
+       <property>controls/rotor/brake</property>
+		<factor>110</factor>
+      <axis>
+        <x> 0 </x>
+        <y> 1 </y>
+        <z> 0 </z>
+      </axis>
+      <center>
+        <x-m>0</x-m>
+        <y-m> 0 </y-m>
+        <z-m>0</z-m>  
+      </center>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+       <object-name>lever</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+	<binding>
+					<command>nasal</command>
+					<script>
+						var p = "/controls/rotor/brake";
+						setprop(p, !getprop(p));
+					</script>
+				</binding>
+        </action>
+    </animation>
+
+</PropertyList>
+

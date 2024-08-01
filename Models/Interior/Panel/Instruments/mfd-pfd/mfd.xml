@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Primus MFD
+     Based on MFD of Citation X
+     
+     Modified : Helijah 07/2020
+-->
+<PropertyList>
+
+  <path>mfd.ac</path>
+  
+  <animation>
+    <object-name>MFD</object-name>
+    <object-name>btn</object-name>
+    <object-name>ZOOM.btn</object-name>
+    <object-name>MAP.btn</object-name>
+    
+    <object-name>MFD.bkg</object-name>
+    <object-name>MFD.menu</object-name>
+    <object-name>MFD.hsi</object-name>
+    <object-name>MFD.staticplane</object-name>
+    <object-name>MFD.arc</object-name>
+    <object-name>MFD.trunorth</object-name>
+    <object-name>MFD.hdg-bug</object-name>
+    <object-name>MFD.hdg-bracket</object-name>
+    <object-name>MFD.sat</object-name>
+    <object-name>Lhdg-arrow</object-name>
+    <object-name>Rhdg-arrow</object-name>
+    <object-name>MagHdg</object-name>
+    <object-name>MFD.wxoff</object-name>
+    <object-name>MFD.clock</object-name>
+    <object-name>MFD.apt</object-name>
+    <object-name>MFD.vor</object-name>
+    <object-name>MFD.tcas-auto</object-name>
+    <object-name>MFD.tcas-off</object-name>
+    <object-name>MFD.ete</object-name>
+    <object-name>hdgtext</object-name>
+    <object-name>hdgtext1</object-name>
+    <object-name>hdgtext2</object-name>
+    <object-name>Hdg</object-name>
+    <object-name>Hdg1</object-name>
+    <object-name>Hdg2</object-name>
+    <object-name>canvasCadre</object-name>
+    <object-name>NAVdist</object-name>
+    <object-name>NAVdist1</object-name>
+    <object-name>NAVdist2</object-name>
+    <object-name>NAVdist3</object-name>
+    <object-name>SAT1</object-name>
+    <object-name>SAT2</object-name>
+    <object-name>TAS1</object-name>
+    <object-name>TAS2</object-name>
+    <object-name>TAS3</object-name>
+    <object-name>GSPD1</object-name>
+    <object-name>GSPD2</object-name>
+    <object-name>GSPD3</object-name>
+    <object-name>NAVsrc1</object-name>
+    <object-name>NAVsrc2</object-name>
+    <object-name>RNG1-1</object-name>
+    <object-name>RNG1-2</object-name>
+    <object-name>RNG1-3</object-name>
+    <object-name>RNG2-1</object-name>
+    <object-name>RNG2-2</object-name>
+    <object-name>RNG2-3</object-name>
+    
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>MFD</object-name>
+    <object-name>btn</object-name>
+    <object-name>ZOOM.btn</object-name>
+    <object-name>MAP.btn</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>MFD.bkg</object-name>
+    <object-name>MFD.menu</object-name>
+    <object-name>MFD.hsi</object-name>
+    <object-name>MFD.staticplane</object-name>
+    <object-name>MFD.arc</object-name>
+    <object-name>MFD.trunorth</object-name>
+    <object-name>MFD.hdg-bug</object-name>
+    <object-name>MFD.hdg-bracket</object-name>
+    <object-name>MFD.sat</object-name>
+    <object-name>Lhdg-arrow</object-name>
+    <object-name>Rhdg-arrow</object-name>
+    <object-name>MagHdg</object-name>
+    <object-name>MFD.wxoff</object-name>
+    <object-name>MFD.clock</object-name>
+    <object-name>MFD.apt</object-name>
+    <object-name>MFD.vor</object-name>
+    <object-name>MFD.tcas-auto</object-name>
+    <object-name>MFD.tcas-off</object-name>
+    <object-name>MFD.screen</object-name>
+    <object-name>MFD.lines</object-name>
+    <object-name>MFD.page</object-name>
+    <object-name>MFD.range</object-name>
+    <object-name>MFD.hdg</object-name>
+    <object-name>MFD.bug</object-name>
+    <object-name>MFD.ete</object-name>
+    <object-name>hdgtext</object-name>
+    <object-name>hdgtext1</object-name>
+    <object-name>hdgtext2</object-name>
+    <object-name>Hdg</object-name>
+    <object-name>Hdg1</object-name>
+    <object-name>Hdg2</object-name>
+    <object-name>canvasCadre</object-name>
+    <object-name>NAVdist</object-name>
+    <object-name>NAVdist1</object-name>
+    <object-name>NAVdist2</object-name>
+    <object-name>NAVdist3</object-name>
+    <object-name>SAT1</object-name>
+    <object-name>SAT2</object-name>
+    <object-name>TAS1</object-name>
+    <object-name>TAS2</object-name>
+    <object-name>TAS3</object-name>
+    <object-name>GSPD1</object-name>
+    <object-name>GSPD2</object-name>
+    <object-name>GSPD3</object-name>
+    <object-name>NAVsrc1</object-name>
+    <object-name>NAVsrc2</object-name>
+    <object-name>RNG1-1</object-name>
+    <object-name>RNG1-2</object-name>
+    <object-name>RNG1-3</object-name>
+    <object-name>RNG2-1</object-name>
+    <object-name>RNG2-2</object-name>
+    <object-name>RNG2-3</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <panel>
+    <name>panel-area</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/nd.xml</path>
+    <bottom-left>
+      <x-m>  0.00025 </x-m>
+      <y-m> -0.08000 </y-m>
+      <z-m> -0.08000 </z-m>
+    </bottom-left>
+    <bottom-right>
+      <x-m>  0.00025 </x-m>
+      <y-m>  0.08000 </y-m>
+      <z-m> -0.08000 </z-m>
+    </bottom-right>
+    <top-left>
+      <x-m>  0.00025 </x-m>
+      <y-m> -0.08000 </y-m>
+      <z-m>  0.10800 </z-m>
+    </top-left>
+  </panel>
+  
+  <model>
+    <name>Mtext3d</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/Mtext3d.xml</path>
+    <offsets>
+      <x-m> 0.0005 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.0000 </z-m>
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.arc</object-name>
+    <object-name>MFD.hdg-bracket</object-name>
+    <object-name>MFD.staticplane</object-name>
+    <object-name>MagHdg</object-name>
+    <object-name>hdgtext</object-name>
+    <object-name>hdgtext1</object-name>
+    <object-name>hdgtext2</object-name>
+    <object-name>Hdg</object-name>
+    <object-name>Hdg1</object-name>
+    <object-name>Hdg2</object-name>
+    <object-name>Lhdg-arrow</object-name>
+    <object-name>Rhdg-arrow</object-name>
+    <object-name>NAVdist</object-name>
+    <object-name>NAVdist1</object-name>
+    <object-name>NAVdist2</object-name>
+    <object-name>NAVdist3</object-name>
+    <object-name>SAT1</object-name>
+    <object-name>SAT2</object-name>
+    <object-name>TAS1</object-name>
+    <object-name>TAS2</object-name>
+    <object-name>TAS3</object-name>
+    <object-name>GSPD1</object-name>
+    <object-name>GSPD2</object-name>
+    <object-name>GSPD3</object-name>
+    <object-name>NAVsrc1</object-name>
+    <object-name>NAVsrc2</object-name>
+    <object-name>RNG1-1</object-name>
+    <object-name>RNG1-2</object-name>
+    <object-name>RNG1-3</object-name>
+    <object-name>RNG2-1</object-name>
+    <object-name>RNG2-2</object-name>
+    <object-name>RNG2-3</object-name>
+    <condition>
+      <property>instrumentation/primus2000/dc840/mfd-map</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.trunorth</object-name>
+    <object-name>canvasCadre</object-name>
+    <condition>
+      <not>
+        <property>instrumentation/primus2000/dc840/mfd-map</property>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>MFD.arc</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.018 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.tcas-off</object-name>
+    <condition>
+      <not>
+        <property>instrumentation/primus2000/dc840/tcas</property>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>MFD.hdg-bug</object-name>
+    <property>autopilot/internal/heading-bug-error-deg</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.018 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.vor</object-name>
+    <condition>
+      <property>instrumentation/primus2000/dc840/mfd-wx</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.apt</object-name>
+    <condition>
+      <property>instrumentation/primus2000/dc840/mfd-wx</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.hdg-bug</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>autopilot/internal/heading-bug-error-deg</property>
+          <value> -55 </value>
+        </greater-than>
+        <less-than>
+          <property>autopilot/internal/heading-bug-error-deg</property>
+          <value> 55 </value>
+        </less-than>
+        <property>instrumentation/primus2000/dc840/mfd-map</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Lhdg-arrow</object-name>
+    <condition>
+      <and>
+        <less-than>
+          <property>autopilot/internal/heading-bug-error-deg</property>
+          <value> -55 </value>
+        </less-than>
+        <property>instrumentation/primus2000/dc840/mfd-map</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Rhdg-arrow</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>autopilot/internal/heading-bug-error-deg</property>
+          <value> 55 </value>
+        </greater-than>
+        <property>instrumentation/primus2000/dc840/mfd-map</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>MFD.tcas-auto</object-name>
+    <condition>
+      <property>instrumentation/primus2000/dc840/tcas</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>MFD.menu</object-name>
+    <property>instrumentation/primus2000/mfd/menu-num</property>
+    <factor>0.05</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>MFD.plane</object-name>
+    <property>orientation/heading-deg</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.018 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- HDG -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext</object-name>
+    <property>autopilot/settings/heading-bug-deg</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext1</object-name>
+    <property>autopilot/settings/heading-bug-deg</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext2</object-name>
+    <property>autopilot/settings/heading-bug-deg</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- BUGHDG -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>Hdg</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Hdg1</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Hdg2</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Map Mode ON/Off for the moment by clic on glass -->  
+  <animation>
+    <type>pick</type>
+    <object-name>MAP.btn</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/primus2000/dc840/mfd-map</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- NAV Dist -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>NAVdist1</object-name>
+    <property>autopilot/internal/nav-distance</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>NAVdist2</object-name>
+    <property>autopilot/internal/nav-distance</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>NAVdist3</object-name>
+    <property>autopilot/internal/nav-distance</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+    
+  <!-- TEMPERATURE DEGC -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SAT1</object-name>
+    <property>environment/temperature-degc</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>SAT2</object-name>
+    <property>environment/temperature-degc</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- TRUE SPEED KT -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>TAS1</object-name>
+    <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>TAS2</object-name>
+    <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>TAS3</object-name>
+    <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- GROUND SPEED KT -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>GSPD1</object-name>
+    <property>velocities/groundspeed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>GSPD2</object-name>
+    <property>velocities/groundspeed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>GSPD3</object-name>
+    <property>velocities/groundspeed-kt</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- NAV Src -->
+  <animation>
+    <type>select</type>
+    <object-name>NAVsrc1</object-name>
+    <condition>
+      <equals>
+        <property>autopilot/internal/nav-type</property>
+        <value>VOR1</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>NAVsrc2</object-name>
+    <condition>
+      <equals>
+        <property>autopilot/internal/nav-type</property>
+        <value>VOR2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- Zoom -/+ -->  
+  <animation>
+    <type>knob</type>
+    <drag-direction>horizontal</drag-direction>
+    <object-name>ZOOM.btn</object-name>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nd/range</property>
+        <factor> 1 </factor>
+        <min>0</min>
+        <max>300</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ZOOM.btn</object-name>
+    <property>instrumentation/nd/range</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 300 </ind><dep> 360 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.06926 </y-m>
+      <z-m> -0.09517 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>ZOOM.btn</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>pilotauto.FD_set_range(1);</script>
+      </binding>
+    </action>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>pilotauto.FD_set_range(-1);</script>
+      </binding>
+    </action>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>pilotauto.FD_set_range(1);</script>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>pilotauto.FD_set_range(-1);</script>
+      </binding>
+    </action>
+  </animation>
+  -->
+  
+  <!-- ZOOM value -->
+  <!-- Left -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG1-1</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG1-2</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG1-3</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Right -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG2-1</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG2-2</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>RNG2-3</object-name>
+    <property>instrumentation/nd/range</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

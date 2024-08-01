@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>chronometer.ac</path>
+
+  <animation>
+    <object-name>Chronometer</object-name>
+    <object-name>Chrono.lcd</object-name>
+    <object-name>Chrono.select</object-name>
+    <object-name>Chrono.control</object-name>
+    <object-name>Chrono.select</object-name>
+    <object-name>Chrono.dim</object-name>
+    <object-name>Ch.colon</object-name>
+    <object-name>Ch.hr1</object-name>
+    <object-name>Ch.hr2</object-name>
+    <object-name>Ch.mn1</object-name>
+    <object-name>Ch.mn2</object-name>
+    <object-name>Ch.sc1</object-name>
+    <object-name>Ch.sc2</object-name>
+    <object-name>Ch.EThr1</object-name>
+    <object-name>Ch.EThr2</object-name>
+    <object-name>Ch.ETmn1</object-name>
+    <object-name>Ch.ETmn2</object-name>
+    
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Chronometer</object-name>
+    <object-name>Chrono.lcd</object-name>
+    <object-name>Chrono.select</object-name>
+    <object-name>Chrono.control</object-name>
+    <object-name>Chrono.dim</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Ch.colon</object-name>
+    <object-name>Ch.hr1</object-name>
+    <object-name>Ch.hr2</object-name>
+    <object-name>Ch.mn1</object-name>
+    <object-name>Ch.mn2</object-name>
+    <object-name>Ch.sc1</object-name>
+    <object-name>Ch.sc2</object-name>
+    <object-name>Ch.EThr1</object-name>
+    <object-name>Ch.EThr2</object-name>
+    <object-name>Ch.ETmn1</object-name>
+    <object-name>Ch.ETmn2</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+  
+  <!-- GMT display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.hr1</object-name>
+    <property>sim/time/utc/hour</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.hr2</object-name>
+    <property>sim/time/utc/hour</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.mn1</object-name>
+    <property>sim/time/utc/minute</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.mn2</object-name>
+    <property>sim/time/utc/minute</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.sc1</object-name>
+    <property>sim/time/utc/second</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>Ch.sc2</object-name>
+    <property>sim/time/utc/second</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
