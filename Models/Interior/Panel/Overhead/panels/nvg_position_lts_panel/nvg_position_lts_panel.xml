@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>nvg_position_lts_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>switch</object-name>
+    <property>controls/switches/nvg_pos_lts</property>
+    <center>
+      <x-m>  0.00007 </x-m>
+      <y-m> -0.02994 </y-m>
+      <z-m> -0.00625 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-48.5</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/nvg_pos_lts</property>
+        <min>0</min>
+        <max>5</max>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

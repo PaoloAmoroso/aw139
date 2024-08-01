@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>chip_det_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>cablecutswitch</object-name>
+    <object-name>chipdetswitch</object-name>
+    <object-name>clutchguard</object-name>
+    <object-name>forcetrimswitch</object-name>
+    <object-name>hydcontswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>cablecutswitch</object-name>
+    <object-name>chipdetswitch</object-name>
+    <object-name>clutchguard</object-name>
+    <object-name>forcetrimswitch</object-name>
+    <object-name>hydcontswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>cablecutswitch</object-name>
+    <object-name>chipdetswitch</object-name>
+    <object-name>clutchguard</object-name>
+    <object-name>forcetrimswitch</object-name>
+    <object-name>hydcontswitch</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>chipdetswitch</object-name>
+    <property>controls/switches/chipdet</property>
+    <center>
+      <x-m> -0.000 </x-m>
+      <y-m> -0.052 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/chipdet</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <!-- Clutch -->
+  <animation>
+    <type>knob</type>
+    <object-name>clutchguard</object-name>
+    <property>controls/switches/cablecutclutchguard</property>
+    <factor>-40</factor>
+    <center>
+      <x-m> -0.01970 </x-m>
+      <y-m> -0.01149 </y-m>
+      <z-m>  0.00006 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cablecutclutchguard</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>cablecutswitch</object-name>
+    <property>controls/switches/cablecut</property>
+    <center>
+      <x-m> -0.000 </x-m>
+      <y-m>  0.011 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cablecut</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>forcetrimswitch</object-name>
+    <property>controls/switches/forcetrim</property>
+    <center>
+      <x-m> -0.000 </x-m>
+      <y-m>  0.011 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/forcetrim</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>hydcontswitch</object-name>
+    <property>controls/switches/hydcont</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.052 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/hydcont</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

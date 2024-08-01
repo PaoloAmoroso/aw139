@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>ac_circuit_breaker_panel.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>cb00_attd_pilot_1</object-name>
+    <object-name>cb01_attd_pilot_2</object-name>
+    <object-name>cb02_attd_copilot_1</object-name>
+    <object-name>cb03_attd_copilot_2</object-name>
+    <object-name>cb11_gyro_cmps</object-name>
+    <object-name>cb12_fuel_qty</object-name>
+    <object-name>cb13_28v_trans</object-name>
+    <object-name>cb14_fail_relay</object-name>
+    <object-name>cb20_fuel_pressure</object-name>
+    <object-name>cb21_torque_pressure</object-name>
+    <object-name>cb22_xmsn_pressure</object-name>
+    <object-name>cb23_eng_pressure</object-name>
+    <object-name>cb24_course_ind</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>base</object-name>
+    <object-name>cb00_attd_copilot_1</object-name>
+    <object-name>cb01_attd_copilot_2</object-name>
+    <object-name>cb02_attd_pilot_1</object-name>
+    <object-name>cb03_attd_pilot_2</object-name>
+    <object-name>cb11_gyro_cmps</object-name>
+    <object-name>cb12_fuel_qty</object-name>
+    <object-name>cb13_28v_trans</object-name>
+    <object-name>cb14_fail_relay</object-name>
+    <object-name>cb20_fuel_pressure</object-name>
+    <object-name>cb21_torque_pressure</object-name>
+    <object-name>cb22_xmsn_pressure</object-name>
+    <object-name>cb23_eng_pressure</object-name>
+    <object-name>cb24_course_ind</object-name>
+  </animation>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>cb00_attd_copilot_1</object-name>
+    <object-name>cb01_attd_copilot_2</object-name>
+    <object-name>cb02_attd_pilot_1</object-name>
+    <object-name>cb03_attd_pilot_2</object-name>
+    <object-name>cb11_gyro_cmps</object-name>
+    <object-name>cb12_fuel_qty</object-name>
+    <object-name>cb13_28v_trans</object-name>
+    <object-name>cb14_fail_relay</object-name>
+    <object-name>cb20_fuel_pressure</object-name>
+    <object-name>cb21_torque_pressure</object-name>
+    <object-name>cb22_xmsn_pressure</object-name>
+    <object-name>cb23_eng_pressure</object-name>
+    <object-name>cb24_course_ind</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb00_attd_pilot_1</object-name>
+    <property>controls/circuit_breaker/attd_pilot_1</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/attd_pilot_1</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb01_attd_pilot_2</object-name>
+    <property>controls/circuit_breaker/attd_pilot_2</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/attd_pilot_2</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb02_attd_copilot_1</object-name>
+    <property>controls/circuit_breaker/attd_copilot_1</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/attd_copilot_1</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb03_attd_copilot_2</object-name>
+    <property>controls/circuit_breaker/attd_copilot_2</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/attd_copilot_2</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb11_gyro_cmps</object-name>
+    <property>controls/circuit_breaker/gyro_cmps</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/gyro_cmps</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb12_fuel_qty</object-name>
+    <property>controls/circuit_breaker/fuel_qty</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_qty</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>cb13_28v_trans</object-name>
+    <property>controls/circuit_breaker/v28_trans</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/v28_trans</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb14_fail_relay</object-name>
+    <property>controls/circuit_breaker/fail_relay</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fail_relay</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb20_fuel_pressure</object-name>
+    <property>controls/circuit_breaker/fuel_pressure</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_pressure</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb21_torque_pressure</object-name>
+    <property>controls/circuit_breaker/torque_pressure</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/torque_pressure</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>cb22_xmsn_pressure</object-name>
+    <property>controls/circuit_breaker/xmsn_pressure</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/xmsn_pressure</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb23_eng_pressure</object-name>
+    <property>controls/circuit_breaker/eng_pressure</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/eng_pressure</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>cb24_course_ind</object-name>
+    <property>controls/circuit_breaker/course_ind</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.014</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/course_ind</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

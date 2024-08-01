@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>apx72.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>poticode</object-name>
+    <object-name>potimaster</object-name>
+    <object-name>potireply</object-name>
+    <object-name>potitest</object-name>
+    <object-name>switchaudiolight</object-name>
+    <object-name>switchm1</object-name>
+    <object-name>switchm2</object-name>
+    <object-name>switchm3</object-name>
+    <object-name>switchmc</object-name>
+    <object-name>switchradtestmon</object-name>
+    <object-name>switchonoff</object-name>
+    <object-name>switchidentmic</object-name>
+    <object-name>wheel1</object-name>
+    <object-name>wheel2</object-name>
+    <object-name>wheel3</object-name>
+    <object-name>wheel4</object-name>
+    <object-name>wheel5</object-name>
+    <object-name>wheel6</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>poticode</object-name>
+    <object-name>potimaster</object-name>
+    <object-name>potireply</object-name>
+    <object-name>potitest</object-name>
+    <object-name>switchaudiolight</object-name>
+    <object-name>switchidentmic</object-name>
+    <object-name>switchm1</object-name>
+    <object-name>switchm2</object-name>
+    <object-name>switchm3</object-name>
+    <object-name>switchmc</object-name>
+    <object-name>switchonoff</object-name>
+    <object-name>switchradtestmon</object-name>
+    <object-name>wheel1</object-name>
+    <object-name>wheel2</object-name>
+    <object-name>wheel3</object-name>
+    <object-name>wheel4</object-name>
+    <object-name>wheel5</object-name>
+    <object-name>wheel6</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>poticode</object-name>
+    <object-name>potimaster</object-name>
+    <object-name>potireply</object-name>
+    <object-name>potitest</object-name>
+    <object-name>switchaudiolight</object-name>
+    <object-name>switchidentmic</object-name>
+    <object-name>switchm1</object-name>
+    <object-name>switchm2</object-name>
+    <object-name>switchm3</object-name>
+    <object-name>switchmc</object-name>
+    <object-name>switchonoff</object-name>
+    <object-name>switchradtestmon</object-name>
+    <object-name>wheel1</object-name>
+    <object-name>wheel2</object-name>
+    <object-name>wheel3</object-name>
+    <object-name>wheel4</object-name>
+    <object-name>wheel5</object-name>
+    <object-name>wheel6</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/ped</factor-prop>
+      <red>  0.01</red>
+      <green>0.01</green>
+      <blue> 0.01</blue>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>poticode</object-name>
+    <property>controls/switches/apx72/code</property>
+    <center>
+      <x-m>-0.040</x-m>
+      <y-m>-0.040</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/code</property>
+        <min>-1</min>
+        <max>2</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/code</property>
+        <min>0</min>
+        <max>2</max>
+        <wrap>false</wrap>
+      </binding>
+    </release>
+  </animation>
+  -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>potimaster</object-name>
+    <property>controls/switches/apx72/master</property>
+    <center>
+      <x-m>-0.040</x-m>
+      <y-m> 0.040</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/master</property>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>potireply</object-name>
+    <property>controls/switches/apx72/reply</property>
+    <center>
+      <x-m>-0.050</x-m>
+      <y-m>-0.013</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-2.6</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/reply</property>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potitest</object-name>
+    <property>controls/switches/apx72/test</property>
+    <center>
+      <x-m>-0.050</x-m>
+      <y-m> 0.013</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-2.6</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/test</property>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchaudiolight</object-name>
+    <property>controls/switches/apx72/audiolight</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m>-0.050</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/audiolight</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchidentmic</object-name>
+    <property>controls/switches/apx72/identmic</property>
+    <center>
+      <x-m>0.031</x-m>
+      <y-m>0.050</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/identmic</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/identmic</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchm1</object-name>
+    <property>controls/switches/apx72/m1</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m>-0.030</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m1</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m1</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchm2</object-name>
+    <property>controls/switches/apx72/m2</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m>-0.010</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m2</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m2</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchm3</object-name>
+    <property>controls/switches/apx72/m3</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m> 0.010</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m3</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/m3</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchmc</object-name>
+    <property>controls/switches/apx72/mc</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m> 0.030</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/mc</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/mc</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchonoff</object-name>
+    <property>controls/switches/apx72/mode4</property>
+    <center>
+      <x-m> 0.031</x-m>
+      <y-m>-0.040</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-40</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/apx72/mode4</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>switchradtestmon</object-name>
+    <property>controls/switches/apx72/radtestmon</property>
+    <center>
+      <x-m>-0.007</x-m>
+      <y-m> 0.050</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/radtestmon</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/apx72/radtestmon</property>
+        <step>0</step>
+        <min>-1</min>
+        <max>0</max>
+      </binding>
+    </release>
+  </animation>
+  -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>wheel1</object-name>
+    <property>instrumentation/transponder/inputs/digit</property>
+    <center>
+      <x-m> 0.0472</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0193</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit", 1 );</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit", 0 );</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>wheel2</object-name>
+    <property>instrumentation/transponder/inputs/digit[1]</property>
+    <center>
+      <x-m> 0.0472</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0193</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[1]", 1 );</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[1]", 0 );</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>wheel3</object-name>
+    <property>instrumentation/transponder/inputs/digit[2]</property>
+    <center>
+      <x-m> 0.0472</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0193</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[2]", 1 );</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[2]", 0 );</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>wheel4</object-name>
+    <property>instrumentation/transponder/inputs/digit[3]</property>
+    <center>
+      <x-m> 0.0472</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0193</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[3]", 1 );</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>apx72.setdigit( "instrumentation/transponder/inputs/digit[3]", 0 );</script>
+      </binding>
+    </decrease>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,313 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>arc54.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>apoti</object-name>
+    <object-name>bpoti</object-name>
+    <object-name>cpoti</object-name>
+    <object-name>dpoti</object-name>
+    <object-name>squelchpoti</object-name>
+    <object-name>volpoti</object-name>
+    <object-name>funcpoti</object-name>
+
+    <object-name>glas</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>apoti</object-name>
+    <object-name>bpoti</object-name>
+    <object-name>cpoti</object-name>
+    <object-name>dpoti</object-name>
+    <object-name>squelchpoti</object-name>
+    <object-name>volpoti</object-name>
+    <object-name>funcpoti</object-name>
+    <object-name>glas</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../../Effects/Glass/glass</inherits-from>
+    <object-name>glas</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>apoti</object-name>
+    <object-name>bpoti</object-name>
+    <object-name>cpoti</object-name>
+    <object-name>dpoti</object-name>
+    <object-name>squelchpoti</object-name>
+    <object-name>volpoti</object-name>
+    <object-name>funcpoti</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>apoti</object-name>
+    <property>controls/switches/arc54/apoti</property>
+    <center>
+      <x-m>-0.019</x-m>
+      <y-m>-0.044</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-18</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/apoti</property>
+        <min>3</min>
+        <max>6</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>bpoti</object-name>
+    <property>controls/switches/arc54/bpoti</property>
+    <center>
+      <x-m>-0.019</x-m>
+      <y-m>-0.015</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-18</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/bpoti</property>
+        <min>0</min>
+        <max>9</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>cpoti</object-name>
+    <property>controls/switches/arc54/cpoti</property>
+    <center>
+      <x-m>-0.019</x-m>
+      <y-m> 0.015</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-18</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/cpoti</property>
+        <min>0</min>
+        <max>9</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>dpoti</object-name>
+    <property>controls/switches/arc54/dpoti</property>
+    <center>
+      <x-m>-0.019</x-m>
+      <y-m> 0.044</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-18</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/dpoti</property>
+        <min>0</min>
+        <max>9</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>squelchpoti</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/squelch</property>
+        <step>1</step>
+        <min>0</min>
+        <max>2</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>squelchpoti</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/squelch</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>2</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>squelchpoti</object-name>
+    <property>controls/switches/arc54/squelch</property>
+    <factor>-40</factor>
+    <center>
+      <x-m> 0.017</x-m>
+      <y-m>-0.025</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>funcpoti</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/func</property>
+        <step>1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>funcpoti</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/func</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>funcpoti</object-name>
+    <property>controls/switches/arc54/func</property>
+    <factor>-25</factor>
+    <center>
+      <x-m>0.017</x-m>
+      <y-m>0.026</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>volpoti</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/volume</property>
+        <step>5</step>
+        <min>0</min>
+        <max>100</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>volpoti</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc54/volume</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>100</max>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>volpoti</object-name>
+    <property>controls/switches/arc54/volume</property>
+    <factor>-2.9</factor>
+    <center>
+      <x-m>0.024</x-m>
+      <y-m>0.000</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+  -->
+
+</PropertyList>

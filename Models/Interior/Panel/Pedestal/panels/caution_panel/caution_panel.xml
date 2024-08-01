@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>caution_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>resettestswitch</object-name>
+    <object-name>brightdimswitch</object-name>
+
+    <object-name>planel0engineoilpress</object-name>
+    <object-name>planel1engineicing</object-name>
+    <object-name>planel2engineicedet</object-name>
+    <object-name>planel3enginedeiceon</object-name>
+    <object-name>planel4leftfuelboost</object-name>
+    <object-name>planel5rightfuelboost</object-name>
+    <object-name>planel6engfuelpump</object-name>
+    <object-name>planel7fuellowlevel</object-name>
+    <object-name>planel8fuelfilter</object-name>
+    <object-name>planel9govemer</object-name>
+
+    <object-name>planer0engoilfilter</object-name>
+    <object-name>planer1xmsnoilpress</object-name>
+    <object-name>planer2xmsnoilhot</object-name>
+    <object-name>planer3hyd#1pressure</object-name>
+    <object-name>planer4hyd#2pressure</object-name>
+    <object-name>planer5instinverter</object-name>
+    <object-name>planer6dcgenerator</object-name>
+    <object-name>planer7doorlock</object-name>
+    <object-name>planer8spare</object-name>
+    <object-name>planer9spare</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>resettestswitch</object-name>
+    <object-name>brightdimswitch</object-name>
+    <object-name>planel0engineoilpress</object-name>
+    <object-name>planel1engineicing</object-name>
+    <object-name>planel2engineicedet</object-name>
+    <object-name>planel3enginedeiceon</object-name>
+    <object-name>planel4leftfuelboost</object-name>
+    <object-name>planel5rightfuelboost</object-name>
+    <object-name>planel6engfuelpump</object-name>
+    <object-name>planel7fuellowlevel</object-name>
+    <object-name>planel8fuelfilter</object-name>
+    <object-name>planel9govemer</object-name>
+    <object-name>planer0engoilfilter</object-name>
+    <object-name>planer1xmsnoilpress</object-name>
+    <object-name>planer2xmsnoilhot</object-name>
+    <object-name>planer3hyd#1pressure</object-name>
+    <object-name>planer4hyd#2pressure</object-name>
+    <object-name>planer5instinverter</object-name>
+    <object-name>planer6dcgenerator</object-name>
+    <object-name>planer7doorlock</object-name>
+    <object-name>planer8spare</object-name>
+    <object-name>planer9spare</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>resettestswitch</object-name>
+    <object-name>brightdimswitch</object-name>
+    <object-name>planel0engineoilpress</object-name>
+    <object-name>planel1engineicing</object-name>
+    <object-name>planel2engineicedet</object-name>
+    <object-name>planel3enginedeiceon</object-name>
+    <object-name>planel4leftfuelboost</object-name>
+    <object-name>planel5rightfuelboost</object-name>
+    <object-name>planel6engfuelpump</object-name>
+    <object-name>planel7fuellowlevel</object-name>
+    <object-name>planel8fuelfilter</object-name>
+    <object-name>planel9govemer</object-name>
+    <object-name>planer0engoilfilter</object-name>
+    <object-name>planer1xmsnoilpress</object-name>
+    <object-name>planer2xmsnoilhot</object-name>
+    <object-name>planer3hyd#1pressure</object-name>
+    <object-name>planer4hyd#2pressure</object-name>
+    <object-name>planer5instinverter</object-name>
+    <object-name>planer6dcgenerator</object-name>
+    <object-name>planer7doorlock</object-name>
+    <object-name>planer8spare</object-name>
+    <object-name>planer9spare</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel0engineoilpress</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/engine_oil_press</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel1engineicing</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/engine_icing</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel2engineicedet</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/engine_ice_det</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel3enginedeiceon</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/engine_deice_on</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel4leftfuelboost</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/fuel_boost_left</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel5rightfuelboost</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/fuel_boost_right</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel6engfuelpump</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/eng_fuel_pump</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel7fuellowlevel</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/fuel_low_level</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel8fuelfilter</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/fuel_filter</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planel9govemer</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/gov_emer</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer0engoilfilter</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/eng_oil_filter</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer1xmsnoilpress</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/xmsn_oil_press</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer2xmsnoilhot</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/xmsn_oil_hot</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer3hyd#1pressure</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/hyd1_pressure</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer4hyd#2pressure</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/hyd2_pressure</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer5instinverter</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/inst_inverter</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer6dcgenerator</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/dc_generator</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer7doorlock</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/door_lock</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer8spare</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/spare</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>planer9spare</object-name>
+    <condition>
+      <property>systems/electrical/outputs/warn/spare</property>
+    </condition>
+  </animation>
+
+  <!-- Reset Test Switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>resettestswitch</object-name>
+    <property>controls/switches/cautionresettest</property>
+    <center>
+      <x-m> -0.037 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/cautionresettest</property>
+        <!--        <step>1</step> -->
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop( "controls/switches/cautionresettest", 1 );
+          settimer( func{ uh1.switch_warns( "true" ) }, 1.0 );
+          settimer( func{ uh1.switch_warns( "false" );
+          setprop( "controls/switches/cautionresettest", 0 );
+          }, 3.5 );
+        </script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop( "controls/switches/cautionresettest", -1 );
+          uh1.switch_warns( "true" );
+          settimer( func{ uh1.switch_warns( "false" );
+          setprop( "controls/switches/cautionresettest", 0 );
+          }, 2.0 );
+        </script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <!-- Bright Dim Switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>brightdimswitch</object-name>
+    <property>controls/switches/cautionbrightdim</property>
+    <center>
+      <x-m> 0.037</x-m>
+      <y-m>-0.050</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cautionbrightdim</property>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop( "controls/lighting/cautionbrightdim",
+          getprop( "controls/switches/cautionbrightdim" ) ? 5 : 1 );
+        </script>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

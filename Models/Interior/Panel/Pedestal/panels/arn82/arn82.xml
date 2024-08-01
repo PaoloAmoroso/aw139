@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>arn82.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>potifunc</object-name>
+    <object-name>potivolume</object-name>
+    <object-name>freqdisplay0</object-name>
+    <object-name>freqdisplay1</object-name>
+    <object-name>freqdisplay2</object-name>
+    <object-name>freqdisplay3</object-name>
+    <object-name>freqdisplay4</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potikhz</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>freqdisplay0</object-name>
+    <object-name>freqdisplay1</object-name>
+    <object-name>freqdisplay2</object-name>
+    <object-name>freqdisplay3</object-name>
+    <object-name>freqdisplay4</object-name>
+    <object-name>potifunc</object-name>
+    <object-name>potikhz</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potivolume</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>freqdisplay0</object-name>
+    <object-name>freqdisplay1</object-name>
+    <object-name>freqdisplay2</object-name>
+    <object-name>freqdisplay3</object-name>
+    <object-name>freqdisplay4</object-name>
+    <object-name>potifunc</object-name>
+    <object-name>potikhz</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potivolume</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqdisplay0</object-name>
+    <property>instrumentation/nav/frequencies/selected-khz</property>
+    <factor>-0.1</factor>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqdisplay1</object-name>
+    <property>instrumentation/nav/frequencies/selected-khz</property>
+    <factor>-0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqdisplay2</object-name>
+    <property>instrumentation/nav/frequencies/selected-khz</property>
+    <factor>-0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqdisplay3</object-name>
+    <property>instrumentation/nav/frequencies/selected-khz</property>
+    <factor>-0.0001</factor>
+    <step>1000</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqdisplay4</object-name>
+    <property>instrumentation/nav/frequencies/selected-khz</property>
+    <factor>-0.00001</factor>
+    <step>10000</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potifunc</object-name>
+    <property>controls/switches/arn82/pwr</property>
+    <center>
+      <x-m>  0.0069 </x-m>
+      <y-m> -0.0376 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-44</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn82/pwr</property>
+        <min>0</min>
+        <max>2</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <release>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn82/pwr</property>
+        <min>0</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </release>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potikhz</object-name>
+    <property>controls/switches/arn82/right</property>
+    <center>
+      <x-m> 0.0069 </x-m>
+      <y-m> 0.0367 </y-m>
+      <z-m> 0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-20</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arn82.inc_freq()</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arn82.dec_freq()</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potimhz</object-name>
+    <property>controls/switches/arn82/left</property>
+    <center>
+      <x-m>  0.0069 </x-m>
+      <y-m> -0.0376 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-20</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arn82.adjustnavfreq( 1.0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arn82.adjustnavfreq( -1.0 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potivolume</object-name>
+    <property>controls/switches/arn82/vol</property>
+    <center>
+      <x-m> 0.0069 </x-m>
+      <y-m> 0.0367 </y-m>
+      <z-m> 0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-28</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn82/vol</property>
+        <min> 0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

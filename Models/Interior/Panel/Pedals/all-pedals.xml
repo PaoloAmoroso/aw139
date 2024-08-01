@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <!-- Pilot left pedal/Pilota pedale sinistro -->
+  <model>
+    <name>PedalAL</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <offsets>
+      <x-m> -2.48630 </x-m>
+      <y-m>  0.45723 </y-m>
+      <z-m> -1.11230 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilot right pedal/Pilota pedale destro -->
+  <model>
+    <name>PedalAR</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <offsets>
+      <x-m> -2.48630 </x-m>
+      <y-m>  0.76937 </y-m>
+      <z-m> -1.11230 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Co-Pilot left pedal/Co-Pilota pedale sinistro -->
+  <model>
+    <name>PedalBL</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <offsets>
+      <x-m> -2.48630 </x-m>
+      <y-m> -0.45723 </y-m>
+      <z-m> -1.11230 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Co-Pilot right pedal/Co-Pilota pedale destro -->
+  <model>
+    <name>PedalAR</name>
+    <path>Aircraft/aw139/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <offsets>
+      <x-m> -2.48630 </x-m>
+      <y-m> -0.76937 </y-m>
+      <z-m> -1.11230 </z-m>
+    </offsets>
+  </model>
+ 
+  <animation>
+    <type>translate</type>
+    <object-name>PedalAL</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> -0.1 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind>  1 </ind><dep>  0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>PedalAR</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  0.1 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>PedalBL</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> -0.1 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind>  1 </ind><dep>  0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>PedalBR</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  0.1 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

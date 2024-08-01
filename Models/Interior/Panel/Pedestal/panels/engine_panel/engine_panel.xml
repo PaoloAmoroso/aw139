@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>engine_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>lowrpmswitch</object-name>
+    <object-name>intauxfuelleftswitch</object-name>
+    <object-name>intauxfuelrightswitch</object-name>
+    <object-name>mainswitch</object-name>
+    <object-name>deiceswitch</object-name>
+    <object-name>startswitch</object-name>
+    <object-name>govswitch</object-name>
+    <object-name>clutchguard</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>lowrpmswitch</object-name>
+    <object-name>intauxfuelleftswitch</object-name>
+    <object-name>intauxfuelrightswitch</object-name>
+    <object-name>mainswitch</object-name>
+    <object-name>deiceswitch</object-name>
+    <object-name>startswitch</object-name>
+    <object-name>govswitch</object-name>
+    <object-name>clutchguard</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>lowrpmswitch</object-name>
+    <object-name>intauxfuelleftswitch</object-name>
+    <object-name>intauxfuelrightswitch</object-name>
+    <object-name>mainswitch</object-name>
+    <object-name>deiceswitch</object-name>
+    <object-name>startswitch</object-name>
+    <object-name>govswitch</object-name>
+    <object-name>clutchguard</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- Clutch Guard -->
+  <animation>
+    <type>knob</type>
+    <object-name>clutchguard</object-name>
+    <property>controls/switches/engine/clutchguard</property>
+    <factor>-42</factor>
+    <center>
+      <x-m> -0.03891 </x-m>
+      <y-m> -0.00034 </y-m>
+      <z-m>  0.00134 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/clutchguard</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Main Fuel Switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>mainswitch</object-name>
+    <property>controls/switches/engine/mainfuel</property>
+    <center>
+      <x-m> -0.022 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.001 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/mainfuel</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Start Fuel Switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>startswitch</object-name>
+    <property>controls/switches/engine/startfuel</property>
+    <center>
+      <x-m> -0.022 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.001 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/startfuel</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Low RPM Switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>lowrpmswitch</object-name>
+    <property>controls/switches/lowrpmaudio</property>
+    <center>
+      <x-m> -0.022 </x-m>
+      <y-m> -0.054 </y-m>
+      <z-m>  0.001 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/lowrpmaudio</property>
+      </binding>
+      <binding>
+        <script>uh1.rpm_warn()</script>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>intauxfuelrightswitch</object-name>
+    <property>controls/switches/engine/intauxfuelright</property>
+    <center>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.057 </y-m>
+      <z-m> -0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/intauxfuelright</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>intauxfuelleftswitch</object-name>
+    <property>controls/switches/engine/intauxfuelleft</property>
+    <center>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.054 </y-m>
+      <z-m> -0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/intauxfuelleft</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>deiceswitch</object-name>
+    <property>controls/switches/warn/engine_deice_on</property>
+    <center>
+      <x-m>  0.025 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/warn/engine_deice_on</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>govswitch</object-name>
+    <property>controls/switches/engine/gov</property>
+    <center>
+      <x-m>  0.025 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/engine/gov</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

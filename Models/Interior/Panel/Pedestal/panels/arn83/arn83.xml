@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>arn83.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>faceback</object-name>
+    <object-name>loopswitch</object-name>
+    <object-name>gainpoti</object-name>
+    <object-name>freqband</object-name>
+    <object-name>tunepoti</object-name>
+    <object-name>facereceiver</object-name>
+    <object-name>bfoswitch</object-name>
+    <object-name>gainswitch</object-name>
+    <object-name>freqpreselectpoti</object-name>
+    <object-name>pointer</object-name>
+
+    <object-name>glas</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>faceback</object-name>
+    <object-name>loopswitch</object-name>
+    <object-name>gainpoti</object-name>
+    <object-name>freqband</object-name>
+    <object-name>tunepoti</object-name>
+    <object-name>facereceiver</object-name>
+    <object-name>bfoswitch</object-name>
+    <object-name>gainswitch</object-name>
+    <object-name>freqpreselectpoti</object-name>
+    <object-name>pointer</object-name>
+    <object-name>glas</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../../Effects/Glass/glass</inherits-from>
+    <object-name>glas</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>faceback</object-name>
+    <object-name>loopswitch</object-name>
+    <object-name>gainpoti</object-name>
+    <object-name>freqband</object-name>
+    <object-name>tunepoti</object-name>
+    <object-name>facereceiver</object-name>
+    <object-name>bfoswitch</object-name>
+    <object-name>gainswitch</object-name>
+    <object-name>freqpreselectpoti</object-name>
+    <object-name>pointer</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>bfoswitch</object-name>
+    <property>controls/switches/arn83/bfo</property>
+    <center>
+      <x-m> -0.028 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-40</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/arn83/bfo</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>gainswitch</object-name>
+    <property>controls/switches/arn83/gainswitch</property>
+    <center>
+      <x-m>  0.016 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-27</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn83/gainswitch</property>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>gainpoti</object-name>
+    <property>controls/switches/arn83/gain</property>
+    <center>
+      <x-m>  0.016 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-4</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn83/gain</property>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>loopswitch</object-name>
+    <property>controls/switches/arn83/loopadf</property>
+    <center>
+      <x-m> -0.023 </x-m>
+      <y-m> -0.054 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-25</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arn83/loopadf</property>
+        <min>-1</min>
+        <max>2</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>freqpreselectpoti</object-name>
+    <property>instrumentation/adf/frequencies/freqbandselect</property>
+    <center>
+      <x-m> 0.016 </x-m>
+      <y-m> 0.047 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-49</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arn83.adjustadfband( 0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arn83.adjustadfband( 1 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>tunepoti</object-name>
+    <property>instrumentation/adf/frequencies/freqpos</property>
+    <center>
+      <x-m> 0.016 </x-m>
+      <y-m> 0.047 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-0.5</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arn83.adjustadffreq( 0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arn83.adjustadffreq( 1 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>freqband</object-name>
+    <property>instrumentation/adf/frequencies/freqpos</property>
+    <offset-deg>20</offset-deg>
+    <factor>0.0459</factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.023 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>freqband</object-name>
+    <property>/instrumentation/adf/frequencies/freqbandselect</property>
+    <factor>1.075</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pointer</object-name>
+    <property>instrumentation/adf/in-range</property>
+    <condition>
+      <property>systems/electrical/outputs/adf</property>
+    </condition>
+    <factor>-90</factor>
+    <center>
+      <x-m> -0.018 </x-m>
+      <y-m>  0.050 </y-m>
+      <z-m> -0.001 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

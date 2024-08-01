@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>inst_ltg_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>poticopilot</object-name>
+    <object-name>potisec</object-name>
+    <object-name>poticonsole</object-name>
+    <object-name>potipilot</object-name>
+    <object-name>potiengine</object-name>
+    <object-name>potiped</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>poticopilot</object-name>
+    <object-name>potisec</object-name>
+    <object-name>poticonsole</object-name>
+    <object-name>potipilot</object-name>
+    <object-name>potiengine</object-name>
+    <object-name>potiped</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>poticopilot</object-name>
+    <object-name>potisec</object-name>
+    <object-name>poticonsole</object-name>
+    <object-name>potipilot</object-name>
+    <object-name>potiengine</object-name>
+    <object-name>potiped</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- console -->
+  <animation>
+    <type>knob</type>
+    <object-name>poticonsole</object-name>
+    <property>controls/lighting/instltg/console</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m> -0.03708 </y-m>
+      <z-m>  0.05850 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/console</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- ped -->
+  <animation>
+    <type>knob</type>
+    <object-name>potiped</object-name>
+    <property>controls/lighting/instltg/ped</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m>  0.03686 </y-m>
+      <z-m>  0.05803 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/ped</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- sec -->
+  <animation>
+    <type>knob</type>
+    <object-name>potisec</object-name>
+    <property>controls/lighting/instltg/sec</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m> -0.03708 </y-m>
+      <z-m>  0.00001 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/sec</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- engine -->
+  <animation>
+    <type>knob</type>
+    <object-name>potiengine</object-name>
+    <property>controls/lighting/instltg/engine</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m>  0.03686 </y-m>
+      <z-m>  0.00001 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/engine</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- copilot -->
+  <animation>
+    <type>knob</type>
+    <object-name>poticopilot</object-name>
+    <property>controls/lighting/instltg/copilot</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m> -0.03708 </y-m>
+      <z-m> -0.05895 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/copilot</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- pilot -->
+  <animation>
+    <type>knob</type>
+    <object-name>potipilot</object-name>
+    <property>controls/lighting/instltg/pilot</property>
+    <center>
+      <x-m>  0.00047 </x-m>
+      <y-m>  0.03686 </y-m>
+      <z-m> -0.05895 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/instltg/pilot</property>
+        <min>0</min>
+        <max>10</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

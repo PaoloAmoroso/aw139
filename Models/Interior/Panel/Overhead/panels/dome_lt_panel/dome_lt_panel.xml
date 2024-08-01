@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>dome_lt_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>domeswitch</object-name>
+    <object-name>pitotswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>domeswitch</object-name>
+    <object-name>pitotswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>domeswitch</object-name>
+    <object-name>pitotswitch</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>domeswitch</object-name>
+    <property>controls/lighting/domelight</property>
+    <center>
+      <x> -0.00003 </x>
+      <y> -0.03687 </y>
+      <z>  0.00014 </z>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/lighting/domelight</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>pitotswitch</object-name>
+    <property>controls/switches/pitot_htr</property>
+    <center>
+      <x> 0.00001 </x>
+      <y> 0.03685 </y>
+      <z> 0.00013 </z>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/pitot_htr</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

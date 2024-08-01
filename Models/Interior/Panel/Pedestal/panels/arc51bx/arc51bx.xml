@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>arc51bx.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>blend</object-name>
+    <object-name>cap</object-name>
+    <object-name>presetchan</object-name>
+    <object-name>circlek100</object-name>
+    <object-name>circlek010</object-name>
+    <object-name>circlem001</object-name>
+    <object-name>circlem100</object-name>
+    <object-name>circlem010</object-name>
+    <object-name>presetswitch</object-name>
+    <object-name>receiveswitch</object-name>
+    <object-name>funcswitch</object-name>
+    <object-name>volume</object-name>
+    <object-name>tune100</object-name>
+    <object-name>tune010</object-name>
+    <object-name>tune001</object-name>
+    <object-name>sqdisableswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>blend</object-name>
+    <object-name>cap</object-name>
+    <object-name>presetchan</object-name>
+    <object-name>circlek100</object-name>
+    <object-name>circlek010</object-name>
+    <object-name>circlem001</object-name>
+    <object-name>circlem100</object-name>
+    <object-name>circlem010</object-name>
+    <object-name>presetswitch</object-name>
+    <object-name>receiveswitch</object-name>
+    <object-name>funcswitch</object-name>
+    <object-name>volume</object-name>
+    <object-name>tune100</object-name>
+    <object-name>tune010</object-name>
+    <object-name>tune001</object-name>
+    <object-name>sqdisableswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>blend</object-name>
+    <object-name>cap</object-name>
+    <object-name>presetchan</object-name>
+    <object-name>circlek100</object-name>
+    <object-name>circlek010</object-name>
+    <object-name>circlem001</object-name>
+    <object-name>circlem100</object-name>
+    <object-name>circlem010</object-name>
+    <object-name>presetswitch</object-name>
+    <object-name>receiveswitch</object-name>
+    <object-name>funcswitch</object-name>
+    <object-name>volume</object-name>
+    <object-name>tune100</object-name>
+    <object-name>tune010</object-name>
+    <object-name>tune001</object-name>
+    <object-name>sqdisableswitch</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/ped</factor-prop>
+      <red>   0.01 </red>
+      <green> 0.01 </green>
+      <blue>  0.01 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>cap</object-name>
+    <property>controls/switches/arc51bx/cap</property>
+    <center>
+      <x-m> -0.063 </x-m>
+      <y-m> -0.003 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-127</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/arc51bx/cap</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>funcswitch</object-name>
+    <property>controls/switches/arc51bx/func</property>
+    <center>
+      <x-m>0.014</x-m>
+      <y-m>0.053</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-15</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc51bx/func</property>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>presetswitch</object-name>
+    <property>controls/switches/arc51bx/presetchan</property>
+    <center>
+      <x-m>-0.0123</x-m>
+      <y-m>-0.0386</y-m>
+      <z-m> 0.0000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-3</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc51bx/presetchan</property>
+        <min>0</min>
+        <max>20</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>presetchan</object-name>
+    <property>controls/switches/arc51bx/presetchan</property>
+    <center>
+      <x-m>-0.0371</x-m>
+      <y-m>-0.0409</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-18</factor>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>receiveswitch</object-name>
+    <property>controls/switches/arc51bx/source</property>
+    <center>
+      <x-m> 0.0141</x-m>
+      <y-m>-0.0542</y-m>
+      <z-m> 0.0000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-15</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc51bx/source</property>
+        <min>0</min>
+        <max>2</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>sqdisableswitch</object-name>
+    <property>controls/switches/arc51bx/sqdisable</property>
+    <center>
+      <x-m>-0.123</x-m>
+      <y-m> 0.000</y-m>
+      <z-m>-0.001</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <factor>-20</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/arc51bx/sqdisable</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>tune001</object-name>
+    <property>controls/switches/arc51bx/freq_tk</property>
+    <center>
+      <x-m>0.044</x-m>
+      <y-m>0.050</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-2</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( 0.05 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( -0.05 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>circlek010</object-name>
+    <property>controls/switches/arc51bx/freq_tk</property>
+    <center>
+      <x-m> 0.0193</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>circlek100</object-name>
+    <property>controls/switches/arc51bx/freq_kk</property>
+    <center>
+      <x-m> 0.0193</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>tune010</object-name>
+    <property>controls/switches/arc51bx/freq_m</property>
+    <center>
+      <x-m>0.044</x-m>
+      <y-m>0.000</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-2</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( 1.0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( -1.0 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>circlem001</object-name>
+    <property>controls/switches/arc51bx/freq_m</property>
+    <center>
+      <x-m> 0.0193</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>tune100</object-name>
+    <property>controls/switches/arc51bx/freq_tm</property>
+    <center>
+      <x-m> 0.044</x-m>
+      <y-m>-0.050</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-2</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( 10.0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arc51bx.adjustuhffreq( -10.0 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>circlem010</object-name>
+    <property>controls/switches/arc51bx/freq_tm</property>
+    <center>
+      <x-m> 0.0193</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>circlem100</object-name>
+    <property>controls/switches/arc51bx/freq_km</property>
+    <center>
+      <x-m> 0.0193</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.0255</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>-36</factor>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>volume</object-name>
+    <property>controls/switches/arc51bx/volume</property>
+    <center>
+      <x-m>-0.012</x-m>
+      <y-m> 0.052</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-1.4</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc51bx/volume</property>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

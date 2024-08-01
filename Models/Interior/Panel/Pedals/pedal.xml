@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>pedal.ac</path>
+
+  <animation>
+    <!-- Objets opaques/Oggetti opachi -->
+    <object-name>pedal</object-name>
+
+    <!-- Objets transparents/Oggetti trasparenti -->
+  </animation>
+ 
+</PropertyList>

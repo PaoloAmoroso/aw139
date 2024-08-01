@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>wiper_panel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>leftswitch</object-name>
+    <object-name>poti</object-name>
+    <object-name>rightswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>leftswitch</object-name>
+    <object-name>poti</object-name>
+    <object-name>rightswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>leftswitch</object-name>
+    <object-name>poti</object-name>
+    <object-name>rightswitch</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- Wiper left/right/both -->
+  <animation>
+    <type>knob</type>
+    <object-name>leftswitch</object-name>
+    <property>controls/electric/wipers/switch</property>
+    <factor>25</factor>
+    <center>
+      <x-m> -0.00003 </x-m>
+      <y-m> -0.05312 </y-m>
+      <z-m>  0.00132 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/electric/wipers/switch</property>
+        <min> -1 </min>
+        <max>  1 </max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Wiper speed -->
+  <animation>
+    <type>knob</type>
+    <object-name>poti</object-name>
+    <property>controls/wiper/speed</property>
+    <factor>-22.5</factor>
+    <center>
+      <x-m>  0.00001 </x-m>
+      <y-m>  0.00173 </y-m>
+      <z-m> -0.00427 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/wiper/speed</property>
+        <min> -1 </min>
+        <max>  3 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Cargo rel. -->
+  <!--
+  <animation>
+    <type>knob</type>
+    <object-name>rightswitch</object-name>
+    <property>controls/switches/cargorel</property>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <factor>30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cargorel</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

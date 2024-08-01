@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>c6533.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>1switch</object-name>
+    <object-name>2switch</object-name>
+    <object-name>3switch</object-name>
+    <object-name>4switch</object-name>
+    <object-name>5switch</object-name>
+    <object-name>auxswitch</object-name>
+    <object-name>navswitch</object-name>
+    <object-name>volpoti</object-name>
+    <object-name>hotmikeswitch</object-name>
+    <object-name>txpoti</object-name>
+
+    <object-name>planeshort</object-name>
+    <object-name>planelong</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>1switch</object-name>
+    <object-name>2switch</object-name>
+    <object-name>3switch</object-name>
+    <object-name>4switch</object-name>
+    <object-name>5switch</object-name>
+    <object-name>auxswitch</object-name>
+    <object-name>hotmikeswitch</object-name>
+    <object-name>navswitch</object-name>
+    <object-name>txpoti</object-name>
+    <object-name>volpoti</object-name>
+    <object-name>planeshort</object-name>
+    <object-name>planelong</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>1switch</object-name>
+    <object-name>2switch</object-name>
+    <object-name>3switch</object-name>
+    <object-name>4switch</object-name>
+    <object-name>5switch</object-name>
+    <object-name>auxswitch</object-name>
+    <object-name>hotmikeswitch</object-name>
+    <object-name>navswitch</object-name>
+    <object-name>txpoti</object-name>
+    <object-name>volpoti</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../../Effects/Glass/glass</inherits-from>
+    <object-name>planeshort</object-name>
+    <object-name>planelong</object-name>
+  </effect>
+
+  <!-- receiver 1 -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>1switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/receiver1</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>1switch</object-name>
+    <property>controls/switches/c6533/receiver1</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.051 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- receiver 2 -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>2switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/receiver2</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>2switch</object-name>
+    <property>controls/switches/c6533/receiver2</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.034 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- receiver 3 -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>3switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/receiver3</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>3switch</object-name>
+    <property>controls/switches/c6533/receiver3</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.017 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+-->
+
+  <!-- receiver 4 -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>4switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/receiver4</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>4switch</object-name>
+    <property>controls/switches/c6533/receiver4</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- receiver 5 -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>5switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/receiver5</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>5switch</object-name>
+    <property>controls/switches/c6533/receiver5</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.017 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- aux -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>auxswitch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/aux</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>auxswitch</object-name>
+    <property>controls/switches/c6533/aux</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.034 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- nav -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>navswitch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/nav</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>navswitch</object-name>
+    <property>controls/switches/c6533/nav</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- hot mike -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>hotmikeswitch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/c6533/hotmike</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>hotmikeswitch</object-name>
+    <property>controls/switches/c6533/hotmike</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> 0.020 </x-m>
+      <y-m> 0.051 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- transm. poti -->
+  <!--
+  <animation>
+    <type>pick</type>
+    <object-name>txpoti</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/c6533/transmitter</property>
+        <step>1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>txpoti</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/c6533/transmitter</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>txpoti</object-name>
+    <property>controls/switches/c6533/transmitter</property>
+    <factor>-60</factor>
+    <center>
+      <x-m> 0.017 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  -->
+
+  <!-- volume -->
+  <animation>
+    <type>pick</type>
+    <object-name>volpoti</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/c6533/volume</property>
+        <step>5</step>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>volpoti</object-name>
+    <property>controls/switches/c6533/volume</property>
+    <factor>-2.8</factor>
+    <center>
+      <x-m>  0.020 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/c6533/volume</property>
+        <min>0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

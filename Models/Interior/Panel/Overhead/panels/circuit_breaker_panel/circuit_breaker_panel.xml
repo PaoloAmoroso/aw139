@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>circuit_breaker_panel.ac</path>
+
+  <animation>
+    <object-name>panel</object-name>
+    <object-name>master_avionics_switch</object-name>
+    <object-name>panelleft</object-name>
+    <object-name>panelright</object-name>
+    <object-name>l11_rpm_warn_system</object-name>
+    <object-name>l12_anti_ice_eng</object-name>
+    <object-name>l13_fire_det</object-name>
+    <object-name>l14_lm_fuel_boost_pump</object-name>
+    <object-name>l15_turn_slip_ind</object-name>
+    <object-name>l16_temp_ind_eng_xmsn</object-name>
+    <object-name>l17_force_trim</object-name>
+    <object-name>l18_hyd_cont</object-name>
+    <object-name>l21_heated_blanket</object-name>
+    <object-name>l22_heated_blanket</object-name>
+    <object-name>l23_volt_meter_non_ess_bus</object-name>
+    <object-name>l24_batt_temp</object-name>
+    <object-name>l25_pitot_tube_htr</object-name>
+    <object-name>l26_j2_cmps_ind</object-name>
+    <object-name>l27_bleed_air_pwr</object-name>
+    <object-name>l28_cabin_heater_cont</object-name>
+    <object-name>l31_wiper_cplt</object-name>
+    <object-name>l32_wiper_plt</object-name>
+    <object-name>l33_eng_air_filter_cont</object-name>
+    <object-name>l35_ldg_light_pwr</object-name>
+    <object-name>l36_search_light_pwr</object-name>
+    <object-name>l37_ldg_search_light_cont</object-name>
+    <object-name>l38_anti_coll_light</object-name>
+    <object-name>l41_iff_apx</object-name>
+    <object-name>l42_ts_apx</object-name>
+    <object-name>l44_marker_beacon_nav</object-name>
+    <object-name>l45_adf_rcvr</object-name>
+    <object-name>l46_radar_alt</object-name>
+    <object-name>l47_inter_comm_cplt_crewl</object-name>
+    <object-name>l48_inter_comm_plt_crewr</object-name>
+    <object-name>r11_gov_cont</object-name>
+    <object-name>r12_idle_stop_rel</object-name>
+    <object-name>r13_fuel_boost_left</object-name>
+    <object-name>r14_fuel_boost_right</object-name>
+    <object-name>r15_fuel_transfer_pump</object-name>
+    <object-name>r16_fuel_valve</object-name>
+    <object-name>r17_starter_relay</object-name>
+    <object-name>r18_ignition_system</object-name>
+    <object-name>r21_cargo_hook_rel</object-name>
+    <object-name>r22_stat_invtr_pwr</object-name>
+    <object-name>r23_nvg_dim_cont</object-name>
+    <object-name>r24_spare_invtr_pwr</object-name>
+    <object-name>r25_invtr_cont</object-name>
+    <object-name>r26_main_invtr_pwr</object-name>
+    <object-name>r27_gen_bus_reset</object-name>
+    <object-name>r28_stby_gen_field</object-name>
+    <object-name>r31_fus_lights</object-name>
+    <object-name>r32_nav_lights</object-name>
+    <object-name>r33_dome_lights</object-name>
+    <object-name>r34_cockpit_lights</object-name>
+    <object-name>r35_caution_lights</object-name>
+    <object-name>r36_console_ped_lights</object-name>
+    <object-name>r37_inst_panel_lights</object-name>
+    <object-name>r38_inst_sec_lights</object-name>
+    <object-name>r42_hf_arc-102</object-name>
+    <object-name>r43_fm_arc-54</object-name>
+    <object-name>r45_uhf_arc-51</object-name>
+    <object-name>r46_vhf_arc-115</object-name>
+    <object-name>r47_aims_alt</object-name>
+    <object-name>r48_fm2_arc-114</object-name>
+    <object-name>r52_flight_hobbs</object-name>
+    <object-name>r53_oas_aux_pwr</object-name>
+    <object-name>r55_door_eng_ind</object-name>
+    <object-name>r56_rescue_hoist_power</object-name>
+    <object-name>r57_rescue_hoist_cont</object-name>
+    <object-name>r58_rescue_hoist_cable_cutter</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>master_avionics_switch</object-name>
+    <object-name>panelleft</object-name>
+    <object-name>panelright</object-name>
+    <object-name>l11_rpm_warn_system</object-name>
+    <object-name>l12_anti_ice_eng</object-name>
+    <object-name>l13_fire_det</object-name>
+    <object-name>l14_lm_fuel_boost_pump</object-name>
+    <object-name>l15_turn_slip_ind</object-name>
+    <object-name>l16_temp_ind_eng_xmsn</object-name>
+    <object-name>l17_force_trim</object-name>
+    <object-name>l18_hyd_cont</object-name>
+    <object-name>l21_heated_blanket</object-name>
+    <object-name>l22_heated_blanket</object-name>
+    <object-name>l23_volt_meter_non_ess_bus</object-name>
+    <object-name>l24_batt_temp</object-name>
+    <object-name>l25_pitot_tube_htr</object-name>
+    <object-name>l26_j2_cmps_ind</object-name>
+    <object-name>l27_bleed_air_pwr</object-name>
+    <object-name>l28_cabin_heater_cont</object-name>
+    <object-name>l31_wiper_cplt</object-name>
+    <object-name>l32_wiper_plt</object-name>
+    <object-name>l33_eng_air_filter_cont</object-name>
+    <object-name>l35_ldg_light_pwr</object-name>
+    <object-name>l36_search_light_pwr</object-name>
+    <object-name>l37_ldg_search_light_cont</object-name>
+    <object-name>l38_anti_coll_light</object-name>
+    <object-name>l41_iff_apx</object-name>
+    <object-name>l42_ts_apx</object-name>
+    <object-name>l44_marker_beacon_nav</object-name>
+    <object-name>l45_adf_rcvr</object-name>
+    <object-name>l46_radar_alt</object-name>
+    <object-name>l47_inter_comm_cplt_crewl</object-name>
+    <object-name>l48_inter_comm_plt_crewr</object-name>
+    <object-name>r11_gov_cont</object-name>
+    <object-name>r12_idle_stop_rel</object-name>
+    <object-name>r13_fuel_boost_left</object-name>
+    <object-name>r14_fuel_boost_right</object-name>
+    <object-name>r15_fuel_transfer_pump</object-name>
+    <object-name>r16_fuel_valve</object-name>
+    <object-name>r17_starter_relay</object-name>
+    <object-name>r18_ignition_system</object-name>
+    <object-name>r21_cargo_hook_rel</object-name>
+    <object-name>r22_stat_invtr_pwr</object-name>
+    <object-name>r23_nvg_dim_cont</object-name>
+    <object-name>r24_spare_invtr_pwr</object-name>
+    <object-name>r25_invtr_cont</object-name>
+    <object-name>r26_main_invtr_pwr</object-name>
+    <object-name>r27_gen_bus_reset</object-name>
+    <object-name>r28_stby_gen_field</object-name>
+    <object-name>r31_fus_lights</object-name>
+    <object-name>r32_nav_lights</object-name>
+    <object-name>r33_dome_lights</object-name>
+    <object-name>r34_cockpit_lights</object-name>
+    <object-name>r35_caution_lights</object-name>
+    <object-name>r36_console_ped_lights</object-name>
+    <object-name>r37_inst_panel_lights</object-name>
+    <object-name>r38_inst_sec_lights</object-name>
+    <object-name>r42_hf_arc-102</object-name>
+    <object-name>r43_fm_arc-54</object-name>
+    <object-name>r45_uhf_arc-51</object-name>
+    <object-name>r46_vhf_arc-115</object-name>
+    <object-name>r47_aims_alt</object-name>
+    <object-name>r48_fm2_arc-114</object-name>
+    <object-name>r52_flight_hobbs</object-name>
+    <object-name>r53_oas_aux_pwr</object-name>
+    <object-name>r55_door_eng_ind</object-name>
+    <object-name>r56_rescue_hoist_power</object-name>
+    <object-name>r57_rescue_hoist_cont</object-name>
+    <object-name>r58_rescue_hoist_cable_cutter</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- avionic master switch -->
+  <animation>
+    <type>knob</type>
+    <object-name>master_avionics_switch</object-name>
+    <property>controls/switches/main_avionics</property>
+    <factor>30</factor>
+    <center>
+      <x-m> -0.099 </x-m>
+      <y-m>  0.023 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/main_avionics</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- left panel first row -->
+  <animation>
+    <type>slider</type>
+    <object-name>l11_rpm_warn_system</object-name>
+    <property>controls/circuit_breaker/rpm_warn_system</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/rpm_warn_system</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l12_anti_ice_eng</object-name>
+    <property>controls/circuit_breaker/anti_ice_eng</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/anti_ice_eng</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l13_fire_det</object-name>
+    <property>controls/circuit_breaker/fire_det</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fire_det</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l14_lm_fuel_boost_pump</object-name>
+    <property>controls/circuit_breaker/lm_fuel_boost_pump</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/lm_fuel_boost_pump</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l15_turn_slip_ind</object-name>
+    <property>controls/circuit_breaker/turn_slip_ind</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/turn_slip_ind</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l16_temp_ind_eng_xmsn</object-name>
+    <property>controls/circuit_breaker/temp_ind_eng_xmsn</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/temp_ind_eng_xmsn</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l17_force_trim</object-name>
+    <property>controls/circuit_breaker/force_trim</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/force_trim</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l18_hyd_cont</object-name>
+    <property>controls/circuit_breaker/hyd_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/hyd_cont</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- left panel sec. line
+  <animation>
+    <type>slider</type>
+    <object-name>l21_heated_blanket</object-name>
+    <property>controls/circuit_breaker/heated_blanket_l</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/heated_blanket_l</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l22_heated_blanket</object-name>
+    <property>controls/circuit_breaker/heated_blanket_r</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/heated_blanket_r</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l23_volt_meter_non_ess_bus</object-name>
+    <property>controls/circuit_breaker/volt_meter_non_ess_bus</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/volt_meter_non_ess_bus</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l24_batt_temp</object-name>
+    <property>controls/circuit_breaker/batt_temp</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/batt_temp</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l25_pitot_tube_htr</object-name>
+    <property>controls/circuit_breaker/pitot_tube_htr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/pitot_tube_htr</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l26_j2_cmps_ind</object-name>
+    <property>controls/circuit_breaker/j2_cmps_ind</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/j2_cmps_ind</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l27_bleed_air_pwr</object-name>
+    <property>controls/circuit_breaker/bleed_air_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/bleed_air_pwr</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l28_cabin_heater_cont</object-name>
+    <property>controls/circuit_breaker/cabin_heater_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/cabin_heater_cont</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <!-- left panel third line -->
+  <animation>
+    <type>slider</type>
+    <object-name>l31_wiper_cplt</object-name>
+    <property>controls/circuit_breaker/wiper_cplt</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/wiper_cplt</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l32_wiper_plt</object-name>
+    <property>controls/circuit_breaker/wiper_plt</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/wiper_plt</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l33_eng_air_filter_cont</object-name>
+    <property>controls/circuit_breaker/eng_air_filter_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/eng_air_filter_cont</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>l35_ldg_light_pwr</object-name>
+    <property>controls/circuit_breaker/ldg_light_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/ldg_light_pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l36_search_light_pwr</object-name>
+    <property>controls/circuit_breaker/search_light_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/search_light_pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l37_ldg_search_light_cont</object-name>
+    <property>controls/circuit_breaker/ldg_search_light_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/ldg_search_light_cont</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l38_anti_coll_light</object-name>
+    <property>controls/circuit_breaker/anti_coll_light</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/anti_coll_light</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- left panel fourth line -->
+  <animation>
+    <type>slider</type>
+    <object-name>l41_iff_apx</object-name>
+    <property>controls/circuit_breaker/iff_apx</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/iff_apx</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l42_ts_apx</object-name>
+    <property>controls/circuit_breaker/ts_apx</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/ts_apx</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l44_marker_beacon_nav</object-name>
+    <property>controls/circuit_breaker/marker_beacon_nav</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/marker_beacon_nav</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l45_adf_rcvr</object-name>
+    <property>controls/circuit_breaker/adf_rcvr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/adf_rcvr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>l46_radar_alt</object-name>
+    <property>controls/circuit_breaker/radar_alt</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/radar_alt</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l47_inter_comm_cplt_crewl</object-name>
+    <property>controls/circuit_breaker/inter_comm_cplt_crewl</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/inter_comm_cplt_crewl</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>l48_inter_comm_plt_crewr</object-name>
+    <property>controls/circuit_breaker/inter_comm_plt_crewr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/inter_comm_plt_crewr</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <!-- right panel first line
+  <animation>
+    <type>slider</type>
+    <object-name>r11_gov_cont</object-name>
+    <property>controls/circuit_breaker/gov_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/gov_cont</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r12_idle_stop_rel</object-name>
+    <property>controls/circuit_breaker/idle_stop_rel</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/idle_stop_rel</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>r13_fuel_boost_left</object-name>
+    <property>controls/circuit_breaker/fuel_boost_left</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_boost_left</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r14_fuel_boost_right</object-name>
+    <property>controls/circuit_breaker/fuel_boost_right</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_boost_right</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r15_fuel_transfer_pump</object-name>
+    <property>controls/circuit_breaker/fuel_transfer_pump</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_transfer_pump</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r16_fuel_valve</object-name>
+    <property>controls/circuit_breaker/fuel_valve</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fuel_valve</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r17_starter_relay</object-name>
+    <property>controls/circuit_breaker/starter_relay</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/starter_relay</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r18_ignition_system</object-name>
+    <property>controls/circuit_breaker/ignition_system</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/ignition_system</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <!-- right panel second line
+  <animation>
+    <type>slider</type>
+    <object-name>r21_cargo_hook_rel</object-name>
+    <property>controls/circuit_breaker/cargo_hook_rel</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/cargo_hook_rel</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>r22_stat_invtr_pwr</object-name>
+    <property>controls/circuit_breaker/stat_invtr_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/stat_invtr_pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- -->
+  <animation>
+    <type>slider</type>
+    <object-name>r23_nvg_dim_cont</object-name>
+    <property>controls/circuit_breaker/nvg_dim_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/nvg_dim_cont</property>
+      </binding>
+    </action>
+  </animation>
+  <!-- -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>r24_spare_invtr_pwr</object-name>
+    <property>controls/circuit_breaker/spare_invtr_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/spare_invtr_pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r25_invtr_cont</object-name>
+    <property>controls/circuit_breaker/invtr_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/invtr_cont</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r26_main_invtr_pwr</object-name>
+    <property>controls/circuit_breaker/main_invtr_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/main_invtr_pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r27_gen_bus_reset</object-name>
+    <property>controls/circuit_breaker/gen_bus_reset</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/gen_bus_reset</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r28_stby_gen_field</object-name>
+    <property>controls/circuit_breaker/stby_gen_field</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/stby_gen_field</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- right panel third line -->
+  <animation>
+    <type>slider</type>
+    <object-name>r31_fus_lights</object-name>
+    <property>controls/circuit_breaker/fus_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fus_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r32_nav_lights</object-name>
+    <property>controls/circuit_breaker/nav_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/nav_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r33_dome_lights</object-name>
+    <property>controls/circuit_breaker/dome_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/dome_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r34_cockpit_lights</object-name>
+    <property>controls/circuit_breaker/cockpit_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/cockpit_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r35_caution_lights</object-name>
+    <property>controls/circuit_breaker/caution_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/caution_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r36_console_ped_lights</object-name>
+    <property>controls/circuit_breaker/console_ped_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/console_ped_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r37_inst_panel_lights</object-name>
+    <property>controls/circuit_breaker/inst_panel_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/inst_panel_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>slider</type>
+    <object-name>r38_inst_sec_lights</object-name>
+    <property>controls/circuit_breaker/inst_sec_lights</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/inst_sec_lights</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- right panel fourth line
+  <animation>
+    <type>slider</type>
+    <object-name>r42_hf_arc-102</object-name>
+    <property>controls/circuit_breaker/hf_arc-102</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/hf_arc-102</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r43_fm_arc-54</object-name>
+    <property>controls/circuit_breaker/fm_arc-54</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fm_arc-54</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r45_uhf_arc-51</object-name>
+    <property>controls/circuit_breaker/uhf_arc-51</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/uhf_arc-51</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>r46_vhf_arc-115</object-name>
+    <property>controls/circuit_breaker/arc_134</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/arc_134</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r47_aims_alt</object-name>
+    <property>controls/circuit_breaker/aims_alt</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/aims_alt</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r48_fm2_arc-114</object-name>
+    <property>controls/circuit_breaker/fm2_arc-114</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/fm2_arc-114</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <!-- right panel fifth line
+  <animation>
+    <type>slider</type>
+    <object-name>r52_flight_hobbs</object-name>
+    <property>controls/circuit_breaker/flight_hobbs</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/flight_hobbs</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r53_oas_aux_pwr</object-name>
+    <property>controls/circuit_breaker/oas_aux_pwr</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/oas_aux_pwr</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+  <animation>
+    <type>slider</type>
+    <object-name>r55_door_eng_ind</object-name>
+    <property>controls/circuit_breaker/door_egt_ind</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/door_egt_ind</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r56_rescue_hoist_power</object-name>
+    <property>controls/circuit_breaker/rescue_hoist_power</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/rescue_hoist_power</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r57_rescue_hoist_cont</object-name>
+    <property>controls/circuit_breaker/rescue_hoist_cont</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/rescue_hoist_cont</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+  <!--
+  <animation>
+    <type>slider</type>
+    <object-name>r58_rescue_hoist_cable_cutter</object-name>
+    <property>controls/circuit_breaker/rescue_hoist_cable_cutter</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <factor>-0.006</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/circuit_breaker/rescue_hoist_cable_cutter</property>
+      </binding>
+    </action>
+  </animation>
+  -->
+
+</PropertyList>

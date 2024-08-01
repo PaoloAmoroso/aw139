@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>arc134.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>mhz100</object-name>
+    <object-name>mhz010</object-name>
+    <object-name>mhz001</object-name>
+    <object-name>khz100</object-name>
+    <object-name>khz010</object-name>
+    <object-name>khz001</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potikhz</object-name>
+    <object-name>potipwr</object-name>
+    <object-name>potivol</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>mhz100</object-name>
+    <object-name>mhz010</object-name>
+    <object-name>mhz001</object-name>
+    <object-name>khz100</object-name>
+    <object-name>khz010</object-name>
+    <object-name>khz001</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potikhz</object-name>
+    <object-name>potipwr</object-name>
+    <object-name>potivol</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>mhz100</object-name>
+    <object-name>mhz010</object-name>
+    <object-name>mhz001</object-name>
+    <object-name>khz100</object-name>
+    <object-name>khz010</object-name>
+    <object-name>khz001</object-name>
+    <object-name>potimhz</object-name>
+    <object-name>potikhz</object-name>
+    <object-name>potipwr</object-name>
+    <object-name>potivol</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>khz001</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-khz</property>
+    <factor>-0.1</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>khz010</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-khz</property>
+    <factor>-0.01000001</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>khz100</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-khz</property>
+    <factor>-0.00100001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>mhz001</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
+    <factor>-0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>mhz010</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
+    <factor>-0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>mhz100</object-name>
+    <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
+    <factor>-0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potikhz</object-name>
+    <property>controls/switches/arc134_2/freq_khz</property>
+    <center>
+      <x-m> 0.0064 </x-m>
+      <y-m> 0.0217 </y-m>
+      <z-m> 0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-20</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arc134.inc_freq_2()</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arc134.dec_freq_2()</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potimhz</object-name>
+    <property>controls/switches/arc134_2/freq_mhz</property>
+    <center>
+      <x-m>  0.0064 </x-m>
+      <y-m> -0.0207 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-20</factor>
+    <increase>
+      <binding>
+        <command>nasal</command>
+        <script>arc134.adjustvhffreq_2( 1.0 )</script>
+      </binding>
+    </increase>
+    <decrease>
+      <binding>
+        <command>nasal</command>
+        <script>arc134.adjustvhffreq_2( -1.0 )</script>
+      </binding>
+    </decrease>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potipwr</object-name>
+    <property>controls/switches/arc134_2/pwr</property>
+    <center>
+      <x-m>  0.0064 </x-m>
+      <y-m> -0.0207 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-60</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/arc134_2/pwr</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>potivol</object-name>
+    <property>controls/switches/arc134_2/vol</property>
+    <center>
+      <x-m> 0.0064 </x-m>
+      <y-m> 0.0217 </y-m>
+      <z-m> 0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <factor>-2.8</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/arc134_2/vol</property>
+        <min> 0</min>
+        <max>100</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/sound/atc/volume</property>
+        <min>0.0</min>
+        <max>1.0</max>
+        <factor>0.01</factor>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
