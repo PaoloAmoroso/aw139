@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">PH-LDE, Default</name>
+					 <index type="int">1</index>
+					  <texture>defaultaw139ext.png</texture>
+				</livery>
+				<aw139>
+                      <Civilian type="bool">true</Civilian>
+                      <Military type="bool">false</Military>
+				<hide-gsdi>true</hide-gsdi>
+				<radome type="bool">false</radome>
+                      <antenna1>false</antenna1>
+                      <antenna2>false</antenna2>
+                      <antenna3>false</antenna3>
+				<winch>false</winch>
+                      <hook>false</hook>
+                      <floats>true</floats>
+				<searchlight_front>false</searchlight_front>
+				<wirecutter>false</wirecutter>
+				<FLIR>false</FLIR>
+                      <Countermeasures>false</Countermeasures>
+                      <AW139M type="bool">false</AW139M>
+				<reardoor_right>true</reardoor_right>
+				<reardoor_left>true</reardoor_left>
+				<reardoor_wind_right>false</reardoor_wind_right>
+				<reardoor_wind_left>false</reardoor_wind_left>
+			<rotor>
+				 <texture>white.png</texture>
+			</rotor>
+			</aw139>
+		 </model>
+	</sim>
+</PropertyList>

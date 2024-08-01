@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+       <model>
+	   <livery>
+		<name type="string">HM Coast Guard</name>
+		<texture>Liveries/HMCoastGuard.png</texture>
+	   </livery>
+	   <aw139>
+           <Civilian type="bool">false</Civilian>
+           <Military type="bool">true</Military>
+           <shortnose>false</shortnose>
+           <longnose>false</longnose>
+           <radome type="bool">true</radome>
+           <antenna1>true</antenna1>
+           <antenna2>false</antenna2>
+           <antenna3>false</antenna3>
+           <FLIR>true</FLIR>
+           <winch>true</winch>
+           <hook>false</hook>
+           <floats>true</floats>
+		<searchlight_front>true</searchlight_front>
+           <wirecutter>true</wirecutter>
+           <Countermeasures>false</Countermeasures>
+		<hide-gsdi>true</hide-gsdi>
+           <AW139M type="bool">false</AW139M>
+             <rotor>
+		    <texture>black.png</texture>
+		  </rotor>
+	   </aw139>
+	  </model>
+	  <rendering>
+         <refl_correction type="string">1.5</refl_correction>
+        </rendering>
+	</sim>
+
+</PropertyList>

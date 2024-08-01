@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>blade-assemb.ac</path>
+
+  <animation>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propblur1</object-name>
+    <object-name>propdisc1</object-name>
+    <object-name>blade</object-name>
+    <object-name>blade-base</object-name>
+    <object-name>blade-rod</object-name>
+	</animation>
+
+  <animation>
+       <name>blade-assemb</name>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propblur1</object-name>
+    <object-name>propdisc1</object-name>
+    <object-name>blade</object-name>
+    <object-name>blade-base</object-name>
+    <object-name>blade-rod</object-name>
+	</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>blade-assemb</object-name>
+    <property>rotors/main/blade[0]/position-deg</property>
+    <factor>1</factor>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+       <!-- selection blade/blur/disc main rotor-->
+  <animation>
+    <name>DiscComplet</name>
+    <object-name>propdisc1</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>propdisc4</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>DiscComplet</object-name>
+    <condition>
+      <greater-than>
+        <property>rotors/main/rpm</property>
+        <value>150</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <name>BlurComplet</name>
+    <object-name>propblur1</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propblur4</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>BlurComplet</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>rotors/main/rpm</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>rotors/main/rpm</property>
+          <value>150.001</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <name>BladeComplete</name>
+    <object-name>blade</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>BladeComplete</object-name>
+    <condition>
+      <or>
+        <less-than>
+          <property>rotors/main/rpm</property>
+          <value>150</value>
+        </less-than>
+        <equals>
+          <property>rotors/main/bladesvisible</property>
+          <value>1</value>
+        </equals>
+      </or>
+    </condition>
+  </animation>
+
+      <!-- first cone effect for blade3 -->
+  <animation>
+    <name>Total0</name>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>blade</object-name>
+    <object-name>propblur1</object-name>
+    <object-name>propdisc1</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Total0</object-name>
+    <property>rotors/main/cone-deg</property>
+    <factor> 0.08 </factor>
+    <center>
+       <x-m> 0.008 </x-m>
+       <y-m> -0.652 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- 2nd cone effect for blade3 -->
+  <animation>
+    <name>Total1</name>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Total1</object-name>
+    <property>rotors/main/cone-deg</property>
+    <factor> 0.17 </factor>
+    <center>
+       <x-m> 0.008 </x-m>
+       <y-m> -2.63 </y-m>
+       <z-m>  0.002 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+    <!-- 3rd cone effect for blade3 -->
+  <animation>
+    <name>Total2</name>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Total2</object-name>
+    <property>rotors/main/cone-deg</property>
+    <factor> 0.22 </factor>
+    <center>
+       <x-m>  0.008 </x-m>
+       <y-m> -3.965 </y-m>
+       <z-m>  0.002 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- 3rd cone effect for blade3 -->
+  <animation>
+    <name>Total3</name>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Total3</object-name>
+    <property>rotors/main/cone-deg</property>
+    <factor> 0.14 </factor>
+    <center>
+       <x-m>  0.008 </x-m>
+       <y-m> -5.31 </y-m>
+       <z-m>  0.002 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Pitch rotation for main blades -->
+  <animation>
+       <name>blade-assemb2</name>
+    <name>blade-assemb0</name>
+    <object-name>blade</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+    <object-name>blade-base</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>blade-assemb2</object-name>
+    <property>rotors/main/blade[2]/incidence-deg</property>
+    <factor>1</factor>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1</y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+	
+ <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>propblur1</object-name>
+  <object-name>propblur2</object-name>
+  <object-name>propblur3</object-name>
+  <object-name>propblur4</object-name>
+  <object-name>propdisc1</object-name>
+  <object-name>propdisc2</object-name>
+  <object-name>propdisc3</object-name>
+  <object-name>propdisc4</object-name>
+ </effect>
+
+</PropertyList>
+

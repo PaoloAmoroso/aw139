@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>tailrotor.ac</path>
+
+  <animation>
+    <object-name>axetail</object-name>
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/aw139/Models/tailrotor/blade.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <name>Blade2</name>
+    <path>Aircraft/aw139/Models/tailrotor/blade.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade3</name>
+    <path>Aircraft/aw139/Models/tailrotor/blade.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   180 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Blade4</name>
+    <path>Aircraft/aw139/Models/tailrotor/blade.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   270 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>rotorcomplet</name>
+    <object-name>rotortail</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>
+    <object-name>Blade3</object-name>
+    <object-name>Blade4</object-name>
+  </animation>
+
+  <!-- Rotation of rotor -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/tail/blade[0]/position-deg</property>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

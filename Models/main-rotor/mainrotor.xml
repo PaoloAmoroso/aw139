@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>main-rotor.ac</path>
+
+  <animation>
+    <object-name>starflex</object-name>
+    <object-name>cap</object-name>
+    <object-name>leftroll-swashrod</object-name>
+    <object-name>pitch-swashrod</object-name>
+    <object-name>rightroll-swashrod</object-name>
+    <object-name>lower-swashplate</object-name>
+    <object-name>static-lowlink</object-name>
+    <object-name>static-uplink</object-name>
+    <object-name>leftroll-swashrod</object-name>
+    <object-name>leftlower-flexlink</object-name>
+    <object-name>leftupper-flexlink</object-name>
+    <object-name>rightlower-flexlink</object-name>
+    <object-name>rightupper-flexlink</object-name>
+  </animation>
+
+<!-- main rotor rotation -->
+  <animation>
+    <name>rotor-starflex</name>
+    <object-name>starflex</object-name>
+    <object-name>cap</object-name>
+    <object-name>leftlower-flexlink</object-name>
+    <object-name>leftupper-flexlink</object-name>
+    <object-name>rightlower-flexlink</object-name>
+    <object-name>rightupper-flexlink</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rotor-starflex</object-name>
+    <property>rotors/main/blade[0]/position-deg</property>
+    <factor>1</factor>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/aw139/Models/main-rotor/blade1.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg>  0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/aw139/Models/main-rotor/blade2.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 288 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade3</name>
+    <path>Aircraft/aw139/Models/main-rotor/blade3.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 216 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <name>Blade4</name>
+    <path>Aircraft/aw139/Models/main-rotor/blade4.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 144 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Blade5</name>
+    <path>Aircraft/aw139/Models/main-rotor/blade5.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 72 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

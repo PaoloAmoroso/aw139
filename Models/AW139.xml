@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ 	<path>AW139.ac</path>
+	
+  <!-- <nasal>
+        <load>
+            var livery_update = aircraft.livery_update.new(
+	    "Aircraft/aw139/Models/Liveries", 10,
+	    func { print("aw139 livery update") });
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal> -->
+
+      <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/aw139/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <sound>
+  	<path>Aircraft/aw139/Sounds/mp-sound.xml</path>
+  </sound>
+<!--
+<effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>frontglass</object-name>
+    <object-name>frnt-sideglass_L</object-name>
+    <object-name>frnt-sideglass_R</object-name>
+    <object-name>sideglass</object-name>
+    <object-name>sideglass_L</object-name>
+    <object-name>sideglass_R</object-name>
+    <object-name>inspection-glass</object-name>
+ </effect>
+ -->
+
+  <animation>
+    <type>material</type>
+    <object-name>fusebody</object-name>
+    <object-name>shortnose</object-name>
+    <object-name>longnose</object-name>
+    <object-name>radome</object-name>
+    <object-name>stabilizer</object-name>
+    <object-name>tail-fin</object-name>
+    <object-name>tailrotor-fairing</object-name>
+    <object-name>EngineBayInterior</object-name>
+    <object-name>upperduct</object-name>
+    <object-name>exhaust</object-name>
+    <object-name>EAPS</object-name>
+    <object-name>front-doorL</object-name>
+    <object-name>front-doorR</object-name>
+    <object-name>fdoorhL</object-name>
+    <object-name>fdoorhR</object-name>
+    <object-name>side-doorL</object-name>
+    <object-name>side-doorR</object-name>
+    <object-name>backdoorhandle_L</object-name>
+    <object-name>backdoorhandle_R</object-name>
+    <object-name>wheelFR</object-name>
+    <object-name>wheelL</object-name>
+    <object-name>wheelR</object-name>
+    <object-name>antenna</object-name>
+    <object-name>antennaVOR</object-name>
+    <object-name>antenna1</object-name>
+    <object-name>antenna2</object-name>
+    <object-name>antenna3</object-name>
+    <object-name>fin2</object-name>
+    <object-name>Hook</object-name>
+    <object-name>Floats</object-name>
+    <object-name>Supports</object-name>
+    <object-name>wire_cutter</object-name>
+    <object-name>wire_cutter_Inferior</object-name>
+    <object-name>PlateFront</object-name>
+    <object-name>PlateL</object-name>
+    <object-name>PlateR</object-name>
+    <object-name>Countermeasures</object-name>
+    <object-name>winch</object-name>
+    <object-name>crochet</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>defaultaw139ext.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <!-- <effect>
+    <inherits-from>Aircraft/aw139/Models/Effects/Bump/bumpspec</inherits-from>
+    <object-name>fusebody</object-name>
+    <object-name>shortnose</object-name>
+    <object-name>longnose</object-name>
+    <object-name>radome</object-name>
+    <object-name>stabilizer</object-name>
+    <object-name>tail-fin</object-name>
+    <object-name>tailrotor-fairing</object-name>
+    <object-name>exhaust</object-name>
+    <object-name>front-doorL</object-name>
+    <object-name>front-doorR</object-name>
+    <object-name>fdoorhL</object-name>
+    <object-name>fdoorhR</object-name>
+    <object-name>side-doorL</object-name>
+    <object-name>side-doorR</object-name>
+    <object-name>backdoorhandle_L</object-name>
+    <object-name>backdoorhandle_R</object-name>
+    <object-name>wheelFR</object-name>
+    <object-name>wheelL</object-name>
+    <object-name>wheelR</object-name>
+    <object-name>antenna</object-name>
+    <object-name>fin2</object-name>
+    <object-name>wire_cutter</object-name>
+    <object-name>wire_cutter_Inferior</object-name>
+    <object-name>Countermeasures</object-name>
+    <object-name>winch</object-name>
+    <object-name>crochet</object-name>
+  </effect> -->
+
+  <!-- Main Rotor -->
+  <model>
+    <path>Aircraft/aw139/Models/main-rotor/mainrotor.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  1.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+ <!-- tailrotor -->
+  <model>
+    <path>Aircraft/aw139/Models/tailrotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  8.821 </x-m>
+      <y-m>  0.417 </y-m>
+      <z-m>  1.877 </z-m>
+      <roll-deg>    14 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- DOORS -->
+  <!-- Left Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>front-doorL</object-name>
+    <object-name>frnt-sideglass_L</object-name>
+    <object-name>fdoorhL</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.leftFrontDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>LeftSide</name>
+    <object-name>front-doorL</object-name>
+    <object-name>frontdoor-glass_L</object-name>
+    <object-name>frnt-sideglass_L</object-name>
+    <object-name>fdoorhL</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftSide</object-name>
+    <property>sim/model/door-positions/leftFrontDoor/position-norm</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -2.4762 </x1-m>
+      <y1-m> -1.0418 </y1-m>
+      <z1-m> -0.6452 </z1-m>
+      <x2-m> -2.1916 </x2-m>
+      <y2-m> -0.9903 </y2-m>
+      <z2-m>  0.0891 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Right Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>front-doorR</object-name>
+    <object-name>frnt-sideglass_R</object-name>
+    <object-name>fdoorhR</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.rightFrontDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>RightSide</name>
+    <object-name>front-doorR</object-name>
+    <object-name>frontdoor-glass_R</object-name>
+    <object-name>frnt-sideglass_R</object-name>
+    <object-name>fdoorhR</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightSide</object-name>
+    <property>sim/model/door-positions/rightFrontDoor/position-norm</property>
+    <factor> 80 </factor>
+    <axis>
+      <x1-m> -2.4762 </x1-m>
+      <y1-m>  1.0246 </y1-m>
+      <z1-m> -0.6452 </z1-m>
+      <x2-m> -2.1916 </x2-m>
+      <y2-m>  0.9731 </y2-m>
+      <z2-m>  0.0891 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Left Slide Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>side-doorL</object-name>
+    <object-name>sideglass_L</object-name>
+    <object-name>backdoorhandle_L</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.leftSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>LeftSlide</name>
+    <object-name>side-doorL</object-name>
+    <object-name>backdoorhandle_L</object-name>
+    <object-name>sideglass_L</object-name>
+    <object-name>glassedge2L</object-name>
+    <object-name>glassedge3L</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -0.014 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.014 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 1.510 </dep></entry>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Right Slide Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>side-doorR</object-name>
+    <object-name>sideglass_R</object-name>
+    <object-name>backdoorhandle_R</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>aw139.rightSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>RightSlide</name>
+    <object-name>side-doorR</object-name>
+    <object-name>backdoorhandle_R</object-name>
+    <object-name>sideglass_R</object-name>
+    <object-name>glassedge2R</object-name>
+    <object-name>glassedge3R</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 0.014 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.014 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 1.510 </dep></entry>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+<!-- LANDING GEAR -->
+<!-- Main Right Retraction -->
+<animation>
+            <type>rotate</type>
+            <object-name>wheelR</object-name>
+	     <object-name>lowerstrutr</object-name>
+	         <object-name>upperstrutr</object-name>
+           <property>/gear/gear[2]/position-norm</property>
+            <interpolation>
+                   <entry>
+                    <ind>1.0</ind>
+                    <dep>0</dep>
+                    </entry>
+		  <entry>
+                    <ind>0</ind>
+                    <dep>90</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.76</x-m>
+                    <y-m>1.36</y-m>
+                    <z-m>-1.124</z-m>
+		</center>
+            <axis>
+              <x>-1</x>
+              <y>0</y>
+              <z>0</z>
+            </axis>
+        </animation>
+<animation>
+            <type>rotate</type>
+            <object-name>wheelR</object-name>
+	     <object-name>lowerstrutr</object-name>
+            <property>/gear/gear[2]/position-norm</property>
+            <interpolation>
+	          <entry>
+                    <ind>0.0</ind>
+                    <dep>60</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.7</ind>
+                    <dep>45</dep>
+                    </entry>
+		<entry>
+                    <ind>1</ind>
+                    <dep>-18.75</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.092</x-m>
+                    <y-m>1.360</y-m>
+                    <z-m>-1.391</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>-1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+<!-- Right Main Gear Compression -->
+<animation>
+            <type>rotate</type>
+            <object-name>wheelR</object-name>
+	       <object-name>lowerstrutr</object-name>
+            <property>/gear/gear[2]/compression-norm</property>
+            <interpolation>
+                   <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+		 <entry>
+                    <ind>0.4</ind>
+                    <dep>-15</dep>
+                    </entry>
+		 <entry>
+                    <ind>0.525</ind>
+                    <dep>-22</dep>
+                    </entry>
+		   <entry>
+                    <ind>1</ind>
+                    <dep>-28</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.092</x-m>
+                    <y-m>1.360</y-m>
+                    <z-m>-1.391</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+<!-- Left Main Gear Compression -->
+<animation>
+            <type>rotate</type>
+            <object-name>wheelL</object-name>
+	       <object-name>lowerstrutl</object-name>
+	       <object-name>upperstrutl</object-name>
+            <property>/gear/gear[1]/position-norm</property>
+            <interpolation>
+                   <entry>
+                    <ind>1.0</ind>
+                    <dep>0</dep>
+                    </entry>
+		  <entry>
+                    <ind>0</ind>
+                    <dep>-90</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.76</x-m>
+                    <y-m>-1.36</y-m>
+                    <z-m>-1.124</z-m>
+		</center>
+            <axis>
+              <x>-1</x>
+              <y>0</y>
+              <z>0</z>
+            </axis>
+        </animation>
+<animation>
+            <type>rotate</type>
+            <object-name>wheelL</object-name>
+	       <object-name>lowerstrutl</object-name>
+        <property>/gear/gear[1]/position-norm</property>
+            <interpolation>
+	     <entry>
+                    <ind>0.0</ind>
+                    <dep>60</dep>
+                    </entry>
+                   <entry>
+                    <ind>0.7</ind>
+                    <dep>45</dep>
+                    </entry>
+		 <entry>
+                    <ind>1</ind>
+                    <dep>-18.75</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.092</x-m>
+                    <y-m>-1.360</y-m>
+                    <z-m>-1.391</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>-1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+<animation>
+            <type>rotate</type>
+            <object-name>wheelL</object-name>
+	       <object-name>lowerstrutl</object-name>
+            <property>/gear/gear[1]/compression-norm</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+		 <entry>
+                    <ind>0.4</ind>
+                    <dep>-15</dep>
+                    </entry>
+		 <entry>
+                    <ind>0.525</ind>
+                    <dep>-22</dep>
+                    </entry>
+		   <entry>
+                    <ind>1</ind>
+                    <dep>-28</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>1.092</x-m>
+                    <y-m>-1.360</y-m>
+                    <z-m>-1.391</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+<animation>
+            <type>rotate</type>
+        <object-name>wheelFR</object-name>
+	     <object-name>Cylinder</object-name>
+	        <object-name>frntgear-upcyl</object-name>
+		  <object-name>frntgear-lowercyl</object-name>
+              <object-name>lowerstrutf</object-name>
+              <object-name>upperstrutf</object-name>
+           <property>/gear/gear[0]/caster-angle-deg</property>
+             <center>
+                    <x-m>-2.741</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-1.931</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>1</z>
+            </axis>
+        </animation>
+
+<!-- Front Gear Retraction -->
+<animation>
+            <type>rotate</type>
+        <object-name>wheelFR</object-name>
+	     <object-name>Cylinder</object-name>
+	        <object-name>frntgear-upcyl</object-name>
+		  <object-name>frntgear-lowercyl</object-name>
+              <object-name>lowerstrutf</object-name>
+              <object-name>upperstrutf</object-name>  
+           <property>/gear/gear[0]/position-norm</property>
+            <interpolation>
+                   <entry>
+                    <ind>1.0</ind>
+                    <dep>0</dep>
+                    </entry>
+		  <entry>
+                    <ind>0</ind>
+                    <dep>98</dep>
+                    </entry>
+	</interpolation>
+	 <center>
+                    <x-m>-2.771</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-1.281</z-m>
+		</center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+<animation>
+            <type>translate</type>
+            <object-name>wheelFR</object-name>
+	     <object-name>lowerstrutf</object-name>
+         <property>/gear/gear[0]/position-norm</property>
+            <interpolation>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>-0.20</dep>
+                    </entry>
+		    <entry>
+                    <ind>0.5</ind>
+                    <dep>-0.13</dep>
+                    </entry>
+		<entry>
+                    <ind>0</ind>
+                    <dep>0.0</dep>
+                    </entry>
+	</interpolation>
+	          <center>
+                    <x-m>-2.741</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-1.931</z-m>
+		     </center>
+            <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>1</z>
+            </axis>
+        </animation>
+
+
+<animation>
+            <type>translate</type>
+            <object-name>wheelFR</object-name>
+	      <object-name>lowerstrutf</object-name>
+            <!-- <object-name>PlateFront</object-name> -->
+            <property>/gear/gear[0]/compression-norm</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+                    </entry>
+		<entry>
+                    <ind>0.5</ind>
+                    <dep>0.114</dep>
+                    </entry>
+		<entry>
+		        <ind>1.0</ind>
+                    <dep>0.227</dep>
+                    </entry>
+	</interpolation>
+        <center>
+	     <x-m>-2.741</x-m>
+           <y-m>0</y-m>
+           <z-m>-1.931</z-m>
+        </center>
+          <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>1</z>
+            </axis>
+        </animation>
+
+        <!-- Front Gear Turn -->
+        <animation>
+          <type>rotate</type>
+              <object-name>wheelFR</object-name>
+              <object-name>frntgear-lowercyl</object-name>
+              <object-name>upperstrutf</object-name>
+              <object-name>lowerstrutf</object-name>
+              <object-name>PlateFront</object-name>
+          <property>gear/gear[0]/caster-angle-deg</property>
+          <factor> -0.8 </factor>
+            <center>
+               <x-m> -2.7636 </x-m>
+               <y-m>  0.0000 </y-m>
+               <z-m> -1.9055 </z-m>
+            </center>
+            <axis>
+               <x> 0 </x>
+               <y> 0 </y>
+               <z> 1 </z>
+            </axis>
+        </animation>
+
+        <!-- Landing gear Skids compression -->
+        <animation>
+          <type>translate</type>
+          <object-name>PlateFront</object-name>
+        <property>gear/gear[0]/compression-norm</property>
+        <interpolation>
+		<entry>
+                    <ind>0.5</ind>
+                    <dep>0.0</dep>
+           </entry>
+		<entry>
+		        <ind>1.0</ind>
+                   <dep>0.227</dep>
+           </entry>
+	   </interpolation>
+         <center>
+	        <x-m>-2.741</x-m>
+              <y-m>0</y-m>
+              <z-m>-1.931</z-m>
+          </center>
+          <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>1</z>
+          </axis>
+       </animation>
+
+        <animation>
+          <type>translate</type>
+          <object-name>PlateL</object-name>
+        <property>gear/gear[1]/compression-norm</property>
+        <interpolation>
+		 <entry>
+                    <ind>0</ind>
+                    <dep>0</dep>
+           </entry>
+		 <entry>
+                    <ind>42</ind> <!-- Start Point -->
+                    <dep>5</dep>  <!-- Stop Point -->
+            </entry>
+	   </interpolation>
+	       <center>
+                    <x-m>  1.092 </x-m>
+                    <y-m>  1.360 </y-m>
+                    <z-m> -1.391 </z-m>
+	       </center>
+            <axis>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+            </axis>
+       </animation>
+
+        <animation>
+          <type>translate</type>
+          <object-name>PlateR</object-name>
+        <property>gear/gear[2]/compression-norm</property>
+        <interpolation>
+		 <entry>
+                    <ind>0</ind>
+                    <dep>0</dep>
+           </entry>
+		 <entry>
+                    <ind>42</ind> <!-- Start Point -->
+                    <dep>5</dep>  <!-- Stop Point -->
+            </entry>
+	   </interpolation>
+	       <center>
+                    <x-m>  1.092 </x-m>
+                    <y-m>  1.360 </y-m>
+                    <z-m> -1.391 </z-m>
+	       </center>
+            <axis>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+            </axis>
+       </animation>
+
+       <animation>
+    <type>translate</type>
+    <object-name>PlateR</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.000 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 0.010 </ind><dep> 0.060 </dep></entry>
+      <entry><ind> 0.060 </ind><dep> 0.010 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+<!-- FLIR -->
+  <model>
+    <name>FLIR</name>
+    <path>Models/Interior/Equipment/flir.xml</path>
+    <offsets>
+      <x-m>  -3.8918 </x-m>
+      <y-m>   0.0000 </y-m>
+      <z-m>  -1.1304 </z-m>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 2.0 </x-offset>
+        <y-offset> 2.0 </y-offset>
+        <z-offset> 2.0 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <animation>
+	<type>select</type>
+	<object-name>FLIR</object-name>
+	<condition>
+		<property>sim/model/aw139/FLIR</property>
+	</condition>
+ </animation>
+
+ <animation>
+    <type>select</type>
+    <object-name>wire_cutter_Inferior</object-name>
+    <condition>
+      <not>
+       <property>sim/model/aw139/FLIR</property>
+      </not>
+    </condition>
+  </animation>
+
+  <!-- SEARCH LIGHT -->
+  <model>
+    <name>searchlight_front</name>
+    <path>Models/Interior/Equipment/SearchLight.xml</path>
+    <offsets>
+      <x-m>  -1.1911 </x-m>
+      <y-m>  -1.1971 </y-m>
+      <z-m>  -1.4377 </z-m>
+    </offsets>
+  </model>
+	
+<!-- AW139 VARIANTS -->
+<animation>
+	<type>select</type>
+	<object-name>longnose</object-name>
+	<condition>
+		<property>sim/model/aw139/longnose</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>shortnose</object-name>
+	<condition>
+		<property>sim/model/aw139/shortnose</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>radome</object-name>
+	<condition>
+		<property>sim/model/aw139/radome</property>
+	</condition>
+</animation>
+
+<!-- EXTERNAL DEVICES -->
+<animation>
+     <type>select</type>
+     <object-name>wire_cutter</object-name>
+     <object-name>wire_cutter_Inferior</object-name>
+	<condition>
+		<property>sim/model/aw139/wirecutter</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>winch</object-name>
+     <object-name>crochet</object-name>
+	<condition>
+		<property>sim/model/aw139/winch</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Hook</object-name>
+	<condition>
+		<property>sim/model/aw139/hook</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Floats</object-name>
+	<condition>
+		<property>sim/model/aw139/floats</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>searchlight_front</object-name>
+	<condition>
+		<property>sim/model/aw139/searchlight_front</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+     <object-name>EAPS</object-name>
+	<condition>
+		<property>sim/model/EAPS</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+     <object-name>PlateFront</object-name>
+     <object-name>PlateL</object-name>
+     <object-name>PlateR</object-name>
+	<condition>
+		<property>sim/model/Plates</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>antenna1</object-name>
+	<condition>
+		<property>sim/model/aw139/antenna1</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>antenna2</object-name>
+	<condition>
+		<property>sim/model/aw139/antenna2</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>antenna3</object-name>
+	<condition>
+		<property>sim/model/aw139/antenna3</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Countermeasures</object-name>
+	<condition>
+		<property>sim/model/aw139/Countermeasures</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Supports</object-name>
+	<condition>
+		<property>sim/model/aw139/AW139M</property>
+	</condition>
+</animation>
+
+<model>
+    <name>Rockets</name>
+    <path>Models/Interior/Equipment/Rockets.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+	<type>select</type>
+	<object-name>Rockets</object-name>
+	<condition>
+		<property>sim/model/aw139/AW139M</property>
+	</condition>
+ </animation>
+
+ <model>
+    <name>Guns</name>
+    <path>Models/Interior/Equipment/Guns.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+	<type>select</type>
+	<object-name>Guns</object-name>
+	<condition>
+		<property>sim/model/aw139/AW139M</property>
+	</condition>
+ </animation>
+
+ <!-- AW139M LOADS -->
+ <animation>
+    <type>select</type>
+    <object-name>Supports</object-name>
+    <object-name>Rockets</object-name>
+    <object-name>Guns</object-name>
+    <condition>
+       <equals>
+         <property>sim/weight[4]/selected</property>
+           <value>Attack Configuration</value>
+       </equals>
+    </condition>
+  </animation>
+
+  <!-- Guns effects -->
+  <model>
+    <path>Models/Effects/guns/fire.xml</path>
+    <condition>
+      <property>controls/armament/trigger</property>
+    </condition>
+    <offsets>
+      <x-m> -0.25342 </x-m>
+      <y-m>  2.18420 </y-m>
+      <z-m> -0.21608 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Models/Effects/guns/fire.xml</path>
+    <condition>
+      <property>controls/armament/trigger</property>
+    </condition>
+    <offsets>
+      <x-m> -0.25342 </x-m>
+      <y-m> -2.18420 </y-m>
+      <z-m> -0.21608 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+<!-- LIGHTS -->	
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/beacon.xml</path>
+    <offsets>
+      <x-m>  8.7686 </x-m>
+      <y-m> -0.1452 </y-m>
+      <z-m>  2.0430 </z-m>
+    </offsets>
+  </model>
+
+<!-- EFFECTS -->
+<effect>
+  <inherits-from>Aircraft/aw139/Models/Effects/reflectglas-uber</inherits-from>
+  <object-name>frnt-sideglass</object-name>
+  <object-name>sideglass</object-name>
+  <object-name>front-sideglass</object-name>
+  <object-name>frontglass</object-name>
+ </effect>
+
+ <model>
+    <name>Emergency_Floats</name>
+    <path>Models/Interior/Equipment/Floats.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Emergency_Floats</object-name>
+    <condition>
+      <property>sim/model/show-Emergency</property>
+    </condition>
+  </animation>
+
+  <!-- INTERIOR -->	
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Interior.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
