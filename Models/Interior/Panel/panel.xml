@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--INSTRUMENTATION -->
+<!-- PRIMARY AVIONICS: PFD -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/pfd.xml</path>
+    <offsets>
+      <x-m> -2.6339 </x-m>
+      <y-m>  0.6100 </y-m>
+      <z-m> -0.4920 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.2 </x-offset>
+        <y-offset> 1.2 </y-offset>
+        <z-offset> 1.2 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/pfd.xml</path>
+    <offsets>
+      <x-m> -2.6339 </x-m>
+      <y-m> -0.6100 </y-m>
+      <z-m> -0.4920 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.2 </x-offset>
+        <y-offset> 1.2 </y-offset>
+        <z-offset> 1.2 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <!-- PRIMARY AVIONICS: MFD -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/mfd.xml</path>
+    <offsets>
+      <x-m> -2.6339 </x-m>
+      <y-m>  0.3886 </y-m>
+      <z-m> -0.4920 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.2 </x-offset>
+        <y-offset> 1.2 </y-offset>
+        <z-offset> 1.2 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/mfd.xml</path>
+    <offsets>
+      <x-m> -2.6339 </x-m>
+      <y-m> -0.3886 </y-m>
+      <z-m> -0.4920 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.2 </x-offset>
+        <y-offset> 1.2 </y-offset>
+        <z-offset> 1.2 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <!-- PRIMARY AVIONICS: EICAS -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/mfd-pfd/eicas.xml</path>
+    <offsets>
+      <x-m> -2.6339 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.4920 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.3 </x-offset>
+        <y-offset> 1.3 </y-offset>
+        <z-offset> 1.3 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <!-- COLLECTIVE AND ROTOR CONTROL-->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/collective/collective.xml</path>
+    <offsets>
+      <x-m> -2.0620 </x-m>
+      <y-m>  0.2519 </y-m>
+      <z-m> -0.7869 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/clutch_lever/clutch_lever.xml</path>
+    <offsets>
+      <x-m> -2.19970 </x-m>
+      <y-m>  0.20419 </y-m>
+      <z-m>  0.23428 </z-m>
+      <pitch-deg> 77.6 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- LANDING GEAR -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/Gear/gearctl.xml</path>
+    <offsets>
+      <x-m> -2.4833 </x-m>
+      <y-m>  0.2453 </y-m>
+      <z-m> -0.6788 </z-m>
+      <pitch-deg> -80 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.2 </x-offset>
+        <y-offset> 1.2 </y-offset>
+        <z-offset> 1.2 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/ParkBrakes/brake.xml</path>
+    <offsets>
+      <x-m> -2.3968 </x-m>
+      <y-m>  0.3051 </y-m>
+      <z-m> -0.6897 </z-m>
+      <pitch-deg> -80 </pitch-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 0.6 </x-offset>
+        <y-offset> 0.6 </y-offset>
+        <z-offset> 0.6 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+<!-- SUPPLEMENT -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -2.6681 </x-m>
+      <y-m>  0.2034 </y-m>
+      <z-m> -0.4076 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/chrono/chronometer.xml</path>
+    <offsets>
+      <x-m> -2.6674 </x-m>
+      <y-m> -0.2034 </y-m>
+      <z-m> -0.4076 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/rmu/rmu1.xml</path>
+    <offsets>
+      <x-m> -2.6139 </x-m>
+      <y-m> -0.2034 </y-m>
+      <z-m> -0.5558 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m> -2.6914 </x-m>
+      <y-m>  0.4996 </y-m>
+      <z-m> -0.3345 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m> -2.6914 </x-m>
+      <y-m> -0.4996 </y-m>
+      <z-m> -0.3345 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- CENTER CONSOLE -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/cdu/cdu.xml</path>
+    <offsets>
+      <x-m> -2.4580 </x-m>
+      <y-m>  0.1133 </y-m>
+      <z-m> -0.6763 </z-m>
+      <pitch-deg> -80 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/cdu/cdu.xml</path>
+    <offsets>
+      <x-m> -2.4580 </x-m>
+      <y-m> -0.2633 </y-m>
+      <z-m> -0.6763 </z-m>
+      <pitch-deg> -80 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- YOKES -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -2.4216 </x-m>
+      <y-m>  0.6133 </y-m>
+      <z-m> -1.1225 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -2.4216 </x-m>
+      <y-m> -0.6133 </y-m>
+      <z-m> -1.1225 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AIR VENTS -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.6022 </x-m>
+      <y-m>  0.7640 </y-m>
+      <z-m> -0.5914 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.6298 </x-m>
+      <y-m>  0.7640 </y-m>
+      <z-m> -0.5157 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.6022 </x-m>
+      <y-m> -0.7640 </y-m>
+      <z-m> -0.5914 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.6298 </x-m>
+      <y-m> -0.7640 </y-m>
+      <z-m> -0.5157 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.4335 </x-m>
+      <y-m>  0.3154 </y-m>
+      <z-m> -1.0235 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -2.5114 </x-m>
+      <y-m>  0.3154 </y-m>
+      <z-m> -1.0235 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- PEDALS -->
+  <model>
+    <path>Aircraft/aw139/Models/Interior/Panel/Pedals/all-pedals.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Overhead Panel -->
+  <model>
+    <path>Overhead/overhead.xml</path>
+    <offsets>
+      <x-m> -2.07730 </x-m>
+      <y-m> -0.00692 </y-m>
+      <z-m>  0.32539 </z-m>
+      <pitch-deg> 90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Pedestal Panel -->
+  <model>
+    <path>Pedestal/pedestal.xml</path>
+    <offsets>
+      <x-m> -2.17220 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.67055 </z-m>
+      <pitch-deg> 10 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
