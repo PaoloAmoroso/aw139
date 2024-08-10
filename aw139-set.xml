@@ -117,6 +117,9 @@ AW139 simulation config.
                        <file type="string">default</file>
                  </livery>
 			<aw139>
+                   <lighting>
+                      <beacon-top type="bool">false</beacon-top>
+                   </lighting>
 				<state type="int">0</state>
 				<rotor-step-deg type="float">-1.0</rotor-step-deg>
 
@@ -415,6 +418,10 @@ AW139 simulation config.
       <binding>
 	   <command>nasal</command>
 	   <script>aw139.cas.toggleEnable();</script>
+	 </binding>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw139.beacon_switch();</script>
 	 </binding>
       </item>
       <item>
@@ -865,6 +872,7 @@ AW139 simulation config.
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/aw139/Nasal/fcs2.nas</file>
                 <file>Aircraft/aw139/Nasal/cdu.nas</file>
+                <file>Aircraft/aw139/Nasal/wiper.nas</file>
 			<file>Aircraft/aw139/Nasal/casdisable.nas</file>
 		</aw139>
             <liveries>
