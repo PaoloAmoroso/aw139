@@ -197,7 +197,8 @@
         dfric="0.8"
         on-water="1"
 	initial-load="0"
-	castering="1">
+	castering="1"
+	stiction="1">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
          <control-speed control="EXTEND" transition-time="5"/>
@@ -220,6 +221,7 @@
         sfric="1.2"
         dfric="0.8"
         on-water="1"
+	stiction="1"
         initial-load="0.0">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
@@ -236,6 +238,7 @@
         sfric="1.2"
         dfric="0.8"
         on-water="1"
+	stiction="1"
         initial-load="0.0">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
