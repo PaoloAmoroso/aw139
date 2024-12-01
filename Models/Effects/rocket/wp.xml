@@ -4,6 +4,15 @@
 
   <path>wp.ac</path>
 
+  <model>
+    <path>trail.xml</path>
+    <offsets>
+      <x-m> 2 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
   <animation>
     <object-name>wp-1-0</object-name>
     <object-name>flame</object-name>
