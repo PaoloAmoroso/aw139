@@ -1,0 +1,32 @@
+ ::AUTHORS OF THE::
+ ..:: LIVERIES ::..
+
+Original:
+Aeronautica Militare Italiana
+Brazilian Federal Police
+Dutch Police
+Spanish Coast Guard
+Uber
+____________________
+Paolo Amoroso:
+AirGreen
+Avincis
+Babcock
+Carabinieri
+Cyprus Air Force
+Grey
+Guardia Costiera Italiana
+Guardia di Finanza
+HM Coast Guard
+Inaer
+ItAF
+Leonardo
+Polizia
+Vigili del Fuoco
+White
+
+____________________
+OrbitalMartian:
+
+T7-LSS
+U.S. Coast Guard (Fictional)
