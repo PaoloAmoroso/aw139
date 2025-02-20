@@ -8,6 +8,27 @@
     <object-name>ATOS</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>manche</object-name>
+    <object-name>ButtonA1</object-name>
+    <object-name>ButtonA2</object-name>
+    <object-name>ButtonA3</object-name>
+    <object-name>ButtonA4</object-name>
+    <object-name>ButtonB1</object-name>
+    <object-name>ButtonB2</object-name>
+    <object-name>ButtonB3</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
   <!-- Attitude Indicator -->
   <model>
     <name>AI</name>
@@ -122,5 +143,35 @@
       <z> 0 </z>
     </axis>
   </animation>
-   
+
+  <!-- RADAR Informations (Show/Hide) -->
+    <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ButtonA1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/radar/info</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ButtonA1</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
 </PropertyList>
