@@ -1,78 +1,99 @@
-# =======================
-# Multiplayer Quirks - PAOLO AMOROSO
-# =======================
+# ===============================================================
+#                   Air and Terrain Mode Radar
+#                       for ATOS System
+#                     AMOROSO Paolo 06/2025
+# ===============================================================
 MPjoin = func(n) {
-  #print(n.getValue(), " added");
-  setprop("instrumentation/radar",n.getValue(),"radar/y-shift",0);
-  setprop("instrumentation/radar",n.getValue(),"radar/x-shift",0);
-  setprop("instrumentation/radar",n.getValue(),"radar/rotation",0);
-  setprop("instrumentation/radar",n.getValue(),"radar/in-range",0);
-  setprop("instrumentation/radar",n.getValue(),"radar/h-offset",180);
-  setprop("instrumentation/radar",n.getValue(),"joined",1);
+  var base = n.getValue();
+  setprop("instrumentation/radar/" ~ base ~ "/radar/y-shift", 0);
+  setprop("instrumentation/radar/" ~ base ~ "/radar/x-shift", 0);
+  setprop("instrumentation/radar/" ~ base ~ "/radar/rotation", 0);
+  setprop("instrumentation/radar/" ~ base ~ "/radar/in-range", 0);
+  setprop("instrumentation/radar/" ~ base ~ "/radar/h-offset", 180);
+  setprop("instrumentation/radar/" ~ base ~ "/joined", 1);
 }
 
-MPleave= func(n) {
-  #print(n.getValue(), " removed");
-  setprop("instrumentation/radar",n.getValue(),"radar/in-range",0);
-  setprop("instrumentation/radar",n.getValue(),"joined",0);
+MPleave = func(n) {
+  var base = n.getValue();
+  setprop("instrumentation/radar/" ~ base ~ "/radar/in-range", 0);
+  setprop("instrumentation/radar/" ~ base ~ "/joined", 0);
 }
 
-#need to copy the properties so that we never try to access a non-existent property in XML
 MPradarProperties = func {
-  targetList= props.globals.getNode("ai/models/").getChildren("multiplayer");
-
+  var targetList = props.globals.getNode("ai/models/").getChildren("multiplayer");
   foreach (d; props.globals.getNode("ai/models/").getChildren("aircraft")) {
-    append(targetList,d);
+    append(targetList, d);
   }
 
   foreach (m; targetList) {
-    var string = "instrumentation/radar/ai/models/"~m.getName()~"["~m.getIndex()~"]/";
-    if (getprop(string,"joined")==1 or m.getName()=="aircraft") {
-      factor = getprop("instrumentation/radar/range-factor");
-      setprop(string,"radar/y-shift",m.getNode("radar/y-shift").getValue() * factor);
-      setprop(string,"radar/x-shift",m.getNode("radar/x-shift").getValue() * factor);
-      setprop(string,"radar/rotation",m.getNode("radar/rotation").getValue());
-      setprop(string,"radar/h-offset",m.getNode("radar/h-offset").getValue());
+    var name = m.getName();
+    var index = m.getIndex();
+    var path = "instrumentation/radar/ai/models/" ~ name ~ "[" ~ index ~ "]/";
+    var sourcePath = "ai/models/" ~ name ~ "[" ~ index ~ "]/";
 
-      if (getprop("instrumentation/radar/selected")==2){
-        if (getprop(string~"radar/x-shift") < -0.04 or
-          getprop(string~"radar/x-shift") > 0.04) {
-          setprop(string,"radar/in-range",0);
+    if (getprop(path ~ "joined") == 1 or name == "aircraft") {
+      var factor = getprop("instrumentation/radar/range-factor");
+      if (factor == nil) factor = 1.0;
+
+      var yNode = m.getNode("radar/y-shift", 0);
+      var xNode = m.getNode("radar/x-shift", 0);
+      var rotNode = m.getNode("radar/rotation", 0);
+      var hOffNode = m.getNode("radar/h-offset", 0);
+      var inRangeNode = m.getNode("radar/in-range", 0);
+
+      var yVal = yNode != nil and yNode.getValue() != nil ? yNode.getValue() : 0;
+      var xVal = xNode != nil and xNode.getValue() != nil ? xNode.getValue() : 0;
+      var rotVal = rotNode != nil and rotNode.getValue() != nil ? rotNode.getValue() : 0;
+      var hOffVal = hOffNode != nil and hOffNode.getValue() != nil ? hOffNode.getValue() : 0;
+      var inRangeVal = inRangeNode != nil and inRangeNode.getValue() != nil ? inRangeNode.getValue() : 0;
+
+      setprop(path ~ "radar/y-shift", yVal * factor);
+      setprop(path ~ "radar/x-shift", xVal * factor);
+      setprop(path ~ "radar/rotation", rotVal);
+      setprop(path ~ "radar/h-offset", hOffVal);
+
+      if (getprop("instrumentation/radar/selected") == 2) {
+        var xShift = getprop(path ~ "radar/x-shift");
+        if (xShift < -0.04 or xShift > 0.04) {
+          setprop(path ~ "radar/in-range", 0);
         } else {
-          setprop(string,"radar/in-range",m.getNode("radar/in-range").getValue());
+          setprop(path ~ "radar/in-range", inRangeVal);
         }
       } else {
-        setprop(string,"radar/in-range",m.getNode("radar/in-range").getValue());
+        setprop(path ~ "radar/in-range", inRangeVal);
       }
     }
   }
 
-  # this is a good place to deal with the range scaling factors
-  if (getprop("instrumentation/radar/selected")==2) {
-    if (getprop("instrumentation/radar/range")==10) {
-      setprop("instrumentation/radar/range",20);
-      setprop("instrumentation/radar/range-factor",0.002);
-    } elsif (getprop("instrumentation/radar/range")==20) {
-      setprop("instrumentation/radar/range-factor",0.003246);
-    } else { #40
-      setprop("instrumentation/radar/range-factor",0.001623);
+  var selected = getprop("instrumentation/radar/selected");
+  var range = getprop("instrumentation/radar/range");
+
+  # Range Scaling Factor
+  if (selected == 2) {
+    if (range == 10) {
+      setprop("instrumentation/radar/range", 20);
+      setprop("instrumentation/radar/range-factor", 0.002);
+    } elsif (range == 20) {
+      setprop("instrumentation/radar/range-factor", 0.003246);
+    } else {
+      setprop("instrumentation/radar/range-factor", 0.001623);
     }
-  } elsif (getprop("instrumentation/radar/selected")==3 or getprop("instrumentation/radar/selected")==4) {
-    if (getprop("instrumentation/radar/range")==40) {
-      setprop("instrumentation/radar/range",20);
-      setprop("instrumentation/radar/range-factor",0.001888);
-    } elsif (getprop("instrumentation/radar/range")==20) {
-      setprop("instrumentation/radar/range-factor",0.001888);
-    } else { #10
-      setprop("instrumentation/radar/range-factor",0.003776);
+  } elsif (selected == 3 or selected == 4) {
+    if (range == 40) {
+      setprop("instrumentation/radar/range", 20);
+      setprop("instrumentation/radar/range-factor", 0.001888);
+    } elsif (range == 20) {
+      setprop("instrumentation/radar/range-factor", 0.001888);
+    } else {
+      setprop("instrumentation/radar/range-factor", 0.003776);
     }
   }
-  settimer(MPradarProperties,0.05);
+  settimer(MPradarProperties, 0.05);
 }
 
-# ===================
-# Boresight Detecting
-# ===================
+# =====================
+#  Boresight Detecting
+# =====================
 locking=0;
 found=-1;
 
@@ -131,152 +152,104 @@ boreSightLock = func {
   settimer(boreSightLock, 0.2);
 }
 
-	# Multiplayer TCAS
-	
-	for (var n = 0; n < 30; n += 1) {
-	
-		if (getprop("ai/models/multiplayer[" ~ n ~ "]/valid") and (getprop("ai/models/multiplayer[" ~ n ~ "]/callsign") != nil)) {
-		
-			var mp_lat = getprop("ai/models/multiplayer[" ~ n ~ "]/position/latitude-deg");
-			var mp_lon = getprop("ai/models/multiplayer[" ~ n ~ "]/position/longitude-deg");
-			var x_dist = (mp_lon - pos_lon) * 60;
-			var y_dist = (mp_lat - pos_lat) * 60;
-			
-			var distance =  math.sqrt((x_dist*x_dist) + (y_dist*y_dist));
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/distance-nm", distance);
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/bearing-defl",Deflection((57.2957795 * math.atan2(x_dist, y_dist)), 60));
-
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/bearing-deg" ,(57.2957795 * math.atan2(x_dist, y_dist)));
-			
-			var vsfps = getprop("ai/models/multiplayer[" ~ n ~ "]/velocities/vertical-speed-fps");
-			
-			var altitudediff = getprop("ai/models/multiplayer[" ~ n ~ "]/position/altitude-ft") - altitude;
-			
-			## The new NDs only use planar calculations
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/xoffset", (mp_lon - pos_lon) * 60 / range);
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/yoffset", (mp_lat - pos_lat) * 60 / range);
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/callsign", getprop("ai/models/multiplayer[" ~ n ~ "]/callsign"));
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/altitude-ft", getprop("ai/models/multiplayer[" ~ n ~ "]/position/altitude-ft"));
-			
-			setprop("instrumentation/radar/mp[" ~ n ~ "]/tas-kt", getprop("ai/models/multiplayer[" ~ n ~ "]/velocities/true-airspeed-kt"));
-			
-			
-			if (vsfps < -8)
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/phase", "descend");
-			elsif (vsfps >= 8)
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/phase", "climb");
-			else
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/phase", "level");
-				
-			if ((distance <= 3) and (altitudediff <= 1000))
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/color", "red");
-			elsif ((distance <= 5) and (altitudediff <= 2000))
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/color", "orange");
-			elsif ((distance <= 10) and (altitudediff <= 3000))
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/color", "yellow");
-			else
-				setprop("instrumentation/radar/mp[" ~ n ~ "]/color", "cyan");
-			
-			if (distance <= 32)
-				setprop("/instrumentation/radar/mp[" ~ n ~ "]/show-half", 1);
-			else
-				setprop("/instrumentation/radar/mp[" ~ n ~ "]/show-half", 0);
-				
-			if ((math.abs((mp_lon - pos_lon) * 60) <= range) and (mp_lat - pos_lat <= range) and (pos_lat - mp_lat >= (range * -0.8)))
-				setprop("/instrumentation/radar/mp[" ~ n ~ "]/show", 1);
-			else
-				setprop("/instrumentation/radar/mp[" ~ n ~ "]/show", 0);
-				
-		} else
-			setprop("/instrumentation/radar/mp[" ~ n ~ "]/show", 0);
-	
-	}
-	
-	# AI TCAS
-	
-	for (var n = 0; n < 30; n += 1) {
-	
-		if (getprop("ai/models/aircraft[" ~ n ~ "]/valid") and (getprop("ai/models/aircraft[" ~ n ~ "]/callsign") != nil)) {
-		
-			var ai_lat = getprop("ai/models/aircraft[" ~ n ~ "]/position/latitude-deg");
-			var ai_lon = getprop("ai/models/aircraft[" ~ n ~ "]/position/longitude-deg");
-			
-			var x_dist = (ai_lon - pos_lon) * 60;
-			var y_dist = (ai_lat - pos_lat) * 60;
-			
-			var distance =  math.sqrt((x_dist*x_dist) + (y_dist*y_dist));
-			
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/distance-nm", distance);
-			
-			var vsfps = getprop("ai/models/aircraft[" ~ n ~ "]/velocities/vertical-speed-fps");
-			
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/bearing-defl",Deflection((57.2957795 * math.atan2(x_dist, y_dist)), 60));
-
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/bearing-deg" ,(57.2957795 * math.atan2(x_dist, y_dist)));
-			
-			var altitudediff = getprop("ai/models/aircraft[" ~ n ~ "]/position/altitude-ft") - altitude;
-			
-			## The new NDs only use planar calculations
-			
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/xoffset", x_dist / range);
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/yoffset", y_dist / range);
-			
-			if (vsfps < -8)
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/phase", "descend");
-			elsif (vsfps >= 8)
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/phase", "climb");
-			else
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/phase", "level");
-				
-			if ((distance <= 3) and (altitudediff <= 1000))
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/color", "red");
-			elsif ((distance <= 5) and (altitudediff <= 2000))
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/color", "orange");
-			elsif ((distance <= 10) and (altitudediff <= 3000))
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/color", "yellow");
-			else
-				setprop("instrumentation/radar/ai[" ~ n ~ "]/color", "cyan");
-				
-			if ((math.abs((ai_lon - pos_lon) * 60) <= range) and (ai_lat - pos_lat <= range) and (pos_lat - ai_lat >= (range * -0.8)))
-				setprop("/instrumentation/radar/ai[" ~ n ~ "]/show", 1);
-			else
-				setprop("/instrumentation/radar/ai[" ~ n ~ "]/show", 0);
-				
-			if (distance <= 32)
-				setprop("/instrumentation/radar/ai[" ~ n ~ "]/show-half", 1);
-			else
-				setprop("/instrumentation/radar/ai[" ~ n ~ "]/show-half", 0);
-				
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/callsign", getprop("ai/models/aircraft[" ~ n ~ "]/callsign"));
-			
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/altitude-ft", getprop("ai/models/aircraft[" ~ n ~ "]/position/altitude-ft"));
-			
-			setprop("instrumentation/radar/ai[" ~ n ~ "]/tas-kt", getprop("ai/models/aircraft[" ~ n ~ "]/velocities/true-airspeed-kt"));
-				
-		} else
-			setprop("/instrumentation/radar/ai[" ~ n ~ "]/show", 0);
-	
-	}
-	
-    },
-        reset : func {
-            me.loopid += 1;
-            me._loop_(me.loopid);
-        },
-        _loop_ : func(id) {
-            id == me.loopid or return;
-            me.update();
-            settimer(func { me._loop_(id); }, me.UPDATE_INTERVAL);
-        }
-
-    }
-
 setlistener("ai/models/model-added", MPjoin);
 setlistener("ai/models/model-removed", MPleave);
 settimer(MPradarProperties,1.0);
 settimer(boreSightLock, 1.0);
+
+#================================================================
+#                          SLAR Mode
+#================================================================
+
+var RAD2DEG      = 57.2957795;
+var DEG2RAD      = 0.016774532925;
+var terrain      = "/instrumentation/radar/pixels/";
+#                                                  3D radar line length in meters
+var DISP_LENGTH   = 0.0856;
+#                                                  fixed number of plots
+var DISP_DEF      = 100;
+#                                                  vertical calibration
+var DEV_CALIB     = 1.5;
+#                                                  radar update every 0.5s
+var UPDATE_PERIOD = 0.5;
+#
+var FT2M          = 0.3048;
+var NM2M          = 1852;
+var D2R           = math.pi / 180;
+#                                                  radar range 5 NM
+var MAX_RANGE_M   = 5 * NM2M;
+#                                                  5 NM per 100 plots
+var interval_m    = MAX_RANGE_M / DISP_DEF;
+var radar_scale   = DISP_LENGTH / MAX_RANGE_M;
+
+# Function to get Elevation at latitude and longitude
+var get_elevation = func (lat, lon) {
+
+  var info = geodinfo(lat, lon);
+
+  if (info == nil ) {
+    var elev = -1;                                 # Unknown
+  } elsif (info[1] == nil) {
+    var elev = info[0] * 3.2808399;                # Building
+  } elsif (info[1].solid == 0) {
+    var elev = 0;                                  # Water
+  } else {
+    var elev = info[0] * 3.2808399;                # other
+  }
+
+  elev = elev * radar_scale * FT2M;
+
+  return elev;
+}
+var update_radar = func {
+
+  var poslon      = getprop("/position/longitude-deg");
+  var poslat      = getprop("/position/latitude-deg");
+  var heading     = getprop("/orientation/heading-magnetic-deg");
+
+  var range       = getprop("/instrumentation/radar/range");
+  var displaymode = getprop("/instrumentation/radar/display-mode");
+
+  # First get all the points (16x16)
+  for (var col = 0; col <= 98; col += 2) {
+
+    var beam_offset_nm = (49 - col) * (range/30);
+    var forward_offset_nm = range / 30;
+
+    var base = geo.Coord.new().set_latlon(poslat, poslon);
+
+    var lateral = base.apply_course_distance(heading - 90, beam_offset_nm * NM2M);
+    var point = lateral.apply_course_distance(heading, forward_offset_nm * NM2M);
+
+    var pointlat = point.lat();
+    var pointlon = point.lon();
+
+    var elev = get_elevation(pointlat, pointlon);
+
+    setprop(terrain ~ "/col[" ~ col ~ "]/elevation", elev);
+  }
+
+  # Interpolate the rest of the points in each column
+
+  for (var col = 1; col <= 97; col += 2) {
+    var elevprev = getprop(terrain ~ "/col[" ~ (col - 1) ~ "]/elevation");
+    var elevnext = getprop(terrain ~ "/col[" ~ (col + 1) ~ "]/elevation");
+    var elev = (elevprev + elevnext) / 2;
+
+    setprop(terrain ~ "/col[" ~ col ~ "]/elevation", elev);
+  }
+}
+
+###  Main loop ###
+var radar_loop = func {
+  update_radar();
+  settimer(radar_loop, UPDATE_PERIOD);
+}
+
+# Initialisation
+var RADAR_init = func {
+  print("Ground Radar updated");
+  radar_loop();
+}
+
+RADAR_init();
