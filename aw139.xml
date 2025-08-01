@@ -18,7 +18,7 @@
          mincollective="-1.1" maxcollective="13.5"
          mincyclicele="-6" maxcyclicele="6.75"
          mincyclicail="-4" maxcyclicail="4"
-         diameter="13.0" 
+         diameter="13.8" 
          numblades="5"
          weightperblade="180"
          twist="-3.1"
@@ -27,21 +27,21 @@
          relbladecenter="0.61"
          dynamic="0.9"
          rellenflaphinge="0.094"
-         delta3="0.0" delta=".30"
+         delta3="0.0" delta="0.30"
          pitch-a="10" pitch-b="15"
          flapmin="-15" flapmax="15"
          flap0="-7.5" flap0factor="0"
          notorque="0"
          dragfactor="0.23"
          translift-ve="32" 
-	 translift-maxfactor="1.25"
+	    translift-maxfactor="1.25"
          ground-effect-constant="0.18"
-	 taper="1"
+	    taper="1"
          number-of-segments="10"
          number-of-parts="10"
          rel-len-where-incidence-is-measured="0.7"
          rel-len-blade-start="0.1"
-	 
+
 	  airfoil-lift-coefficient="4.3" 
        airfoil-drag-coefficient0="0.0070" 
        airfoil-drag-coefficient1="0.09" 
@@ -52,27 +52,31 @@
        stall-change-over="5.5" 
        cyclic-factor="0.8" 
        rotor-correction-factor="1.0" 
-       downwashfactor ="0.15" 
-        > 
-<control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL"/>
+       downwashfactor="0.15" 
+        >
+  <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL"/>
   <control-input axis="/controls/flight/fcs/roll" control="CYCLICAIL"
 					   src0="-1.0" src1="1.0"
 					   dst0="-1.0" dst1="1.0"/>
   <control-input axis="/controls/flight/elevator-trim" control="CYCLICELE"/>
   <control-input axis="/controls/flight/fcs/pitch" control="CYCLICELE"
-					   src0="-1.0" src1="1.0"
+     				         src0="-1.0" src1="1.0"
 					   dst0="-1.0" dst1="1.0"/>
-<control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE"
+
+  <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE"
 					   src0="0.0" src1="1.0"
-                                           dst0="1.0" dst1="-1"/>
+                              dst0="1.0" dst1="-1"/>
 </rotor>
 
+<!-- mincollective="10" maxcollective="-8.2" -->
+<!-- mincollective="12.24" maxcollective="-8.2" -->
+<!-- mincollective="12.24" maxcollective="-10.2" -->
   <rotor name="tail"
          x="-8.610" y="-0.338" z="1.827"
          nx="0.00" ny="1" nz="0.26"
          fx="-1" fy="0" fz="0"
          ccw="0"
-         mincollective="12.24" maxcollective="-8.2"
+         mincollective="16.24" maxcollective="-8.2"
          diameter="2.7"
          numblades="4"
          chord="0.39"
@@ -86,12 +90,11 @@
          translift="0"
          delta="0.5"
          pitch-a="10" pitch-b="15"
-	 
-         airfoil-lift-coefficient="4.3" 
-	 airfoil-drag-coefficient0="0.0070" 
-	 airfoil-drag-coefficient1="0.10"
+	   airfoil-lift-coefficient="4.3" 
+	   airfoil-drag-coefficient0="0.0070" 
+	   airfoil-drag-coefficient1="0.10"
          incidence-stall-zero-speed="18" 
-	 incidence-stall-half-sonic-speed="9"
+	   incidence-stall-half-sonic-speed="9"
          lift-factor-stall="0.18"
          stall-change-over="5.5"
          drag-factor-stall="8.0"
@@ -103,11 +106,14 @@
          downwashfactor="0.1"
          rotor-correction-factor="0.80"
         > 
-	
 	<control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true"
 					   src0="-1.0" src1="1.0"
 					   dst0="-1.0" dst1="1.0"/>
-		<control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE"
+     <!-- <control-input axis="/controls/flight/collective" control="COLLECTIVE"
+                              src0="0.0" src1="1.0"
+                              dst0="-0.5" dst1="1.1"/> -->
+
+	<control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE"
 					   src0="0.0" src1="1.0"
 					   dst0=".00000000000000000065" dst1=".00000000000000000065"/>
 </rotor>
@@ -198,7 +204,7 @@
         on-water="1"
 	initial-load="0"
 	castering="1"
-	stiction="1">
+     stiction="1">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
          <control-speed control="EXTEND" transition-time="5"/>
@@ -211,8 +217,6 @@
         <control-input  control="STEER"  axis="/controls/flight/rudder" src0="-1.0" src1="1.0" dst0="-0.8" dst1="0.8"/>
         </gear>
 	
-   
-  
   <!-- left gear -->
   <gear x="-1.330" y="1.597" z="-2.082"
         compression="0.135"
@@ -221,8 +225,8 @@
         sfric="1.2"
         dfric="0.8"
         on-water="1"
-	stiction="1"
-        initial-load="0.0">
+        initial-load="0.0"
+        stiction="1">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
          <control-speed control="EXTEND" transition-time="5"/>
@@ -238,8 +242,8 @@
         sfric="1.2"
         dfric="0.8"
         on-water="1"
-	stiction="1"
-        initial-load="0.0">
+        initial-load="0.0"
+        stiction="1">
 	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 	<control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
          <control-speed control="EXTEND" transition-time="5"/>
@@ -305,6 +309,8 @@
         sfric="1"
         dfric="1">
   </gear>
+  
+  <!-- Fuel Tanks -->
   
     <tank x="0.27" y="0.0" z="-1.15" capacity="1824"/>
     <tank x="-0.27" y="0.0" z="-1.15" capacity="1824"/>

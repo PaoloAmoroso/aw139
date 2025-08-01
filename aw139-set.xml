@@ -1,10 +1,4 @@
 <?xml version="1.0"?>
-<!--
-************************************************************************
-AW139 simulation config.
-
-************************************************************************
--->
 
 <PropertyList>
 	<sim>
@@ -16,7 +10,7 @@ AW139 simulation config.
 
 		<flight-model>yasim</flight-model>
 		<aero>aw139</aero>
-		<fuel-fraction>0.8</fuel-fraction>
+		<fuel-fraction>1.0</fuel-fraction>
 
            <tags>
                 <tag>Leonardo</tag>
@@ -36,17 +30,6 @@ AW139 simulation config.
                 <tag>2020s</tag>
            </tags>
 
-		<startup>
-			<splash-texture>Aircraft/aw139/Splash/splash1.jpg</splash-texture>
-			<splash-texture>Aircraft/aw139/Splash/splash2.jpg</splash-texture>
-			<splash-texture>Aircraft/aw139/Splash/splash3.jpg</splash-texture>
-                <splash-texture>Aircraft/aw139/Splash/splash4.jpg</splash-texture>
-			<splash-texture>Aircraft/aw139/Splash/splash5.png</splash-texture>
-                <splash-texture>Aircraft/aw139/Splash/splash6.png</splash-texture>
-                <splash-texture>Aircraft/aw139/Splash/splash7.png</splash-texture>
-                <splash-texture>Aircraft/aw139/Splash/splash8.png</splash-texture>
-                <splash-texture>Aircraft/aw139/Splash/splash9.png</splash-texture>
-		</startup>
            <status>Production</status>
            <rating>
                <FDM type="int">     4 </FDM>
@@ -54,6 +37,7 @@ AW139 simulation config.
                <cockpit type="int"> 4 </cockpit>
                <model type="int">   4 </model>
            </rating>
+
 		<previews>
 			<preview>
 				<type>exterior</type>
@@ -107,15 +91,26 @@ AW139 simulation config.
 		</sound>
 
            <submodels>
-      <serviceable type="bool">true</serviceable>
-      <path>Aircraft/aw139/Models/Effects/submodels.xml</path>
-    </submodels>
+                <serviceable type="bool">true</serviceable>
+                <path>Aircraft/aw139/Models/Effects/submodels.xml</path>
+           </submodels>
 
 		<model>
 			<path archive="y">Aircraft/aw139/Models/AW139.xml</path>
 			<livery>
                        <file type="string">default</file>
                  </livery>
+
+                 <!-- AW139M Doors Gunners -->
+                 <turret n="0">
+                       <heading>-90</heading>
+                       <pitch>-5</pitch> 
+                 </turret>
+                 <turret n="1"> 
+                       <heading>90</heading>
+                       <pitch>-5</pitch> 
+                 </turret>
+
 			<aw139>
                    <lighting>
                       <beacon-top type="bool">false</beacon-top>
@@ -199,6 +194,40 @@ AW139 simulation config.
 		</view>
 
            <view n="101">
+			<name type="string">Passenger Left</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double">-0.78215</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.10128</y-offset-m><!--up-->
+			<z-offset-m type="double">-1.21520</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+                      <heading-offset-deg>-270</heading-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="102">
+			<name>Passenger Right</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double"> 0.78215</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.10128</y-offset-m><!--up-->
+			<z-offset-m type="double">-1.21520</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+                      <heading-offset-deg>-90</heading-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="103">
 			<name>Passenger</name>
 			<type>lookfrom</type>
 			<internal type="bool">true</internal>
@@ -214,7 +243,7 @@ AW139 simulation config.
 			</config>
 		</view>
 
-           <view n="102">
+           <view n="104">
 			<name>FLIR</name>
 			<type>lookfrom</type>
 			<internal type="bool">true</internal>
@@ -304,6 +333,11 @@ AW139 simulation config.
              <opt>
                 <name>Attack Configuration</name>
                 <lbs>350</lbs>
+             </opt>
+
+             <opt>
+                <name>Door Gunner Configuration</name>
+                <lbs>200</lbs>
              </opt>
            </weight>
 
@@ -401,6 +435,11 @@ AW139 simulation config.
       <binding>
         <command>property-assign</command>
         <property>controls/lighting/strobe-lights</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/beacon</property>
         <value>1</value>
       </binding>
       <binding>
@@ -642,7 +681,7 @@ AW139 simulation config.
       <desc>Trigger flare release</desc>
       <condition>
           <property>sim/model/aw139/Countermeasures</property>
-        </condition>
+      </condition>
       <binding>
         <command>property-toggle</command>
         <property>/controls/armament/flares-release</property>
@@ -657,7 +696,7 @@ AW139 simulation config.
       </mod-up>
     </key>
 
-    <key n="101">
+    <!-- <key n="101">
       <name>e</name>
       <desc>Guns</desc>
       <condition>
@@ -673,6 +712,24 @@ AW139 simulation config.
           <command>property-assign</command>
           <property>controls/armament/trigger</property>
           <value>false</value>
+        </binding>
+      </mod-up>
+    </key> -->
+
+    <key n="101">
+      <name>e</name>
+      <desc>Fire machine guns</desc>
+      <binding>
+        <condition>
+          <property>sim/model/aw139/AW139M</property>
+        </condition>
+        <command>nasal</command>
+        <script>turrets.weapons.fire_MG()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>turrets.weapons.stop_MG()</script>
         </binding>
       </mod-up>
     </key>
@@ -719,7 +776,7 @@ AW139 simulation config.
 
     <key n="70">
              <name>F</name>
-             <desc>Right Door</desc>
+             <desc>Emergncy Floats</desc>
              <binding>
                <command>property-toggle</command>
                <property>sim/model/show-Emergency</property>
@@ -770,7 +827,6 @@ AW139 simulation config.
       <command>nasal</command>
       <script>ec135.cas.toggleEnable();</script>
     </binding>
-
   </key>
 			
 			<key n="82">
@@ -827,7 +883,6 @@ AW139 simulation config.
 				</mod-alt>
 			</key>
 
-
 			<key n="123">
 				<name>{</name>
 				<desc>Shutdown Engines</desc>
@@ -863,12 +918,12 @@ AW139 simulation config.
 		</keyboard>
 	</input>
 
-
 	<nasal>
 		<aw139>
 			<file>Aircraft/aw139/Nasal/aw139.nas</file>
                 <file>Aircraft/aw139/Nasal/map.nas</file>
                 <file>Aircraft/aw139/Nasal/doors.nas</file>
+                <file>Aircraft/aw139/Nasal/light.nas</file>
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/aw139/Nasal/fcs2.nas</file>
                 <file>Aircraft/aw139/Nasal/cdu.nas</file>
@@ -884,6 +939,10 @@ AW139 simulation config.
             <terrain-map>
       <file>Aircraft/aw139/Nasal/terrain-map.nas</file>
             </terrain-map>
+            <turrets>
+      <!-- <file>Aircraft/aw139/Nasal/weapons.nas</file> -->
+      <file>Aircraft/aw139/Nasal/turrets.nas</file>
+            </turrets>
 	</nasal>
 
 	<rotors>
