@@ -15,7 +15,7 @@
         </unload>
     </nasal> -->
 
-      <nasal>
+    <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/aw139/Models/Liveries", 10);
 
@@ -47,7 +47,8 @@
     <object-name>frontglass</object-name>
     <object-name>frnt-sideglass_L</object-name>
     <object-name>frnt-sideglass_R</object-name>
-    <object-name>sideglass</object-name>
+    <object-name>sideglassL</object-name>
+    <object-name>sideglassR</object-name>
     <object-name>sideglass_L</object-name>
     <object-name>sideglass_R</object-name>
     <object-name>inspection-glass</object-name>
@@ -941,6 +942,7 @@
 	</condition>
 </animation>
 
+<!-- AW139M External Devices -->
 <animation>
 	<type>select</type>
 	<object-name>Countermeasures</object-name>
@@ -960,11 +962,6 @@
 <model>
     <name>Rockets</name>
     <path>Models/Interior/Equipment/Rockets.xml</path>
-    <offsets>
-      <x-m>  0.0 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m>  0.0 </z-m>
-    </offsets>
   </model>
 
   <animation>
@@ -978,14 +975,9 @@
  <model>
     <name>Guns</name>
     <path>Models/Interior/Equipment/Guns.xml</path>
-    <offsets>
-      <x-m>  0.0 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m>  0.0 </z-m>
-    </offsets>
-  </model>
+ </model>
 
-  <animation>
+ <animation>
 	<type>select</type>
 	<object-name>Guns</object-name>
 	<condition>
@@ -1007,32 +999,163 @@
     </condition>
   </animation>
 
-  <!-- Guns effects -->
+  <!-- AW139M Door Gunners -->
+<!--
   <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <condition>
-      <property>controls/armament/trigger</property>
-    </condition>
+    <name>LeftGun</name>
+    <path>Models/Interior/Equipment/Gunner/guns.xml</path>
     <offsets>
-      <x-m> -0.25342 </x-m>
-      <y-m>  2.18420 </y-m>
-      <z-m> -0.21608 </z-m>
-      <pitch-deg> 180 </pitch-deg>
+      <x-m> -1.21520 </x-m>
+      <y-m> -1.11110 </y-m>
+      <z-m> -0.29108 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Models/Effects/guns/fire.xml</path>
-    <condition>
-      <property>controls/armament/trigger</property>
-    </condition>
+    <name>ColletL</name>
+    <path>Models/Interior/Equipment/Gunner/collet.xml</path>
     <offsets>
-      <x-m> -0.25342 </x-m>
-      <y-m> -2.18420 </y-m>
-      <z-m> -0.21608 </z-m>
-      <pitch-deg> 180 </pitch-deg>
+      <x-m> -1.21520 </x-m>
+      <y-m> -1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
     </offsets>
   </model>
+
+  <model>
+    <name>BaseL</name>
+    <path>Models/Interior/Equipment/Gunner/base.xml</path>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m> -1.11520 </y-m>
+      <z-m> -0.48953 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ColletL</object-name>
+    <object-name>LeftGun</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -1.21520 </x-m>
+      <y-m> -1.11410 </y-m>
+      <z-m> -0.49108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftGun</object-name>
+    <property>sim/model/turret[0]/pitch</property>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m> -1.11410 </y-m>
+      <z-m> -0.49108 </z-m>
+    </offsets>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+-->
+  <model>
+    <name>RightGun</name>
+    <path>Models/Interior/Equipment/Gunner/guns.xml</path>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>ColletR</name>
+    <path>Models/Interior/Equipment/Gunner/collet.xml</path>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>BaseR</name>
+    <path>Models/Interior/Equipment/Gunner/base.xml</path>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11220 </y-m>
+      <z-m> -0.48953 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ColletR</object-name>
+    <object-name>RightGun</object-name>
+    <property>sim/model/turret[1]/heading</property>
+    <center>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightGun</object-name>
+    <property>sim/model/turret[1]/pitch</property>
+    <center>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+	<type>select</type>
+	<!-- <object-name>ColletL</object-name>
+     <object-name>LeftGun</object-name>
+     <object-name>BaseL</object-name> -->
+     <object-name>ColletR</object-name>
+     <object-name>RightGun</object-name>
+     <object-name>BaseR</object-name>
+	<condition>
+	  <equals>
+         <property>sim/weight[4]/selected</property>
+           <value>Door Gunner Configuration</value>
+       </equals>
+	</condition>
+  </animation>
+
+  <animation>
+	<type>select</type>
+	<object-name>sideglassR</object-name>
+	<condition>
+      <not>
+       <equals>
+         <property>sim/weight[4]/selected</property>
+           <value>Door Gunner Configuration</value>
+       </equals>
+      </not>
+    </condition>
+  </animation>
 
 <!-- LIGHTS -->	
   <model>
@@ -1070,6 +1193,10 @@
       <property>sim/model/show-Emergency</property>
     </condition>
   </animation>
+
+  <model>
+    <path>Models/Effects/guns/all-fires.xml</path>
+  </model>
 
   <!-- INTERIOR -->	
   <model>
