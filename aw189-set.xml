@@ -1,0 +1,846 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<description>Leonardo AW189</description>
+		<author>Paolo Amoroso (3D,Liveries,Interiors,Effects), Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal), LesterBoffo (Rotor,liveries and interior animations,coding,patches), </author>
+		<status>alpha</status>
+		<license>GPL v2</license>
+		<aircraft-version>0.2</aircraft-version>
+
+		<flight-model>yasim</flight-model>
+		<aero>aw139</aero>
+           <variant-of>aw139</variant-of>
+		<fuel-fraction>1.0</fuel-fraction>
+
+           <tags>
+                <tag>Leonardo</tag>
+                <tag>Agusta</tag>
+                <tag>AgustaWestland</tag>
+                <tag>AW149</tag>
+                <tag>AW189</tag>
+                <tag>helicopter</tag>
+                <tag>Rotary Wing</tag>
+                <tag>Utility Helicopter</tag>
+	           <tag>Civil Helicopter</tag>
+	           <tag>Military Helicopter</tag>
+                <tag>2-engine</tag>
+                <tag>tricycle</tag>
+                <tag>retractable-gear</tag>
+                <tag>2000s</tag>
+                <tag>2010s</tag>
+                <tag>2020s</tag>
+           </tags>
+
+           <status>Production</status>
+           <rating>
+               <FDM type="int">     4 </FDM>
+               <systems type="int"> 3 </systems>
+               <cockpit type="int"> 4 </cockpit>
+               <model type="int">   4 </model>
+           </rating>
+
+		<previews>
+			<preview>
+				<type>exterior</type>
+				<splash type="bool">true</splash>
+				<path>Splash/splash10.png</path>
+			</preview>
+		</previews>
+
+		<sound>
+			<path>Aircraft/aw139/Sounds/sound.xml</path>
+		</sound>
+
+           <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/aw139/Models/Effects/submodels.xml</path>
+    </submodels>
+
+		<model>
+			<path archive="y">Aircraft/aw139/Models/AW189.xml</path>
+			<livery>
+                       <file type="string">default</file>
+                 </livery>
+			<aw189>
+				<state type="int">0</state>
+				<rotor-step-deg type="float">-1.0</rotor-step-deg>
+
+				<hide-gsdi>true</hide-gsdi>
+				<longnose type="bool">false</longnose>
+				<shortnose type="bool">true</shortnose>
+				<winch>false</winch>
+				<mirror>false</mirror>
+				<wirecutter>false</wirecutter>
+				<nose>false</nose>
+				<nosefl>true</nosefl>
+				<radardome>false</radardome>
+				<antennaset>true</antennaset>	
+				<doors>
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">pilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">copilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right reardoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left reardoor</name>
+					</door>
+				</doors>
+				
+			</aw189>
+		</model>
+
+		<!--view-->
+		<view n="0">
+			<name>Cockpit</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                  <x-offset-m type="double">0.62</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.099</y-offset-m><!--up-->
+			<z-offset-m type="double">-2.068</z-offset-m><!--back-->
+				<pitch-offset-deg>-10</pitch-offset-deg>
+				<default-field-of-view-deg type="double">100.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="100">
+			<name>Copilot</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double">-0.62</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.099</y-offset-m><!--up-->
+			<z-offset-m type="double">-2.068</z-offset-m><!--back-->
+				<pitch-offset-deg>-10</pitch-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="101">
+			<name type="string">Passenger Left</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double">-0.78215</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.10128</y-offset-m><!--up-->
+			<z-offset-m type="double">-1.21520</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+                      <heading-offset-deg>-270</heading-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="102">
+			<name>Passenger Right</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double"> 0.78215</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.10128</y-offset-m><!--up-->
+			<z-offset-m type="double">-1.21520</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+                      <heading-offset-deg>-90</heading-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="103">
+			<name>Passenger</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double">-0.78215</x-offset-m><!--left-->
+		      <y-offset-m type="double">-0.06290</y-offset-m><!--up-->
+			<z-offset-m type="double">-0.13796</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<default-field-of-view-deg type="double">110.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+           <view n="104">
+			<name>FLIR</name>
+			<type>lookfrom</type>
+			<internal type="bool">true</internal>
+			<config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+                  <x-offset-m type="double">0.0</x-offset-m><!--left-->
+		      <y-offset-m type="double">-1.73</y-offset-m><!--up-->
+			<z-offset-m type="double">-3.8918</z-offset-m><!--back-->
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<default-field-of-view-deg type="double">120.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="1">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="2">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="3">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="4">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="5">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="6">
+			<config>
+				<target-z-offset-m archive="y" type="double">-1</target-z-offset-m>
+			</config>
+		</view>
+
+
+		<weight n="0">
+			<name>Pilot</name>
+			<weight-lb>180</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="1">
+			<name>Co-Pilot</name>
+			<weight-lb>180</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+				
+		<weight n="2">
+			<name>load</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>4400</max-lb>
+		</weight>
+
+           <weight n="3">
+                <name>AW149 Configuration</name>
+                <weight-lb>0</weight-lb>
+                <selected>Basic Configuration</selected>
+
+             <opt>
+                <name>Basic Configuration</name>
+                <lbs>0</lbs>
+             </opt>
+
+             <opt>
+                <name>Attack Configuration</name>
+                <lbs>350</lbs>
+             </opt>
+           </weight>
+
+		<help>
+           <title>Leonardo AW189</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>}</name>
+    <desc>Autostart</desc>
+  </key>
+  <key>
+    <name>{</name>
+    <desc>Autostop</desc>
+  </key>
+  <key>
+    <name>S | s</name>
+    <desc>Side Doors</desc>
+  </key>
+  <key>
+    <name>D | d</name>
+    <desc>Side Doors</desc>
+  </key>
+  <key>
+    <name>R</name>
+    <desc>Toggle Rotor Brake</desc>
+  </key>
+  <key>
+    <name>r</name>
+    <desc>Apply Rotor Brake</desc>
+  </key>
+  <key>
+    <name>Ctrl-d</name>
+    <desc>Control SAS</desc>
+  </key>
+  <key>
+    <name>Ctrl-f</name>
+    <desc>Auto hovering</desc>
+  </key>
+  <key>
+    <name>i</name>
+    <desc>Toggle Ignition Switch</desc>
+  </key>
+  <key>
+    <name>V</name>
+    <desc>Toggle Dinamic Cockpit View</desc>
+  </key>
+  <key>
+    <name>Q</name>
+    <desc>Reset View</desc>
+  </key>
+  <key>
+    <name>F</name>
+    <desc>Deploy Emergency Floats</desc>
+  </key>
+  <key>
+    <name>q</name>
+    <desc>AW149: Flares Launch</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>AW149: Guns fire</desc>
+  </key>
+  <key>
+    <name>n | m</name>
+    <desc>AW149: Rockets Launch</desc>
+  </key>
+		</help>
+		
+		<menubar>
+			<default>
+				 <menu n="10">
+      <label>AW189</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Autostart</label>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/beacon</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/luminosite-lights</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/nav-lights</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/strobe-lights</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/map-lights</property>
+        <value>1</value>
+      </binding>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw189.startup()</script>
+	   <condition>
+		<property>/sim/signals/fdm-initialized</property>
+	   </condition>
+	 </binding>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw139.cas.toggleEnable();</script>
+	 </binding>
+      </item>
+      <item>
+        <label>Autostop</label>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/beacon</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/luminosite-lights</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/nav-lights</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/strobe-lights</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/map-lights</property>
+        <value>0</value>
+      </binding>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw189.shutdown()</script>
+	   <condition>
+		<property>/sim/signals/fdm-initialized</property>
+	   </condition>
+	 </binding>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw139.cas.toggleEnable();</script>
+	 </binding>
+      </item>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <!-- <item>
+        <label>Show/Hide GSDI</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-gsdi</property>
+        </binding>
+      </item> -->
+      <item>
+        <label>Show/hide Copilot</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/show-copilot</property>
+        </binding>
+      </item>
+      <item>
+        <label>Air Intakes EAPS</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/EAPS</property>
+        </binding>
+      </item>
+      <item>
+        <label>Landing Gear Skids</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/Plates</property>
+        </binding>
+      </item>
+      <item>
+        <label>HEMS Configuration</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/HEMS</property>
+        </binding>
+      </item>
+      <item>
+        <label>ATOS Configuration</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/ATOS</property>
+        </binding>
+      </item>
+				</menu>
+			</default>
+		</menubar>
+	</sim>
+
+	<consumables>
+		<fuel>
+			<tank>
+				<name>Main</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+
+			<tank>
+				<name>Supply</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+		</fuel>
+	</consumables>
+
+	<controls>
+		<rotor>
+			<reltarget type="double">0</reltarget>
+			<maxreltorque type="double">0</maxreltorque>
+		</rotor>
+
+           <gear>
+                 <brake-parking type="double">1</brake-parking>
+           </gear>
+		
+	<engines>
+			<engine n="0">
+				<magnetos>1</magnetos>
+				<propeller-pitch alias="/controls/engines/power-trim"/>
+				<mixture alias="/controls/engines/power-balance"/>
+			</engine>
+			<engine n="1">
+				<magnetos>1</magnetos>
+				<propeller-pitch alias="/controls/engines/power-trim"/>
+				<mixture alias="/controls/engines/power-balance"/>
+				<throttle alias="/controls/engines/engine[0]/throttle"/>
+			</engine>
+			<power-trim type="double">0</power-trim>
+			<power-balance type="double">0</power-balance>
+	</engines>
+
+	<lighting>
+        <instrument-lights type="bool">false</instrument-lights>
+	   <strobe type="bool">true</strobe>
+        <beacon type="bool">true</beacon>
+	   <nav-lights type="bool">true</nav-lights>
+	</lighting>
+	</controls>
+
+	<instrumentation>
+		<gsdi>
+			<serviceable type="bool">true</serviceable>
+		</gsdi>
+		<hsi>
+			<serviceable type="bool" archive="y">true</serviceable>
+		</hsi>
+           <radar>
+    <serviceable                      type="bool" archive="y">true</serviceable>
+    <switch                           type="string" archive="y">off</switch>
+    <mode-control                     type="int" archive="y">3</mode-control>
+    <range                            type="int" archive="y">20</range>
+    <mode                             type="string" archive="y">WX</mode>
+    <heading-marker                   type="bool" archive="y">false</heading-marker>
+    <lightning                        type="bool" archive="y">false</lightning>
+    <display-mode                     type="string">ARC</display-mode>
+    <display-controls>
+      <WX                             type="bool" archive="y">false</WX>
+      <data                           type="bool" archive="y">false</data>
+      <pos                            type="bool" archive="y">true</pos>
+    </display-controls>
+  </radar>
+	</instrumentation>
+
+	<input>
+		<keyboard>
+
+           <key n="83">
+             <name>S</name>
+             <desc>Left Copilot Door</desc>
+             <binding>
+               <command>nasal</command>
+               <script>aw189.leftFrontDoor.toggle();</script>
+             </binding>
+           </key>
+
+           <key n="115">
+             <name>s</name>
+             <desc>Right pilot Door</desc>
+             <binding>
+               <command>nasal</command>
+               <script>aw189.rightFrontDoor.toggle();</script>
+             </binding>
+           </key>
+		
+           <key n="68">
+             <name>D</name>
+             <desc>Left Door</desc>
+             <binding>
+               <command>nasal</command>
+               <script>aw189.leftSlideDoor.toggle();</script>
+             </binding>
+           </key>
+
+           <key n="100">
+             <name>d</name>
+             <desc>Right Door</desc>
+             <binding>
+               <command>nasal</command>
+               <script>aw189.rightSlideDoor.toggle();</script>
+             </binding>
+           </key>
+
+           <key n="113">
+      <name>q</name>
+      <desc>Trigger flare release</desc>
+      <condition>
+          <property>sim/model/aw189/Countermeasures</property>
+        </condition>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/armament/flares-release</property>
+        <value type="bool">true</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/armament/flares-release</property>
+          <value type="bool">false</value>
+        </binding>
+      </mod-up>
+    </key>
+
+    <key n="101">
+      <name>e</name>
+      <desc>Fire machine guns</desc>
+      <binding>
+        <condition>
+          <property>sim/model/aw189/AW149</property>
+        </condition>
+        <command>nasal</command>
+        <script>turrets.fire_MG()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>turrets.stop_MG()</script>
+        </binding>
+      </mod-up>
+    </key>
+
+    <key n="110">
+      <name>n</name>
+      <condition>
+        <condition>
+          <property>sim/model/aw189/AW149</property>
+        </condition>
+      </condition>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/armament/rocketL</property>
+        <value type="bool">true</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/armament/rocketL</property>
+          <value type="bool">false</value>
+        </binding>
+      </mod-up>
+    </key>
+
+    <key n="109">
+      <name>m</name>
+      <condition>
+          <property>sim/model/aw189/AW149</property>
+        </condition>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/armament/rocketR</property>
+        <value type="bool">true</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/armament/rocketR</property>
+          <value type="bool">false</value>
+        </binding>
+      </mod-up>
+    </key>
+
+    <key n="70">
+             <name>F</name>
+             <desc>Emergency Floats</desc>
+             <binding>
+               <command>property-toggle</command>
+               <property>sim/model/show-Emergency</property>
+             </binding>
+           </key>
+
+           <key n="81">
+      <name>Q</name>
+      <desc>Reset view</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop("sim/current-view/field-of-view",      getprop("sim/current-view/config/default-field-of-view-deg"));
+          setprop("sim/current-view/heading-offset-deg", getprop("sim/current-view/config/heading-offset-deg"));
+          setprop("sim/current-view/pitch-offset-deg",   getprop("sim/current-view/config/pitch-offset-deg"));
+          setprop("sim/current-view/roll-offset-deg",    getprop("sim/current-view/config/roll-offset-deg"));
+        </script>
+      </binding>
+    </key>
+		
+<key n="4">
+    <name>Ctrl-d</name>
+    <desc>Toggle SAS enabled</desc>
+    <binding>
+      <command>nasal</command>
+      <script>aw139.sas.toggleEnable();</script>
+    </binding>
+  </key>
+
+  <key n="5">
+      <name>Ctrl-e</name>
+      <desc>Toggle CAS enabled</desc>
+      <binding>
+	   <command>nasal</command>
+	   <script>aw139.cas.toggleEnable();</script>
+	 </binding>
+    </key>
+
+   <!-- only needed for test flights and bug hunting --> 
+ <key n="6">
+    <name>Ctrl-f</name>
+    <desc>Toggle AutoHover</desc>
+    <binding>
+      <command>nasal</command>
+      <script>aw189.afcs.toggleAutoHover();</script>
+   </binding>
+    <binding>
+      <command>nasal</command>
+      <script>aw139.cas.toggleEnable();</script>
+    </binding>
+  </key>
+			
+			<key n="82">
+				<name>R</name>
+				<desc>Toggle rotor brake</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
+						var p = "/controls/rotor/brake";
+						setprop(p, !getprop(p));
+					</script>
+				</binding>
+			</key>
+			
+			<key n="105">
+				<name>i</name>
+				<desc>Toggle ignition switch</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
+						foreach (var e; controls.engines) {
+							if (e.selected.getValue()) {
+								var i = e.controls.getNode("ignition", 1);
+								i.setValue(!i.getValue());
+							}
+						}
+					</script>
+				</binding>
+			</key>
+
+			<key n="114">
+				<name>r</name>
+				<desc>Apply rotor brake</desc>
+				<binding>
+					<command>nasal</command>
+					<script>interpolate("/controls/rotor/brake", 1.0, 2)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>interpolate("/controls/rotor/brake", 0.0, 2)</script>
+					</binding>
+				</mod-up>
+			</key>
+
+			<key n="118">
+				<name>Alt-v</name>
+				<desc>Toggle dynamic cockpit view</desc>
+				<mod-alt>
+					<binding>
+						<command>property-toggle</command>
+						<property>/sim/view/dynamic/enabled</property>
+					</binding>
+				</mod-alt>
+			</key>
+
+			<key n="123">
+				<name>{</name>
+				<desc>Shutdown Engines</desc>
+				<binding>
+					<command>nasal</command>
+					<script>aw139.shutdown()</script>
+					<condition>
+						<property>/sim/signals/fdm-initialized</property>
+					</condition>
+				</binding>
+				<binding>
+      <command>nasal</command>
+      <script>aw139.cas.toggleEnable();</script>
+    </binding>
+			</key>
+
+			<key n="125">
+				<name>}</name>
+				<desc>Start Engines</desc>
+				<binding>
+					<command>nasal</command>
+					<script>aw139.startup()</script>
+					<condition>
+						<property>/sim/signals/fdm-initialized</property>
+					</condition>
+				</binding>
+				
+				<binding>
+      <command>nasal</command>
+      <script>aw139.cas.toggleEnable();</script>
+    </binding>
+			</key>
+		</keyboard>
+	</input>
+
+	<nasal>
+		<aw139>
+			<!-- file>Aircraft/aw139/Nasal/aw139.nas</file -->
+			<file>Aircraft/aw139/Nasal/fcs2.nas</file>
+			<file>Aircraft/aw139/Nasal/casdisable.nas</file>
+                <file>Aircraft/aw139/Nasal/map.nas</file>
+		</aw139>
+		<aw189>
+			<file>Aircraft/aw139/Nasal/aw189.nas</file>
+                <file>Aircraft/aw139/Nasal/doors.nas</file>
+		</aw189>
+           <liveries>
+                <file>Aircraft/aw139/Nasal/liveries_189.nas</file>
+           </liveries>
+           <radar>
+                <file>Aircraft/aw139/Nasal/radar.nas</file>
+           </radar>
+           <terrain-map>
+                <file>Aircraft/aw139/Nasal/terrain-map.nas</file>
+           </terrain-map>
+	</nasal>
+
+	<rotors>
+		<main>
+			<rpm type="double">0</rpm>
+		</main>
+	</rotors>
+
+</PropertyList>
