@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- POD Guns -->
+  <model>
+    <name>PODLeft</name>
+    <path>fire.xml</path>
+    <condition>
+      <property>controls/armament/trigger</property>
+    </condition>
+    <offsets>
+      <x-m> -0.25342 </x-m>
+      <y-m> -2.18420 </y-m>
+      <z-m> -0.21608 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>PODRight</name>
+    <path>fire.xml</path>
+    <condition>
+      <property>controls/armament/trigger</property>
+    </condition>
+    <offsets>
+      <x-m> -0.25342 </x-m>
+      <y-m>  2.18420 </y-m>
+      <z-m> -0.21608 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Right Gunner -->
+  <model>
+    <name>RightGunner</name>
+    <path>fire.xml</path>
+    <condition>
+      <property>controls/armament/trigger2</property>
+    </condition>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightGunner</object-name>
+    <property>sim/model/turret[1]/heading</property>
+    <center>
+      <x-m> 2.100 </x-m>
+      <y-m> 0.590 </y-m>
+      <z-m> 0.480 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightGunner</object-name>
+    <property>sim/model/turret[1]/pitch</property>
+    <center>
+      <x-m> 2.100 </x-m>
+      <y-m> 0.590 </y-m>
+      <z-m> 0.480 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -43,8 +43,7 @@
 
   <!-- GUNS -->
   <cannon>
-    <model>Aircraft/aw139/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
+    <model>Aircraft/aw139/Models/Effects/guns/bullet/apibullet-tracer.xml</model>
     <speed>2755.9</speed>
     <repeat>true</repeat>
     <delay>0.15</delay>
@@ -62,13 +61,13 @@
     <impact>true</impact>
     <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
     <impact-reports>sim/ai/aircraft/collision/cannon</impact-reports>
-    <submodel-path>Aircraft/aw139/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+    <submodel-path>Aircraft/aw139/Models/Effects/guns/bullet/bullet-submodel.xml</submodel-path>
   </cannon>
 
   <submodel>
     <name>Gun left</name>
     <model alias="../../cannon/model"/>
-    <trigger alias="../../cannon/trigger"/>
+    <trigger>controls/armament/trigger</trigger>
     <speed alias="../../cannon/speed"/>
     <repeat alias="../../cannon/repeat"/>
     <delay alias="../../cannon/delay"/>
@@ -96,7 +95,7 @@
   <submodel>
     <name>Gun right</name>
     <model alias="../../cannon/model"/>
-    <trigger alias="../../cannon/trigger"/>
+    <trigger>controls/armament/trigger</trigger>
     <speed alias="../../cannon/speed"/>
     <repeat alias="../../cannon/repeat"/>
     <delay alias="../../cannon/delay"/>
@@ -119,6 +118,34 @@
     <impact-report alias="../../cannon/impact-report"/>
     <impact-reports alias="../../cannon/impact-reports"/>
     <submodel-path alias="../../cannon/submodel-path"/>
+  </submodel>
+
+  <submodel>
+    <name>Right AW-139M Gun</name>
+    <model         alias="../../cannon/model"/>
+    <trigger>controls/armament/trigger2</trigger>
+    <speed         alias="../../cannon/speed"/>
+    <cd            alias="../../cannon/cd"/>
+    <eda           alias="../../cannon/eda"/>
+    <fuse-range    alias="../../cannon/fuse-range"/>
+    <weight        alias="../../cannon/weight"/>
+    <life          alias="../../cannon/life"/>
+    <repeat        alias="../../cannon/repeat"/>
+    <delay         alias="../../cannon/delay"/>
+    <count         alias="../../cannon/count"/>
+    <wind          alias="../../cannon/wind"/>
+    <expiry        alias="../../cannon/expiry"/>
+    <collision     alias="../../cannon/collision"/>
+    <impact        alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <animation     alias="../../cannon/animation"/>
+    <offsets>
+      <x-m> -1.21520 </x-m>
+      <y-m>  1.11110 </y-m>
+      <z-m> -0.49108 </z-m>
+      <heading-deg>sim/model/turret[1]/heading</heading-deg>
+      <pitch-deg>sim/model/turret[1]/pitch</pitch-deg>
+    </offsets>
   </submodel>
 
   <!-- ROCKETS -->  
