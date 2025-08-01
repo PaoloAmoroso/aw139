@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+       <model>
+	   <livery>
+		<name type="string">White</name>
+		<texture>Liveries_189/White.png</texture>
+	   </livery>
+	   <aw189>
+           <Civilian type="bool">true</Civilian>
+           <Military type="bool">false</Military>
+           <shortnose>false</shortnose>
+           <longnose>true</longnose>
+           <radome type="bool">false</radome>
+           <antenna1>true</antenna1>
+           <antenna2>true</antenna2>
+           <antenna3>true</antenna3>
+           <FLIR>false</FLIR>
+           <winch>false</winch>
+           <hook>true</hook>
+           <floats>true</floats>
+		<searchlight_front>false</searchlight_front>
+           <wirecutter>true</wirecutter>
+           <Countermeasures>false</Countermeasures>
+		<hide-gsdi>true</hide-gsdi>
+           <AW149 type="bool">false</AW149>
+             <rotor>
+		    <texture>black.png</texture>
+		  </rotor>
+	   </aw189>
+	  </model>
+	  <rendering>
+         <refl_correction type="string">1.0</refl_correction>
+        </rendering>
+	</sim>
+
+</PropertyList>
