@@ -68,6 +68,7 @@
     <object-name>upperduct</object-name>
     <object-name>exhaust</object-name>
     <object-name>EAPS</object-name>
+    <object-name>HIRSS</object-name>
     <object-name>front-doorL</object-name>
     <object-name>front-doorR</object-name>
     <object-name>fdoorhL</object-name>
@@ -939,6 +940,14 @@
 	<object-name>antenna3</object-name>
 	<condition>
 		<property>sim/model/aw139/antenna3</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>HIRSS</object-name>
+	<condition>
+		<property>sim/model/aw139/HIRSS</property>
 	</condition>
 </animation>
 
