@@ -69,6 +69,9 @@
     <object-name>upperduct</object-name>
     <object-name>exhaust</object-name>
     <object-name>EAPS</object-name>
+    <object-name>HIRSS</object-name>
+    <object-name>HIRSS_Exaust</object-name>
+    <object-name>HIRSS_Suppressor</object-name>
     <object-name>front-doorL</object-name>
     <object-name>front-doorR</object-name>
     <object-name>fdoorhL</object-name>
@@ -943,12 +946,29 @@
 	</condition>
 </animation>
 
+<animation>
+	<type>select</type>
+	<object-name>HIRSS</object-name>
+	<condition>
+		<property>sim/model/aw189/HIRSS1</property>
+	</condition>
+</animation>
+
 <!-- AW149 External Devices -->
 <animation>
 	<type>select</type>
 	<object-name>Countermeasures</object-name>
 	<condition>
 		<property>sim/model/aw189/Countermeasures</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>HIRSS_Exaust</object-name>
+	<object-name>HIRSS_Suppressor</object-name>
+	<condition>
+		<property>sim/model/aw189/HIRSS2</property>
 	</condition>
 </animation>
 
