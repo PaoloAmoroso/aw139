@@ -24,6 +24,7 @@
 		<searchlight_front>true</searchlight_front>
            <wirecutter>false</wirecutter>
            <Countermeasures>false</Countermeasures>
+           <HIRSS>false</HIRSS>
 		<hide-gsdi>true</hide-gsdi>
            <AW139M type="bool">false</AW139M>
              <rotor>

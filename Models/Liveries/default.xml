@@ -23,6 +23,7 @@
 				<wirecutter>false</wirecutter>
 				<FLIR>false</FLIR>
                       <Countermeasures>false</Countermeasures>
+                      <HIRSS>false</HIRSS>
                       <AW139M type="bool">false</AW139M>
 				<reardoor_right>true</reardoor_right>
 				<reardoor_left>true</reardoor_left>

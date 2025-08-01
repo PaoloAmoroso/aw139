@@ -4,13 +4,8 @@
 	<sim>
        <model>
 	   <livery>
-		<name type="string">I-AWIT, Leonardo</name>
-		<texture>Liveries/Leonardo.png</texture>
-           <specular>
-            <red>   0.5 </red>
-            <green> 0.5 </green>
-            <blue>  0.5 </blue>
-           </specular>
+		<name type="string">I-CDDL, Mediaset</name>
+		<texture>Liveries/I-CDDL.png</texture>
 	   </livery>
 	   <aw139>
            <Civilian type="bool">true</Civilian>
