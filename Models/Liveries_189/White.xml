@@ -24,6 +24,8 @@
            <wirecutter>true</wirecutter>
            <Countermeasures>false</Countermeasures>
 		<hide-gsdi>true</hide-gsdi>
+           <HIRSS1>true</HIRSS1>
+           <HIRSS2>false</HIRSS2>
            <AW149 type="bool">false</AW149>
              <rotor>
 		    <texture>black.png</texture>

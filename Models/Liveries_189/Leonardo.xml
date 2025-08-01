@@ -4,7 +4,7 @@
 	<sim>
        <model>
 	   <livery>
-		<name type="string">Leonardo</name>
+		<name type="string">I-RAIH, Leonardo</name>
 		<texture>Liveries_189/Leonardo.png</texture>
 	   </livery>
 	   <aw189>
@@ -23,6 +23,8 @@
 		<searchlight_front>false</searchlight_front>
            <wirecutter>false</wirecutter>
            <Countermeasures>false</Countermeasures>
+           <HIRSS1>true</HIRSS1>
+           <HIRSS2>false</HIRSS2>
 		<hide-gsdi>true</hide-gsdi>
            <AW149 type="bool">false</AW149>
              <rotor>
