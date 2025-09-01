@@ -41,66 +41,141 @@
     </offsets>
   </model>
 
-     <text>
-        <name>ALT</name>
-        <font>lucida.txf</font>
-        <character-size type="double">0.007</character-size> 
-        <type type="string">number-value</type>
-        <property type="string">position/altitude-ft</property>
-        <factor type="double">1.0</factor> 
-        <!-- optional, scale the property's value -->
-        <offset type="double">0.0</offset> 
-        <!-- optional, shift the property's value -->
-        <format type="string">GPS Alt: %1.0lf ft</format> 
-        <!-- sprintf() format to display -->
-        <truncate type="bool">false</truncate> 
-        <!-- truncate to an integer value -->
-        <font-resolution>
-            <width type="int">32</width>
-            <height type="int">32</height>
-        </font-resolution>
-        <offsets>
-            <x-m>  0.173410 </x-m>
-            <y-m> -0.050228 </y-m>
-            <z-m>  0.150000 </z-m>
-            <pitch-deg>31</pitch-deg>
-            <heading-deg>0</heading-deg>
-            <roll-deg>90</roll-deg>
-        </offsets>
-    </text>
+  <text>
+    <name>APT</name>
+    <font>lcd.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> 0.213 </x-m>
+      <y-m> 0.262 </y-m>
+      <z-m> 0.219 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/airport/closest-airport-id</property>
+    <alignment>left-center</alignment>
+  </text>
 
-    <text>
-        <name>SPD</name>
-        <font>lucida.txf</font>
-        <character-size type="double">0.007</character-size> 
-        <type type="string">number-value</type>
-        <property type="string">instrumentation/airspeed-indicator/indicated-speed-kt</property>
-        <factor type="double">1.0</factor> 
-        <!-- optional, scale the property's value -->
-        <offset type="double">0.0</offset> 
-        <!-- optional, shift the property's value -->
-        <format type="string">Ind Spd: %1.0lf kt</format> 
-        <!-- sprintf() format to display -->
-        <truncate type="bool">false</truncate> 
-        <!-- truncate to an integer value -->
-        <font-resolution>
-            <width type="int">32</width>
-            <height type="int">32</height>
-        </font-resolution>
-        <offsets>
-            <x-m>  0.167280 </x-m>
-            <y-m> -0.050228 </y-m>
-            <z-m>  0.140140 </z-m>
-            <pitch-deg>31</pitch-deg>
-            <heading-deg>0</heading-deg>
-            <roll-deg>90</roll-deg>
-        </offsets>
-    </text>
+  <text>
+    <name>ALT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.173410 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.150000 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">ALT: %1.0lf ft</format> 
+    <truncate type="bool">false</truncate>
+    <property>position/altitude-ft</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>AGL</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.168670 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.141980 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">AGL: %1.0lf ft</format> 
+    <truncate type="bool">false</truncate>
+    <property>position/altitude-agl-ft</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.168670 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.133960 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">SPD: %1.0lf kt</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>GS</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.168670 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.125940 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">GS: %1.0lf kt</format>
+    <truncate type="bool">false</truncate>
+    <property>velocities/groundspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.008</character-size>
+    <offsets>
+      <x-m>  0.108900 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.042683 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">LAT: %3.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/gps/indicated-latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.008</character-size>
+    <offsets>
+      <x-m>  0.103510 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.034663 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">LON: %3.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/gps/indicated-longitude-deg</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
 
   <animation>
     <type>material</type>
     <object-name>ALT</object-name>
+    <object-name>AGL</object-name>
     <object-name>SPD</object-name>
+    <object-name>GS</object-name>
+    <object-name>LAT</object-name>
+    <object-name>LON</object-name>
+    <object-name>APT</object-name>
     <condition>
       <property>controls/electric/battery-switch</property>
     </condition>
@@ -190,7 +265,12 @@
     <type>select</type>
     <object-name>AI</object-name>
     <object-name>ALT</object-name>
+    <object-name>AGL</object-name>
     <object-name>SPD</object-name>
+    <object-name>GS</object-name>
+    <object-name>LAT</object-name>
+    <object-name>LON</object-name>
+    <object-name>APT</object-name>
     <object-name>canvasCadre</object-name>
     <object-name>Radar_A</object-name>
     <object-name>Radar_G</object-name>
