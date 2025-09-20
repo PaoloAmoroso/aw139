@@ -202,6 +202,43 @@
     </emission>
   </animation>
 
+  <!-- Radar -->
+  <model>
+    <name>Radar_A</name>
+    <path>radar/nd.xml</path>
+    <offsets>
+      <x-m> 0.16858 </x-m>
+      <y-m> 0.10344 </y-m>
+      <z-m> 0.15052 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>List</name>
+    <path>radar/Text.xml</path>
+    <offsets>
+      <x-m>  0.18000 </x-m>
+      <y-m> -0.19214 </y-m>
+      <z-m>  0.12839 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>Radar_A</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
   <!-- Ground Map/Radar -->
   <model>
     <name>Radar_G</name>
@@ -234,32 +271,6 @@
     </offsets>
   </model>
 
-  <!-- Radar -->
-  <model>
-    <name>Radar_A</name>
-    <path>radar/nd.xml</path>
-    <offsets>
-      <x-m> 0.16858 </x-m>
-      <y-m> 0.10344 </y-m>
-      <z-m> 0.15052 </z-m>
-      <pitch-deg> 31 </pitch-deg>
-    </offsets>
-  </model>
-
-  <animation>
-    <type>material</type>
-    <object-name>Radar_A</object-name>
-    <condition>
-      <property>controls/electric/battery-switch</property>
-    </condition>
-    <emission>
-      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.40 </green>
-      <blue>  0.30 </blue>
-    </emission>
-  </animation>
-
   <!-- MAP Activation (Turn On/Off) -->
     <animation>
     <type>select</type>
@@ -275,6 +286,7 @@
     <object-name>Radar_A</object-name>
     <object-name>Radar_G</object-name>
     <object-name>Radar_S</object-name>
+    <object-name>List</object-name>
     <condition>
       <property>sim/model/show-map</property>
     </condition>
@@ -344,7 +356,7 @@
     </axis>
   </animation>
 
-  <!-- Terrain Radar Mode Map/SLAR -->
+  <!-- Terrain Radar Mode Map/SLAR/List -->
 
   <animation>
     <type>pick</type>
@@ -354,8 +366,12 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>property-toggle</command>
+        <command>property-adjust</command>
         <property>sim/model/RadarMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
       </binding>
     </action>
   </animation>
@@ -393,6 +409,17 @@
       <equals>
         <property>sim/model/RadarMode</property>
         <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>List</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/RadarMode</property>
+        <value>2</value>
       </equals>
     </condition>
   </animation>
