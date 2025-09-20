@@ -1,0 +1,4694 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- DISPLAY RADAR TEXT -->
+
+  <text>
+    <name>TITLE_1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">RADAR CONTACT LIST</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TARGET</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">TARGET</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TARGET_1A</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">MP</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TARGET_1B</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">AI</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TARGET_1C</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">CV</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALLSIGN</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">CALLSIGN</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">TYPE</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">HDG</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">DIST</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">BRNG</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">SPD-KT</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">ALT-FT</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MODE</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">MODE</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MODE_0</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">TRF</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MODE_1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">ID</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MODE_2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">NAV</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>TITLE_1</object-name>
+    <object-name>CALLSIGN</object-name>
+    <object-name>TYPE</object-name>
+    <object-name>HDG</object-name>
+    <object-name>DIST</object-name>
+    <object-name>BRNG</object-name>
+    <object-name>SPD</object-name>
+    <object-name>ALT</object-name>
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>TARGET</object-name>
+    <object-name>MODE</object-name>
+    <ambient>
+      <red>   0.0 </red>
+      <green> 0.5 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.4 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>TARGET_1A</object-name>
+    <object-name>TARGET_1B</object-name>
+    <object-name>TARGET_1C</object-name>
+    <object-name>MODE_0</object-name>
+    <object-name>MODE_1</object-name>
+    <object-name>MODE_2</object-name>
+    <ambient>
+      <red>   0.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.0 </red>
+      <green> 0.3 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>TARGET_1A</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>TARGET_1B</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>TARGET_1C</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_0</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_1</object-name>
+    <object-name>TYPE</object-name>
+    <object-name>DIST</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_2</object-name>
+    <object-name>HDG</object-name>
+    <object-name>BRNG</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- MP Aircraft -->
+  <text>
+    <name>CALL-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[0]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[1]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[2]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[3]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[4]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[5]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[6]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[7]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[8]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[9]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[0]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[1]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[3]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[4]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[5]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[6]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[7]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[8]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/multiplayer[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[0]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[1]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[2]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[3]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[4]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[5]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[6]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[7]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[8]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/multiplayer[9]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[0]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[1]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[2]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[3]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[4]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[5]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[6]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[7]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[8]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[9]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[0]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[1]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[2]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[3]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[4]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[5]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[6]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[7]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[8]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[9]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[0]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[1]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[2]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[3]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[4]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[5]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[6]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[7]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[8]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/multiplayer[9]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[0]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[1]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[2]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[3]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[4]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[5]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[6]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[7]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[8]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[9]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <name>MP-LIST</name>
+    <object-name>CALL-1</object-name>
+    <object-name>CALL-2</object-name>
+    <object-name>CALL-3</object-name>
+    <object-name>CALL-4</object-name>
+    <object-name>CALL-5</object-name>
+    <object-name>CALL-6</object-name>
+    <object-name>CALL-7</object-name>
+    <object-name>CALL-8</object-name>
+    <object-name>CALL-9</object-name>
+    <object-name>CALL-10</object-name>
+
+    <object-name>TYPE-1</object-name>
+    <object-name>TYPE-2</object-name>
+    <object-name>TYPE-3</object-name>
+    <object-name>TYPE-4</object-name>
+    <object-name>TYPE-5</object-name>
+    <object-name>TYPE-6</object-name>
+    <object-name>TYPE-7</object-name>
+    <object-name>TYPE-8</object-name>
+    <object-name>TYPE-9</object-name>
+    <object-name>TYPE-10</object-name>
+
+    <object-name>HDG-1</object-name>
+    <object-name>HDG-2</object-name>
+    <object-name>HDG-3</object-name>
+    <object-name>HDG-4</object-name>
+    <object-name>HDG-5</object-name>
+    <object-name>HDG-6</object-name>
+    <object-name>HDG-7</object-name>
+    <object-name>HDG-8</object-name>
+    <object-name>HDG-9</object-name>
+    <object-name>HDG-10</object-name>
+
+    <object-name>DIST-1</object-name>
+    <object-name>DIST-2</object-name>
+    <object-name>DIST-3</object-name>
+    <object-name>DIST-4</object-name>
+    <object-name>DIST-5</object-name>
+    <object-name>DIST-6</object-name>
+    <object-name>DIST-7</object-name>
+    <object-name>DIST-8</object-name>
+    <object-name>DIST-9</object-name>
+    <object-name>DIST-10</object-name>
+
+    <object-name>BRNG-1</object-name>
+    <object-name>BRNG-2</object-name>
+    <object-name>BRNG-3</object-name>
+    <object-name>BRNG-4</object-name>
+    <object-name>BRNG-5</object-name>
+    <object-name>BRNG-6</object-name>
+    <object-name>BRNG-7</object-name>
+    <object-name>BRNG-8</object-name>
+    <object-name>BRNG-9</object-name>
+    <object-name>BRNG-10</object-name>
+
+    <object-name>SPD-1</object-name>
+    <object-name>SPD-2</object-name>
+    <object-name>SPD-3</object-name>
+    <object-name>SPD-4</object-name>
+    <object-name>SPD-5</object-name>
+    <object-name>SPD-6</object-name>
+    <object-name>SPD-7</object-name>
+    <object-name>SPD-8</object-name>
+    <object-name>SPD-9</object-name>
+    <object-name>SPD-10</object-name>
+
+    <object-name>ALT-1</object-name>
+    <object-name>ALT-2</object-name>
+    <object-name>ALT-3</object-name>
+    <object-name>ALT-4</object-name>
+    <object-name>ALT-5</object-name>
+    <object-name>ALT-6</object-name>
+    <object-name>ALT-7</object-name>
+    <object-name>ALT-8</object-name>
+    <object-name>ALT-9</object-name>
+    <object-name>ALT-10</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>CALL-1</object-name>
+    <object-name>CALL-2</object-name>
+    <object-name>CALL-3</object-name>
+    <object-name>CALL-4</object-name>
+    <object-name>CALL-5</object-name>
+    <object-name>CALL-6</object-name>
+    <object-name>CALL-7</object-name>
+    <object-name>CALL-8</object-name>
+    <object-name>CALL-9</object-name>
+    <object-name>CALL-10</object-name>
+
+    <object-name>TYPE-1</object-name>
+    <object-name>TYPE-2</object-name>
+    <object-name>TYPE-3</object-name>
+    <object-name>TYPE-4</object-name>
+    <object-name>TYPE-5</object-name>
+    <object-name>TYPE-6</object-name>
+    <object-name>TYPE-7</object-name>
+    <object-name>TYPE-8</object-name>
+    <object-name>TYPE-9</object-name>
+    <object-name>TYPE-10</object-name>
+
+    <object-name>HDG-1</object-name>
+    <object-name>HDG-2</object-name>
+    <object-name>HDG-3</object-name>
+    <object-name>HDG-4</object-name>
+    <object-name>HDG-5</object-name>
+    <object-name>HDG-6</object-name>
+    <object-name>HDG-7</object-name>
+    <object-name>HDG-8</object-name>
+    <object-name>HDG-9</object-name>
+    <object-name>HDG-10</object-name>
+
+    <object-name>DIST-1</object-name>
+    <object-name>DIST-2</object-name>
+    <object-name>DIST-3</object-name>
+    <object-name>DIST-4</object-name>
+    <object-name>DIST-5</object-name>
+    <object-name>DIST-6</object-name>
+    <object-name>DIST-7</object-name>
+    <object-name>DIST-8</object-name>
+    <object-name>DIST-9</object-name>
+    <object-name>DIST-10</object-name>
+
+    <object-name>BRNG-1</object-name>
+    <object-name>BRNG-2</object-name>
+    <object-name>BRNG-3</object-name>
+    <object-name>BRNG-4</object-name>
+    <object-name>BRNG-5</object-name>
+    <object-name>BRNG-6</object-name>
+    <object-name>BRNG-7</object-name>
+    <object-name>BRNG-8</object-name>
+    <object-name>BRNG-9</object-name>
+    <object-name>BRNG-10</object-name>
+
+    <object-name>SPD-1</object-name>
+    <object-name>SPD-2</object-name>
+    <object-name>SPD-3</object-name>
+    <object-name>SPD-4</object-name>
+    <object-name>SPD-5</object-name>
+    <object-name>SPD-6</object-name>
+    <object-name>SPD-7</object-name>
+    <object-name>SPD-8</object-name>
+    <object-name>SPD-9</object-name>
+    <object-name>SPD-10</object-name>
+
+    <object-name>ALT-1</object-name>
+    <object-name>ALT-2</object-name>
+    <object-name>ALT-3</object-name>
+    <object-name>ALT-4</object-name>
+    <object-name>ALT-5</object-name>
+    <object-name>ALT-6</object-name>
+    <object-name>ALT-7</object-name>
+    <object-name>ALT-8</object-name>
+    <object-name>ALT-9</object-name>
+    <object-name>ALT-10</object-name>
+
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_1</object-name>
+    <object-name>TYPE-1</object-name>
+    <object-name>TYPE-2</object-name>
+    <object-name>TYPE-3</object-name>
+    <object-name>TYPE-4</object-name>
+    <object-name>TYPE-5</object-name>
+    <object-name>TYPE-6</object-name>
+    <object-name>TYPE-7</object-name>
+    <object-name>TYPE-8</object-name>
+    <object-name>TYPE-9</object-name>
+    <object-name>TYPE-10</object-name>
+
+    <object-name>DIST-1</object-name>
+    <object-name>DIST-2</object-name>
+    <object-name>DIST-3</object-name>
+    <object-name>DIST-4</object-name>
+    <object-name>DIST-5</object-name>
+    <object-name>DIST-6</object-name>
+    <object-name>DIST-7</object-name>
+    <object-name>DIST-8</object-name>
+    <object-name>DIST-9</object-name>
+    <object-name>DIST-10</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_2</object-name>
+    <object-name>HDG-1</object-name>
+    <object-name>HDG-2</object-name>
+    <object-name>HDG-3</object-name>
+    <object-name>HDG-4</object-name>
+    <object-name>HDG-5</object-name>
+    <object-name>HDG-6</object-name>
+    <object-name>HDG-7</object-name>
+    <object-name>HDG-8</object-name>
+    <object-name>HDG-9</object-name>
+    <object-name>HDG-10</object-name>
+
+    <object-name>BRNG-1</object-name>
+    <object-name>BRNG-2</object-name>
+    <object-name>BRNG-3</object-name>
+    <object-name>BRNG-4</object-name>
+    <object-name>BRNG-5</object-name>
+    <object-name>BRNG-6</object-name>
+    <object-name>BRNG-7</object-name>
+    <object-name>BRNG-8</object-name>
+    <object-name>BRNG-9</object-name>
+    <object-name>BRNG-10</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- AI Aircraft -->
+  <text>
+    <name>CALL-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[0]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[1]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[2]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[3]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[4]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[5]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[6]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[7]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[8]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[9]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[0]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[1]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[3]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[4]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[5]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[6]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[7]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[8]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/aircraft[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[0]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[1]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[2]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[3]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[4]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[5]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[6]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[7]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[8]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/aircraft[9]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[0]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[1]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[2]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[3]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[4]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[5]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[6]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[7]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[8]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[9]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[0]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[1]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[2]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[3]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[4]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[5]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[6]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[7]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[8]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[9]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[1]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[2]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[3]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[4]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[5]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[6]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[7]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[8]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/aircraft[9]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[0]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[1]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[2]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[3]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[4]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[5]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[6]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[7]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[8]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[9]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <name>AI-LIST</name>
+    <object-name>CALL-1AI</object-name>
+    <object-name>CALL-2AI</object-name>
+    <object-name>CALL-3AI</object-name>
+    <object-name>CALL-4AI</object-name>
+    <object-name>CALL-5AI</object-name>
+    <object-name>CALL-6AI</object-name>
+    <object-name>CALL-7AI</object-name>
+    <object-name>CALL-8AI</object-name>
+    <object-name>CALL-9AI</object-name>
+    <object-name>CALL-10AI</object-name>
+
+    <object-name>TYPE-1AI</object-name>
+    <object-name>TYPE-2AI</object-name>
+    <object-name>TYPE-3AI</object-name>
+    <object-name>TYPE-4AI</object-name>
+    <object-name>TYPE-5AI</object-name>
+    <object-name>TYPE-6AI</object-name>
+    <object-name>TYPE-7AI</object-name>
+    <object-name>TYPE-8AI</object-name>
+    <object-name>TYPE-9AI</object-name>
+    <object-name>TYPE-10AI</object-name>
+
+    <object-name>HDG-1AI</object-name>
+    <object-name>HDG-2AI</object-name>
+    <object-name>HDG-3AI</object-name>
+    <object-name>HDG-4AI</object-name>
+    <object-name>HDG-5AI</object-name>
+    <object-name>HDG-6AI</object-name>
+    <object-name>HDG-7AI</object-name>
+    <object-name>HDG-8AI</object-name>
+    <object-name>HDG-9AI</object-name>
+    <object-name>HDG-10AI</object-name>
+
+    <object-name>DIST-1AI</object-name>
+    <object-name>DIST-2AI</object-name>
+    <object-name>DIST-3AI</object-name>
+    <object-name>DIST-4AI</object-name>
+    <object-name>DIST-5AI</object-name>
+    <object-name>DIST-6AI</object-name>
+    <object-name>DIST-7AI</object-name>
+    <object-name>DIST-8AI</object-name>
+    <object-name>DIST-9AI</object-name>
+    <object-name>DIST-10AI</object-name>
+
+    <object-name>BRNG-1AI</object-name>
+    <object-name>BRNG-2AI</object-name>
+    <object-name>BRNG-3AI</object-name>
+    <object-name>BRNG-4AI</object-name>
+    <object-name>BRNG-5AI</object-name>
+    <object-name>BRNG-6AI</object-name>
+    <object-name>BRNG-7AI</object-name>
+    <object-name>BRNG-8AI</object-name>
+    <object-name>BRNG-9AI</object-name>
+    <object-name>BRNG-10AI</object-name>
+
+    <object-name>SPD-1AI</object-name>
+    <object-name>SPD-2AI</object-name>
+    <object-name>SPD-3AI</object-name>
+    <object-name>SPD-4AI</object-name>
+    <object-name>SPD-5AI</object-name>
+    <object-name>SPD-6AI</object-name>
+    <object-name>SPD-7AI</object-name>
+    <object-name>SPD-8AI</object-name>
+    <object-name>SPD-9AI</object-name>
+    <object-name>SPD-10AI</object-name>
+
+    <object-name>ALT-1AI</object-name>
+    <object-name>ALT-2AI</object-name>
+    <object-name>ALT-3AI</object-name>
+    <object-name>ALT-4AI</object-name>
+    <object-name>ALT-5AI</object-name>
+    <object-name>ALT-6AI</object-name>
+    <object-name>ALT-7AI</object-name>
+    <object-name>ALT-8AI</object-name>
+    <object-name>ALT-9AI</object-name>
+    <object-name>ALT-10AI</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>CALL-1AI</object-name>
+    <object-name>CALL-2AI</object-name>
+    <object-name>CALL-3AI</object-name>
+    <object-name>CALL-4AI</object-name>
+    <object-name>CALL-5AI</object-name>
+    <object-name>CALL-6AI</object-name>
+    <object-name>CALL-7AI</object-name>
+    <object-name>CALL-8AI</object-name>
+    <object-name>CALL-9AI</object-name>
+    <object-name>CALL-10AI</object-name>
+
+    <object-name>TYPE-1AI</object-name>
+    <object-name>TYPE-2AI</object-name>
+    <object-name>TYPE-3AI</object-name>
+    <object-name>TYPE-4AI</object-name>
+    <object-name>TYPE-5AI</object-name>
+    <object-name>TYPE-6AI</object-name>
+    <object-name>TYPE-7AI</object-name>
+    <object-name>TYPE-8AI</object-name>
+    <object-name>TYPE-9AI</object-name>
+    <object-name>TYPE-10AI</object-name>
+
+    <object-name>HDG-1AI</object-name>
+    <object-name>HDG-2AI</object-name>
+    <object-name>HDG-3AI</object-name>
+    <object-name>HDG-4AI</object-name>
+    <object-name>HDG-5AI</object-name>
+    <object-name>HDG-6AI</object-name>
+    <object-name>HDG-7AI</object-name>
+    <object-name>HDG-8AI</object-name>
+    <object-name>HDG-9AI</object-name>
+    <object-name>HDG-10AI</object-name>
+
+    <object-name>DIST-1AI</object-name>
+    <object-name>DIST-2AI</object-name>
+    <object-name>DIST-3AI</object-name>
+    <object-name>DIST-4AI</object-name>
+    <object-name>DIST-5AI</object-name>
+    <object-name>DIST-6AI</object-name>
+    <object-name>DIST-7AI</object-name>
+    <object-name>DIST-8AI</object-name>
+    <object-name>DIST-9AI</object-name>
+    <object-name>DIST-10AI</object-name>
+
+    <object-name>BRNG-1AI</object-name>
+    <object-name>BRNG-2AI</object-name>
+    <object-name>BRNG-3AI</object-name>
+    <object-name>BRNG-4AI</object-name>
+    <object-name>BRNG-5AI</object-name>
+    <object-name>BRNG-6AI</object-name>
+    <object-name>BRNG-7AI</object-name>
+    <object-name>BRNG-8AI</object-name>
+    <object-name>BRNG-9AI</object-name>
+    <object-name>BRNG-10AI</object-name>
+
+    <object-name>SPD-1AI</object-name>
+    <object-name>SPD-2AI</object-name>
+    <object-name>SPD-3AI</object-name>
+    <object-name>SPD-4AI</object-name>
+    <object-name>SPD-5AI</object-name>
+    <object-name>SPD-6AI</object-name>
+    <object-name>SPD-7AI</object-name>
+    <object-name>SPD-8AI</object-name>
+    <object-name>SPD-9AI</object-name>
+    <object-name>SPD-10AI</object-name>
+
+    <object-name>ALT-1AI</object-name>
+    <object-name>ALT-2AI</object-name>
+    <object-name>ALT-3AI</object-name>
+    <object-name>ALT-4AI</object-name>
+    <object-name>ALT-5AI</object-name>
+    <object-name>ALT-6AI</object-name>
+    <object-name>ALT-7AI</object-name>
+    <object-name>ALT-8AI</object-name>
+    <object-name>ALT-9AI</object-name>
+    <object-name>ALT-10AI</object-name>
+
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>TYPE-1AI</object-name>
+    <object-name>TYPE-2AI</object-name>
+    <object-name>TYPE-3AI</object-name>
+    <object-name>TYPE-4AI</object-name>
+    <object-name>TYPE-5AI</object-name>
+    <object-name>TYPE-6AI</object-name>
+    <object-name>TYPE-7AI</object-name>
+    <object-name>TYPE-8AI</object-name>
+    <object-name>TYPE-9AI</object-name>
+    <object-name>TYPE-10AI</object-name>
+
+    <object-name>DIST-1AI</object-name>
+    <object-name>DIST-2AI</object-name>
+    <object-name>DIST-3AI</object-name>
+    <object-name>DIST-4AI</object-name>
+    <object-name>DIST-5AI</object-name>
+    <object-name>DIST-6AI</object-name>
+    <object-name>DIST-7AI</object-name>
+    <object-name>DIST-8AI</object-name>
+    <object-name>DIST-9AI</object-name>
+    <object-name>DIST-10AI</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/AIMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>HDG-1AI</object-name>
+    <object-name>HDG-2AI</object-name>
+    <object-name>HDG-3AI</object-name>
+    <object-name>HDG-4AI</object-name>
+    <object-name>HDG-5AI</object-name>
+    <object-name>HDG-6AI</object-name>
+    <object-name>HDG-7AI</object-name>
+    <object-name>HDG-8AI</object-name>
+    <object-name>HDG-9AI</object-name>
+    <object-name>HDG-10AI</object-name>
+
+    <object-name>BRNG-1AI</object-name>
+    <object-name>BRNG-2AI</object-name>
+    <object-name>BRNG-3AI</object-name>
+    <object-name>BRNG-4AI</object-name>
+    <object-name>BRNG-5AI</object-name>
+    <object-name>BRNG-6AI</object-name>
+    <object-name>BRNG-7AI</object-name>
+    <object-name>BRNG-8AI</object-name>
+    <object-name>BRNG-9AI</object-name>
+    <object-name>BRNG-10AI</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/AIMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- CV Aircraft -->
+  <text>
+    <name>CALL-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[0]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[1]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[2]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[3]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[4]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[5]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[6]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[7]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[8]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CALL-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[9]/callsign</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[0]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[1]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[3]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[4]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[5]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[6]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[7]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[8]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TYPE-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property>ai/models/carrier[2]/model-short</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[0]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[1]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[2]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[3]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[4]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[5]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[6]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[7]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[8]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>HDG-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.046 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%3.0f</format>
+    <property>ai/models/carrier[9]/orientation/true-heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[0]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[1]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[2]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[3]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[4]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[5]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[6]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[7]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[8]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>DIST-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[9]/radar/range-nm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[0]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[1]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[2]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[3]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[4]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[5]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[6]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[7]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[8]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>BRNG-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[9]/radar/bearing-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[0]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[1]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[2]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[3]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[4]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[5]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[6]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[7]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[8]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">true</truncate>
+    <property>ai/models/carrier[9]/velocities/true-airspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[0]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[1]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[2]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[3]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[4]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[5]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[6]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[7]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[8]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.0f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[9]/position/altitude-ft</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <name>CV-LIST</name>
+    <object-name>CALL-1CV</object-name>
+    <object-name>CALL-2CV</object-name>
+    <object-name>CALL-3CV</object-name>
+    <object-name>CALL-4CV</object-name>
+    <object-name>CALL-5CV</object-name>
+    <object-name>CALL-6CV</object-name>
+    <object-name>CALL-7CV</object-name>
+    <object-name>CALL-8CV</object-name>
+    <object-name>CALL-9CV</object-name>
+    <object-name>CALL-10CV</object-name>
+
+    <object-name>TYPE-10CV</object-name>
+    <object-name>TYPE-2CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-5CV</object-name>
+    <object-name>TYPE-6CV</object-name>
+    <object-name>TYPE-7CV</object-name>
+    <object-name>TYPE-8CV</object-name>
+    <object-name>TYPE-9CV</object-name>
+    <object-name>TYPE-10CV</object-name>
+
+    <object-name>HDG-1CV</object-name>
+    <object-name>HDG-2CV</object-name>
+    <object-name>HDG-3CV</object-name>
+    <object-name>HDG-4CV</object-name>
+    <object-name>HDG-5CV</object-name>
+    <object-name>HDG-6CV</object-name>
+    <object-name>HDG-7CV</object-name>
+    <object-name>HDG-8CV</object-name>
+    <object-name>HDG-9CV</object-name>
+    <object-name>HDG-10CV</object-name>
+
+    <object-name>DIST-1CV</object-name>
+    <object-name>DIST-2CV</object-name>
+    <object-name>DIST-3CV</object-name>
+    <object-name>DIST-4CV</object-name>
+    <object-name>DIST-5CV</object-name>
+    <object-name>DIST-6CV</object-name>
+    <object-name>DIST-7CV</object-name>
+    <object-name>DIST-8CV</object-name>
+    <object-name>DIST-9CV</object-name>
+    <object-name>DIST-10CV</object-name>
+
+    <object-name>BRNG-1CV</object-name>
+    <object-name>BRNG-2CV</object-name>
+    <object-name>BRNG-3CV</object-name>
+    <object-name>BRNG-4CV</object-name>
+    <object-name>BRNG-5CV</object-name>
+    <object-name>BRNG-6CV</object-name>
+    <object-name>BRNG-7CV</object-name>
+    <object-name>BRNG-8CV</object-name>
+    <object-name>BRNG-9CV</object-name>
+    <object-name>BRNG-10CV</object-name>
+
+    <object-name>SPD-1CV</object-name>
+    <object-name>SPD-2CV</object-name>
+    <object-name>SPD-3CV</object-name>
+    <object-name>SPD-4CV</object-name>
+    <object-name>SPD-5CV</object-name>
+    <object-name>SPD-6CV</object-name>
+    <object-name>SPD-7CV</object-name>
+    <object-name>SPD-8CV</object-name>
+    <object-name>SPD-9CV</object-name>
+    <object-name>SPD-10CV</object-name>
+
+    <object-name>ALT-1CV</object-name>
+    <object-name>ALT-2CV</object-name>
+    <object-name>ALT-3CV</object-name>
+    <object-name>ALT-4CV</object-name>
+    <object-name>ALT-5CV</object-name>
+    <object-name>ALT-6CV</object-name>
+    <object-name>ALT-7CV</object-name>
+    <object-name>ALT-8CV</object-name>
+    <object-name>ALT-9CV</object-name>
+    <object-name>ALT-10CV</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>CALL-1CV</object-name>
+    <object-name>CALL-2CV</object-name>
+    <object-name>CALL-3CV</object-name>
+    <object-name>CALL-4CV</object-name>
+    <object-name>CALL-5CV</object-name>
+    <object-name>CALL-6CV</object-name>
+    <object-name>CALL-7CV</object-name>
+    <object-name>CALL-8CV</object-name>
+    <object-name>CALL-9CV</object-name>
+    <object-name>CALL-10CV</object-name>
+
+    <object-name>TYPE-10CV</object-name>
+    <object-name>TYPE-2CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-5CV</object-name>
+    <object-name>TYPE-6CV</object-name>
+    <object-name>TYPE-7CV</object-name>
+    <object-name>TYPE-8CV</object-name>
+    <object-name>TYPE-9CV</object-name>
+    <object-name>TYPE-10CV</object-name>
+
+    <object-name>HDG-1CV</object-name>
+    <object-name>HDG-2CV</object-name>
+    <object-name>HDG-3CV</object-name>
+    <object-name>HDG-4CV</object-name>
+    <object-name>HDG-5CV</object-name>
+    <object-name>HDG-6CV</object-name>
+    <object-name>HDG-7CV</object-name>
+    <object-name>HDG-8CV</object-name>
+    <object-name>HDG-9CV</object-name>
+    <object-name>HDG-10CV</object-name>
+
+    <object-name>DIST-1CV</object-name>
+    <object-name>DIST-2CV</object-name>
+    <object-name>DIST-3CV</object-name>
+    <object-name>DIST-4CV</object-name>
+    <object-name>DIST-5CV</object-name>
+    <object-name>DIST-6CV</object-name>
+    <object-name>DIST-7CV</object-name>
+    <object-name>DIST-8CV</object-name>
+    <object-name>DIST-9CV</object-name>
+    <object-name>DIST-10CV</object-name>
+
+    <object-name>BRNG-1CV</object-name>
+    <object-name>BRNG-2CV</object-name>
+    <object-name>BRNG-3CV</object-name>
+    <object-name>BRNG-4CV</object-name>
+    <object-name>BRNG-5CV</object-name>
+    <object-name>BRNG-6CV</object-name>
+    <object-name>BRNG-7CV</object-name>
+    <object-name>BRNG-8CV</object-name>
+    <object-name>BRNG-9CV</object-name>
+    <object-name>BRNG-10CV</object-name>
+
+    <object-name>SPD-1CV</object-name>
+    <object-name>SPD-2CV</object-name>
+    <object-name>SPD-3CV</object-name>
+    <object-name>SPD-4CV</object-name>
+    <object-name>SPD-5CV</object-name>
+    <object-name>SPD-6CV</object-name>
+    <object-name>SPD-7CV</object-name>
+    <object-name>SPD-8CV</object-name>
+    <object-name>SPD-9CV</object-name>
+    <object-name>SPD-10CV</object-name>
+
+    <object-name>ALT-1CV</object-name>
+    <object-name>ALT-2CV</object-name>
+    <object-name>ALT-3CV</object-name>
+    <object-name>ALT-4CV</object-name>
+    <object-name>ALT-5CV</object-name>
+    <object-name>ALT-6CV</object-name>
+    <object-name>ALT-7CV</object-name>
+    <object-name>ALT-8CV</object-name>
+    <object-name>ALT-9CV</object-name>
+    <object-name>ALT-10CV</object-name>
+
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_1</object-name>
+    <object-name>TYPE-1CV</object-name>
+    <object-name>TYPE-2CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-3CV</object-name>
+    <object-name>TYPE-5CV</object-name>
+    <object-name>TYPE-6</object-name>
+    <object-name>TYPE-7</object-name>
+    <object-name>TYPE-8CV</object-name>
+    <object-name>TYPE-9CV</object-name>
+    <object-name>TYPE-10CV</object-name>
+
+    <object-name>DIST-1CV</object-name>
+    <object-name>DIST-2CV</object-name>
+    <object-name>DIST-3CV</object-name>
+    <object-name>DIST-4CV</object-name>
+    <object-name>DIST-5CV</object-name>
+    <object-name>DIST-6CV</object-name>
+    <object-name>DIST-7CV</object-name>
+    <object-name>DIST-8CV</object-name>
+    <object-name>DIST-9CV</object-name>
+    <object-name>DIST-10CV</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/CVMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_2</object-name>
+    <object-name>HDG-1CV</object-name>
+    <object-name>HDG-2CV</object-name>
+    <object-name>HDG-3CV</object-name>
+    <object-name>HDG-4CV</object-name>
+    <object-name>HDG-5CV</object-name>
+    <object-name>HDG-6CV</object-name>
+    <object-name>HDG-7CV</object-name>
+    <object-name>HDG-8CV</object-name>
+    <object-name>HDG-9CV</object-name>
+    <object-name>HDG-10CV</object-name>
+
+    <object-name>BRNG-1CV</object-name>
+    <object-name>BRNG-2CV</object-name>
+    <object-name>BRNG-3CV</object-name>
+    <object-name>BRNG-4CV</object-name>
+    <object-name>BRNG-5CV</object-name>
+    <object-name>BRNG-6CV</object-name>
+    <object-name>BRNG-7CV</object-name>
+    <object-name>BRNG-8CV</object-name>
+    <object-name>BRNG-9CV</object-name>
+    <object-name>BRNG-10CV</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/CVMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- SEARCH MODE MP/AI/CARRIER -->
+  <animation>
+    <type>select</type>
+    <object-name>MP-LIST</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AI-LIST</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>CV-LIST</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/SRCMode</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- TOUCH SCREEN-->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>TARGET</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/SRCMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>MODE</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/MPMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/AIMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/CVMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
