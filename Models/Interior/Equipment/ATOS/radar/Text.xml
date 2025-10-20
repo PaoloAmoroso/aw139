@@ -3,7 +3,6 @@
 <PropertyList>
 
   <!-- DISPLAY RADAR TEXT -->
-
   <text>
     <name>TITLE_1</name>
     <font>lucida.txf</font>
@@ -165,6 +164,38 @@
   </text>
 
   <text>
+    <name>LAT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">LAT</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">LON</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
     <name>SPD</name>
     <font>lucida.txf</font>
     <character-size type="double">0.01</character-size>
@@ -260,6 +291,22 @@
     <alignment>left-center</alignment>
   </text>
 
+  <text>
+    <name>MODE_3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">POS</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
   <animation>
     <type>material</type>
     <object-name>TITLE_1</object-name>
@@ -267,9 +314,11 @@
     <object-name>TYPE</object-name>
     <object-name>HDG</object-name>
     <object-name>DIST</object-name>
+    <object-name>LAT</object-name>
     <object-name>BRNG</object-name>
     <object-name>SPD</object-name>
     <object-name>ALT</object-name>
+    <object-name>LON</object-name>
     <ambient>
       <red>   1.0 </red>
       <green> 1.0 </green>
@@ -316,6 +365,7 @@
     <object-name>MODE_0</object-name>
     <object-name>MODE_1</object-name>
     <object-name>MODE_2</object-name>
+    <object-name>MODE_3</object-name>
     <ambient>
       <red>   0.0 </red>
       <green> 1.0 </green>
@@ -400,6 +450,33 @@
         <property>sim/model/MPMode</property>
         <value>2</value>
       </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_3</object-name>
+    <object-name>LAT</object-name>
+    <object-name>LON</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SPD</object-name>
+    <object-name>ALT</object-name>
+    <condition>
+     <not>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>3</value>
+      </equals>
+     </not>
     </condition>
   </animation>
 
@@ -1215,6 +1292,346 @@
   </text>
 
   <text>
+    <name>LAT-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[0]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[1]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[2]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[3]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[4]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[5]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[6]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[7]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[8]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[9]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[0]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-2</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[1]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-3</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[2]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-4</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[3]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-5</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[4]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-6</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[5]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-7</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[6]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-8</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[7]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-9</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[8]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-10</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/multiplayer[9]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
     <name>SPD-1</name>
     <font>lucida.txf</font>
     <character-size type="double">0.01</character-size>
@@ -1621,6 +2038,28 @@
     <object-name>BRNG-9</object-name>
     <object-name>BRNG-10</object-name>
 
+    <object-name>LAT-1</object-name>
+    <object-name>LAT-2</object-name>
+    <object-name>LAT-3</object-name>
+    <object-name>LAT-4</object-name>
+    <object-name>LAT-5</object-name>
+    <object-name>LAT-6</object-name>
+    <object-name>LAT-7</object-name>
+    <object-name>LAT-8</object-name>
+    <object-name>LAT-9</object-name>
+    <object-name>LAT-10</object-name>
+
+    <object-name>LON-1</object-name>
+    <object-name>LON-2</object-name>
+    <object-name>LON-3</object-name>
+    <object-name>LON-4</object-name>
+    <object-name>LON-5</object-name>
+    <object-name>LON-6</object-name>
+    <object-name>LON-7</object-name>
+    <object-name>LON-8</object-name>
+    <object-name>LON-9</object-name>
+    <object-name>LON-10</object-name>
+
     <object-name>SPD-1</object-name>
     <object-name>SPD-2</object-name>
     <object-name>SPD-3</object-name>
@@ -1700,6 +2139,28 @@
     <object-name>BRNG-8</object-name>
     <object-name>BRNG-9</object-name>
     <object-name>BRNG-10</object-name>
+
+    <object-name>LAT-1</object-name>
+    <object-name>LAT-2</object-name>
+    <object-name>LAT-3</object-name>
+    <object-name>LAT-4</object-name>
+    <object-name>LAT-5</object-name>
+    <object-name>LAT-6</object-name>
+    <object-name>LAT-7</object-name>
+    <object-name>LAT-8</object-name>
+    <object-name>LAT-9</object-name>
+    <object-name>LAT-10</object-name>
+
+    <object-name>LON-1</object-name>
+    <object-name>LON-2</object-name>
+    <object-name>LON-3</object-name>
+    <object-name>LON-4</object-name>
+    <object-name>LON-5</object-name>
+    <object-name>LON-6</object-name>
+    <object-name>LON-7</object-name>
+    <object-name>LON-8</object-name>
+    <object-name>LON-9</object-name>
+    <object-name>LON-10</object-name>
 
     <object-name>SPD-1</object-name>
     <object-name>SPD-2</object-name>
@@ -1801,6 +2262,71 @@
         <property>sim/model/MPMode</property>
         <value>2</value>
       </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MODE_3</object-name>
+    <object-name>LAT-1</object-name>
+    <object-name>LAT-2</object-name>
+    <object-name>LAT-3</object-name>
+    <object-name>LAT-4</object-name>
+    <object-name>LAT-5</object-name>
+    <object-name>LAT-6</object-name>
+    <object-name>LAT-7</object-name>
+    <object-name>LAT-8</object-name>
+    <object-name>LAT-9</object-name>
+    <object-name>LAT-10</object-name>
+
+    <object-name>LON-1</object-name>
+    <object-name>LON-2</object-name>
+    <object-name>LON-3</object-name>
+    <object-name>LON-4</object-name>
+    <object-name>LON-5</object-name>
+    <object-name>LON-6</object-name>
+    <object-name>LON-7</object-name>
+    <object-name>LON-8</object-name>
+    <object-name>LON-9</object-name>
+    <object-name>LON-10</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SPD-1</object-name>
+    <object-name>SPD-2</object-name>
+    <object-name>SPD-3</object-name>
+    <object-name>SPD-4</object-name>
+    <object-name>SPD-5</object-name>
+    <object-name>SPD-6</object-name>
+    <object-name>SPD-7</object-name>
+    <object-name>SPD-8</object-name>
+    <object-name>SPD-9</object-name>
+    <object-name>SPD-10</object-name>
+
+    <object-name>ALT-1</object-name>
+    <object-name>ALT-2</object-name>
+    <object-name>ALT-3</object-name>
+    <object-name>ALT-4</object-name>
+    <object-name>ALT-5</object-name>
+    <object-name>ALT-6</object-name>
+    <object-name>ALT-7</object-name>
+    <object-name>ALT-8</object-name>
+    <object-name>ALT-9</object-name>
+    <object-name>ALT-10</object-name>
+    <condition>
+     <not>
+      <equals>
+        <property>sim/model/MPMode</property>
+        <value>3</value>
+      </equals>
+     </not>
     </condition>
   </animation>
 
@@ -2616,6 +3142,346 @@
   </text>
 
   <text>
+    <name>LAT-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[0]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[1]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[2]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[3]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[4]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[5]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[6]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[7]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[8]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[9]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-1AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[0]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-2AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[1]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-3AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[2]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-4AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[3]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-5AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[4]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-6AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[5]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-7AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[6]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-8AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[7]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-9AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[8]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-10AI</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/aircraft[9]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
     <name>SPD-1AI</name>
     <font>lucida.txf</font>
     <character-size type="double">0.01</character-size>
@@ -3022,6 +3888,28 @@
     <object-name>BRNG-9AI</object-name>
     <object-name>BRNG-10AI</object-name>
 
+    <object-name>LAT-1AI</object-name>
+    <object-name>LAT-2AI</object-name>
+    <object-name>LAT-3AI</object-name>
+    <object-name>LAT-4AI</object-name>
+    <object-name>LAT-5AI</object-name>
+    <object-name>LAT-6AI</object-name>
+    <object-name>LAT-7AI</object-name>
+    <object-name>LAT-8AI</object-name>
+    <object-name>LAT-9AI</object-name>
+    <object-name>LAT-10AI</object-name>
+
+    <object-name>LON-1AI</object-name>
+    <object-name>LON-2AI</object-name>
+    <object-name>LON-3AI</object-name>
+    <object-name>LON-4AI</object-name>
+    <object-name>LON-5AI</object-name>
+    <object-name>LON-6AI</object-name>
+    <object-name>LON-7AI</object-name>
+    <object-name>LON-8AI</object-name>
+    <object-name>LON-9AI</object-name>
+    <object-name>LON-10AI</object-name>
+
     <object-name>SPD-1AI</object-name>
     <object-name>SPD-2AI</object-name>
     <object-name>SPD-3AI</object-name>
@@ -3101,6 +3989,28 @@
     <object-name>BRNG-8AI</object-name>
     <object-name>BRNG-9AI</object-name>
     <object-name>BRNG-10AI</object-name>
+
+    <object-name>LAT-1AI</object-name>
+    <object-name>LAT-2AI</object-name>
+    <object-name>LAT-3AI</object-name>
+    <object-name>LAT-4AI</object-name>
+    <object-name>LAT-5AI</object-name>
+    <object-name>LAT-6AI</object-name>
+    <object-name>LAT-7AI</object-name>
+    <object-name>LAT-8AI</object-name>
+    <object-name>LAT-9AI</object-name>
+    <object-name>LAT-10AI</object-name>
+
+    <object-name>LON-1AI</object-name>
+    <object-name>LON-2AI</object-name>
+    <object-name>LON-3AI</object-name>
+    <object-name>LON-4AI</object-name>
+    <object-name>LON-5AI</object-name>
+    <object-name>LON-6AI</object-name>
+    <object-name>LON-7AI</object-name>
+    <object-name>LON-8AI</object-name>
+    <object-name>LON-9AI</object-name>
+    <object-name>LON-10AI</object-name>
 
     <object-name>SPD-1AI</object-name>
     <object-name>SPD-2AI</object-name>
@@ -3200,6 +4110,70 @@
         <property>sim/model/AIMode</property>
         <value>2</value>
       </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LAT-1AI</object-name>
+    <object-name>LAT-2AI</object-name>
+    <object-name>LAT-3AI</object-name>
+    <object-name>LAT-4AI</object-name>
+    <object-name>LAT-5AI</object-name>
+    <object-name>LAT-6AI</object-name>
+    <object-name>LAT-7AI</object-name>
+    <object-name>LAT-8AI</object-name>
+    <object-name>LAT-9AI</object-name>
+    <object-name>LAT-10AI</object-name>
+
+    <object-name>LON-1AI</object-name>
+    <object-name>LON-2AI</object-name>
+    <object-name>LON-3AI</object-name>
+    <object-name>LON-4AI</object-name>
+    <object-name>LON-5AI</object-name>
+    <object-name>LON-6AI</object-name>
+    <object-name>LON-7AI</object-name>
+    <object-name>LON-8AI</object-name>
+    <object-name>LON-9AI</object-name>
+    <object-name>LON-10AI</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/AIMode</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SPD-1AI</object-name>
+    <object-name>SPD-2AI</object-name>
+    <object-name>SPD-3AI</object-name>
+    <object-name>SPD-4AI</object-name>
+    <object-name>SPD-5AI</object-name>
+    <object-name>SPD-6AI</object-name>
+    <object-name>SPD-7AI</object-name>
+    <object-name>SPD-8AI</object-name>
+    <object-name>SPD-9AI</object-name>
+    <object-name>SPD-10AI</object-name>
+
+    <object-name>ALT-1AI</object-name>
+    <object-name>ALT-2AI</object-name>
+    <object-name>ALT-3AI</object-name>
+    <object-name>ALT-4AI</object-name>
+    <object-name>ALT-5AI</object-name>
+    <object-name>ALT-6AI</object-name>
+    <object-name>ALT-7AI</object-name>
+    <object-name>ALT-8AI</object-name>
+    <object-name>ALT-9AI</object-name>
+    <object-name>ALT-10AI</object-name>
+    <condition>
+     <not>
+      <equals>
+        <property>sim/model/AIMode</property>
+        <value>3</value>
+      </equals>
+     </not>
     </condition>
   </animation>
 
@@ -4015,6 +4989,346 @@
   </text>
 
   <text>
+    <name>LAT-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[0]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[1]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[2]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[3]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[4]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[5]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[6]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[7]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[8]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[9]/position/latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-1CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[0]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-2CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[1]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-3CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[2]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-4CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[3]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-5CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[4]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-6CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[5]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-7CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[6]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-8CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[7]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-9CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[8]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON-10CV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">%5.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>ai/models/carrier[9]/position/longitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
     <name>SPD-1CV</name>
     <font>lucida.txf</font>
     <character-size type="double">0.01</character-size>
@@ -4421,6 +5735,28 @@
     <object-name>BRNG-9CV</object-name>
     <object-name>BRNG-10CV</object-name>
 
+    <object-name>LAT-1CV</object-name>
+    <object-name>LAT-2CV</object-name>
+    <object-name>LAT-3CV</object-name>
+    <object-name>LAT-4CV</object-name>
+    <object-name>LAT-5CV</object-name>
+    <object-name>LAT-6CV</object-name>
+    <object-name>LAT-7CV</object-name>
+    <object-name>LAT-8CV</object-name>
+    <object-name>LAT-9CV</object-name>
+    <object-name>LAT-10CV</object-name>
+
+    <object-name>LON-1CV</object-name>
+    <object-name>LON-2CV</object-name>
+    <object-name>LON-3CV</object-name>
+    <object-name>LON-4CV</object-name>
+    <object-name>LON-5CV</object-name>
+    <object-name>LON-6CV</object-name>
+    <object-name>LON-7CV</object-name>
+    <object-name>LON-8CV</object-name>
+    <object-name>LON-9CV</object-name>
+    <object-name>LON-10CV</object-name>
+
     <object-name>SPD-1CV</object-name>
     <object-name>SPD-2CV</object-name>
     <object-name>SPD-3CV</object-name>
@@ -4500,6 +5836,28 @@
     <object-name>BRNG-8CV</object-name>
     <object-name>BRNG-9CV</object-name>
     <object-name>BRNG-10CV</object-name>
+
+    <object-name>LAT-1CV</object-name>
+    <object-name>LAT-2CV</object-name>
+    <object-name>LAT-3CV</object-name>
+    <object-name>LAT-4CV</object-name>
+    <object-name>LAT-5CV</object-name>
+    <object-name>LAT-6CV</object-name>
+    <object-name>LAT-7CV</object-name>
+    <object-name>LAT-8CV</object-name>
+    <object-name>LAT-9CV</object-name>
+    <object-name>LAT-10CV</object-name>
+
+    <object-name>LON-1CV</object-name>
+    <object-name>LON-2CV</object-name>
+    <object-name>LON-3CV</object-name>
+    <object-name>LON-4CV</object-name>
+    <object-name>LON-5CV</object-name>
+    <object-name>LON-6CV</object-name>
+    <object-name>LON-7CV</object-name>
+    <object-name>LON-8CV</object-name>
+    <object-name>LON-9CV</object-name>
+    <object-name>LON-10CV</object-name>
 
     <object-name>SPD-1CV</object-name>
     <object-name>SPD-2CV</object-name>
@@ -4604,6 +5962,70 @@
     </condition>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>LAT-1CV</object-name>
+    <object-name>LAT-2CV</object-name>
+    <object-name>LAT-3CV</object-name>
+    <object-name>LAT-4CV</object-name>
+    <object-name>LAT-5CV</object-name>
+    <object-name>LAT-6CV</object-name>
+    <object-name>LAT-7CV</object-name>
+    <object-name>LAT-8CV</object-name>
+    <object-name>LAT-9CV</object-name>
+    <object-name>LAT-10CV</object-name>
+
+    <object-name>LON-1CV</object-name>
+    <object-name>LON-2CV</object-name>
+    <object-name>LON-3CV</object-name>
+    <object-name>LON-4CV</object-name>
+    <object-name>LON-5CV</object-name>
+    <object-name>LON-6CV</object-name>
+    <object-name>LON-7CV</object-name>
+    <object-name>LON-8CV</object-name>
+    <object-name>LON-9CV</object-name>
+    <object-name>LON-10CV</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/CVMode</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SPD-1CV</object-name>
+    <object-name>SPD-2CV</object-name>
+    <object-name>SPD-3CV</object-name>
+    <object-name>SPD-4CV</object-name>
+    <object-name>SPD-5CV</object-name>
+    <object-name>SPD-6CV</object-name>
+    <object-name>SPD-7CV</object-name>
+    <object-name>SPD-8CV</object-name>
+    <object-name>SPD-9CV</object-name>
+    <object-name>SPD-10CV</object-name>
+
+    <object-name>ALT-1CV</object-name>
+    <object-name>ALT-2CV</object-name>
+    <object-name>ALT-3CV</object-name>
+    <object-name>ALT-4CV</object-name>
+    <object-name>ALT-5CV</object-name>
+    <object-name>ALT-6CV</object-name>
+    <object-name>ALT-7CV</object-name>
+    <object-name>ALT-8CV</object-name>
+    <object-name>ALT-9CV</object-name>
+    <object-name>ALT-10CV</object-name>
+    <condition>
+     <not>
+      <equals>
+        <property>sim/model/CVMode</property>
+        <value>3</value>
+      </equals>
+     </not>
+    </condition>
+  </animation>
+
   <!-- SEARCH MODE MP/AI/CARRIER -->
   <animation>
     <type>select</type>
@@ -4669,7 +6091,7 @@
         <property>sim/model/MPMode</property>
         <step> 1 </step>
         <min>  0 </min>
-        <max>  3 </max>
+        <max>  4 </max>
         <wrap>true</wrap>
       </binding>
       <binding>
@@ -4677,7 +6099,7 @@
         <property>sim/model/AIMode</property>
         <step> 1 </step>
         <min>  0 </min>
-        <max>  3 </max>
+        <max>  4 </max>
         <wrap>true</wrap>
       </binding>
       <binding>
@@ -4685,7 +6107,7 @@
         <property>sim/model/CVMode</property>
         <step> 1 </step>
         <min>  0 </min>
-        <max>  3 </max>
+        <max>  4 </max>
         <wrap>true</wrap>
       </binding>
     </action>
