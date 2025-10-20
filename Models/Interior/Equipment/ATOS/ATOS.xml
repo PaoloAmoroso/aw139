@@ -167,6 +167,23 @@
     <alignment>left-center</alignment>
   </text>
 
+  <text>
+    <name>CLOCK</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.008</character-size>
+    <offsets>
+      <x-m>  0.18601 </x-m>
+      <y-m>  0.14921 </y-m>
+      <z-m> -0.21584 </z-m>
+      <pitch-deg> -25.6 </pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">string-value</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/time/local-time-string</property>
+    <alignment>left-center</alignment>
+  </text>
+
   <animation>
     <type>material</type>
     <object-name>ALT</object-name>
@@ -175,7 +192,7 @@
     <object-name>GS</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
-    <object-name>APT</object-name>
+    <object-name>CLOCK</object-name>
     <condition>
       <property>controls/electric/battery-switch</property>
     </condition>
@@ -184,6 +201,74 @@
       <red>   0.50 </red>
       <green> 0.40 </green>
       <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <text>
+    <name>DBS</name>
+    <font>lcd.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m> 0.121900 </x-m>
+      <y-m> 0.244610 </y-m>
+      <z-m> 0.063646 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">DBS</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SAR</name>
+    <font>lcd.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m> 0.121900 </x-m>
+      <y-m> 0.244610 </y-m>
+      <z-m> 0.063646 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">SAR</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>TARGET</name>
+    <font>lcd.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m> 0.121900 </x-m>
+      <y-m> 0.244610 </y-m>
+      <z-m> 0.063646 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">TARGET</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>APT</object-name>
+    <object-name>DBS</object-name>
+    <object-name>SAR</object-name>
+    <object-name>TARGET</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.00 </red>
+      <green> 0.80 </green>
+      <blue>  0.10 </blue>
     </emission>
   </animation>
 
@@ -281,7 +366,11 @@
     <object-name>GS</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
+    <object-name>CLOCK</object-name>
     <object-name>APT</object-name>
+    <object-name>DBS</object-name>
+    <object-name>SAR</object-name>
+    <object-name>TARGET</object-name>
     <object-name>canvasCadre</object-name>
     <object-name>Radar_A</object-name>
     <object-name>Radar_G</object-name>
@@ -394,6 +483,7 @@
   <animation>
     <type>select</type>
     <object-name>Radar_G</object-name>
+    <object-name>DBS</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
@@ -405,6 +495,7 @@
   <animation>
     <type>select</type>
     <object-name>Radar_S</object-name>
+    <object-name>SAR</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
@@ -416,6 +507,7 @@
   <animation>
     <type>select</type>
     <object-name>List</object-name>
+    <object-name>TARGET</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
