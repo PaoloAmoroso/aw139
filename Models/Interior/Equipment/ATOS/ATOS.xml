@@ -15,6 +15,9 @@
     <object-name>ButtonA2</object-name>
     <object-name>ButtonA3</object-name>
     <object-name>ButtonA4</object-name>
+    <object-name>ButtonA5</object-name>
+    <object-name>ButtonA6</object-name>
+    <object-name>ButtonA7</object-name>
     <object-name>ButtonB1</object-name>
     <object-name>ButtonB2</object-name>
     <object-name>ButtonB3</object-name>
@@ -131,6 +134,42 @@
   </text>
 
   <text>
+    <name>RNG</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.128270 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.075250 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <format type="string">RNG: %s NM</format>
+    <property>instrumentation/radar[0]/range</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MDE</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.121190 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.063526 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <format type="string">MOD: %s</format>
+    <property>instrumentation/radar/display-mode</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
     <name>LAT</name>
     <font>lucida.txf</font>
     <character-size type="double">0.008</character-size>
@@ -190,6 +229,8 @@
     <object-name>AGL</object-name>
     <object-name>SPD</object-name>
     <object-name>GS</object-name>
+    <object-name>RNG</object-name>
+    <object-name>MDE</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
     <object-name>CLOCK</object-name>
@@ -198,9 +239,9 @@
     </condition>
     <emission>
       <factor-prop>controls/lighting/luminosite-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.40 </green>
-      <blue>  0.30 </blue>
+      <red>   0.80 </red>
+      <green> 0.80 </green>
+      <blue>  0.80 </blue>
     </emission>
   </animation>
 
@@ -299,17 +340,6 @@
     </offsets>
   </model>
 
-  <model>
-    <name>List</name>
-    <path>radar/Text.xml</path>
-    <offsets>
-      <x-m>  0.18000 </x-m>
-      <y-m> -0.19214 </y-m>
-      <z-m>  0.12839 </z-m>
-      <pitch-deg> 31 </pitch-deg>
-    </offsets>
-  </model>
-
   <animation>
     <type>material</type>
     <object-name>Radar_A</object-name>
@@ -324,14 +354,25 @@
     </emission>
   </animation>
 
+  <model>
+    <name>List</name>
+    <path>Radar/Text.xml</path>
+    <offsets>
+      <x-m>  0.18000 </x-m>
+      <y-m> -0.19214 </y-m>
+      <z-m>  0.12839 </z-m>
+      <pitch-deg> 31 </pitch-deg>
+    </offsets>
+  </model>
+
   <!-- Ground Map/Radar -->
   <model>
     <name>Radar_G</name>
     <path>map/map.xml</path>
     <offsets>
       <x-m>  0.16398 </x-m>
-      <y-m> -0.19214 </y-m>
-      <z-m>  0.12180 </z-m>
+      <y-m> -0.19380 </y-m>
+      <z-m>  0.12388 </z-m>
       <pitch-deg> 31 </pitch-deg>
     </offsets>
     <overlay>
@@ -364,6 +405,8 @@
     <object-name>AGL</object-name>
     <object-name>SPD</object-name>
     <object-name>GS</object-name>
+    <object-name>RNG</object-name>
+    <object-name>MDE</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
     <object-name>CLOCK</object-name>
@@ -415,7 +458,9 @@
     </axis>
   </animation>
 
-  <!-- RADAR Informations (Show/Hide) -->
+  <!-- CONSOLE BUTTONS -->
+
+  <!-- Radar Informations -->
     <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -445,24 +490,99 @@
     </axis>
   </animation>
 
-  <!-- Terrain Radar Mode Map/SLAR/List -->
-
+  <!-- Radar Range and Mode -->
   <animation>
     <type>pick</type>
+    <object-name>ButtonA6</object-name>
     <visible>true</visible>
-    <object-name>ButtonA2</object-name>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>sim/model/RadarMode</property>
-        <step> 1 </step>
-        <min>  0 </min>
-        <max>  3 </max>
+        <property>instrumentation/radar[0]/range</property>
+        <step>  5 </step>
+        <min>   9 </min>
+        <max> 100 </max>
         <wrap>true</wrap>
       </binding>
     </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Range</tooltip-id>
+        <label>Radar Range +</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>ButtonA7</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/radar[0]/range</property>
+        <step>  -5 </step>
+        <min>    9 </min>
+        <max>  100 </max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Range</tooltip-id>
+        <label>Radar Range -</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>ButtonA2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/radar/display-mode</property>
+        <value>NOARC</value>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Mode</tooltip-id>
+        <label>Mode NO ARC</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>ButtonA3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/radar/display-mode</property>
+        <value>ARC</value>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Mode</tooltip-id>
+        <label>Mode ARC</label>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
@@ -481,9 +601,74 @@
   </animation>
 
   <animation>
+    <type>translate</type>
+    <object-name>ButtonA3</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ButtonA4</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Button for Terrain Radar Mode Map/SLAR/List -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ButtonA5</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/RadarMode</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  3 </max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ButtonA5</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
     <type>select</type>
     <object-name>Radar_G</object-name>
     <object-name>DBS</object-name>
+    <object-name>MDE</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
