@@ -10,12 +10,6 @@
     <object-name>nav</object-name>
     <object-name>div</object-name>
     <object-name>rect</object-name>
-    <object-name>plus</object-name>
-    <object-name>moins</object-name>
-    <object-name>modearc</object-name>
-    <object-name>modenoarc</object-name>
-    <object-name>num1</object-name>
-    <object-name>num10</object-name>
     <object-name>multi0</object-name>
     <object-name>multi1</object-name>
     <object-name>multi2</object-name>
@@ -47,12 +41,6 @@
     <object-name>nav</object-name>
     <object-name>div</object-name>
     <object-name>rect</object-name>
-    <object-name>plus</object-name>
-    <object-name>moins</object-name>
-    <object-name>modearc</object-name>
-    <object-name>modenoarc</object-name>
-    <object-name>num1</object-name>
-    <object-name>num10</object-name>
     <object-name>multi0</object-name>
     <object-name>multi1</object-name>
     <object-name>multi2</object-name>
@@ -88,12 +76,6 @@
     <object-name>nav</object-name>
     <object-name>div</object-name>
     <object-name>rect</object-name>
-    <object-name>plus</object-name>
-    <object-name>moins</object-name>
-    <object-name>modearc</object-name>
-    <object-name>modenoarc</object-name>
-    <object-name>num1</object-name>
-    <object-name>num10</object-name>
     <object-name>multi0</object-name>
     <object-name>multi1</object-name>
     <object-name>multi2</object-name>
@@ -132,102 +114,6 @@
     <axis>
       <x> 1 </x>
       <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <!-- radar mode -->
-  <animation>
-    <type>pick</type>
-    <object-name>modenoarc</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-assign</command>
-        <property>instrumentation/radar/display-mode</property>
-        <value>NOARC</value>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>modearc</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-assign</command>
-        <property>instrumentation/radar/display-mode</property>
-        <value>ARC</value>
-      </binding>
-    </action>
-  </animation>
-
-  <!-- radar range -->
-  <animation>
-    <type>pick</type>
-    <object-name>plus</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/radar[0]/range</property>
-        <step> 10 </step>
-        <min>  10 </min>
-        <max> 100 </max>
-        <wrap>true</wrap>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>moins</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/radar[0]/range</property>
-        <step> -10 </step>
-        <min>   10 </min>
-        <max>  100 </max>
-        <wrap>true</wrap>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>textranslate</type>
-    <object-name>num10</object-name>
-    <property>instrumentation/radar[0]/range</property>
-    <factor> 0.01 </factor>
-    <step>  10.00 </step>
-    <scroll> 1.00 </scroll>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>textranslate</type>
-    <object-name>num1</object-name>
-    <property>instrumentation/radar[0]/range</property>
-    <factor> 0.1 </factor>
-    <step>   1.0 </step>
-    <scroll> 1.0 </scroll>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
       <z> 0 </z>
     </axis>
   </animation>
