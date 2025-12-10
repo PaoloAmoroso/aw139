@@ -787,7 +787,7 @@
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
     <type type="string">text-value</type>
-    <property>ai/models/multiplayer[2]/model-short</property>
+    <property>ai/models/multiplayer[9]/model-short</property>
     <alignment>left-center</alignment>
   </text>
 
