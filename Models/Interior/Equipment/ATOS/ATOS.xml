@@ -328,6 +328,25 @@
     </emission>
   </animation>
 
+  <model>
+    <name>Data</name>
+    <path>map/Text.xml</path>
+    <offsets>
+      <x-m>  0.15018 </x-m>
+      <y-m> -0.20891 </y-m>
+      <z-m> -0.11232 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Data</object-name>
+    <condition>
+      <property>sim/model/data</property>
+    </condition>
+  </animation>
+
   <!-- Radar -->
   <model>
     <name>Radar_A</name>
@@ -419,6 +438,7 @@
     <object-name>Radar_G</object-name>
     <object-name>Radar_S</object-name>
     <object-name>List</object-name>
+    <object-name>Data</object-name>
     <condition>
       <property>sim/model/show-map</property>
     </condition>
@@ -699,6 +719,41 @@
         <value>2</value>
       </equals>
     </condition>
+  </animation>
+
+  <!-- Button for Navigation Data -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ButtonB1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/data</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/page</property>
+        <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ButtonB1</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
    
 </PropertyList>
