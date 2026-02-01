@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- NAVIGATION DISPLAY TEXT -->
+  <text>
+    <name>TITLE_0</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.089 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">FLIGHT DATA STATUS</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>NAVIGATION</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">NAVIGATION</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>POSITION</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">POSITION</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>NEXT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">NEXT</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>PREV</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.065 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">PREV</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>TITLE_0</object-name>
+    <object-name>CLOCK</object-name>
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>NAVIGATION</object-name>
+    <object-name>POSITION</object-name>
+    <ambient>
+      <red>   0.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.0 </red>
+      <green> 0.3 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>NEXT</object-name>
+    <object-name>PREV</object-name>
+    <ambient>
+      <red>   0.0 </red>
+      <green> 0.5 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.4 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>HDG</object-name>
+    <object-name>SPD</object-name>
+    <object-name>MACH</object-name>
+    <object-name>ALT</object-name>
+    <object-name>AGL</object-name>
+    <object-name>GS</object-name>
+    <object-name>VS</object-name>
+    <object-name>APT</object-name>
+    <object-name>LAT</object-name>
+    <object-name>LON</object-name>
+    <object-name>LAT_D</object-name>
+    <object-name>LON_D</object-name>
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </diffuse>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <!-- PAGES -->
+  <animation>
+    <type>select</type>
+    <object-name>NAVIGATION</object-name>
+    <object-name>HDG</object-name>
+    <object-name>SPD</object-name>
+    <object-name>MACH</object-name>
+    <object-name>ALT</object-name>
+    <object-name>AGL</object-name>
+    <object-name>GS</object-name>
+    <object-name>VS</object-name>
+    <object-name>NEXT</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/page</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>POSITION</object-name>
+    <object-name>APT</object-name>
+    <object-name>LAT</object-name>
+    <object-name>LON</object-name>
+    <object-name>LAT_D</object-name>
+    <object-name>LON_D</object-name>
+    <object-name>PREV</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/page</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- TEXT NAVIGATION LINES -->
+  <text>
+    <name>HDG</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">COURSE: %1.0lf DEG</format>
+    <truncate type="bool">false</truncate>
+    <property>orientation/heading-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>SPD</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">SPEED: %1.0lf KTS</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>MACH</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">MACH: %1.3f</format>
+    <truncate type="bool">false</truncate>
+    <property>velocities/mach</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>ALT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">ALT: %1.0lf FT</format> 
+    <truncate type="bool">false</truncate>
+    <property>position/altitude-ft</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>AGL</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">AGL: %1.0lf FT</format> 
+    <truncate type="bool">false</truncate>
+    <property>position/altitude-agl-ft</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>GS</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">GS: %1.0lf KT</format>
+    <truncate type="bool">false</truncate>
+    <property>velocities/groundspeed-kt</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>VS</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">VS: %5.1f</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CLOCK</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">string-value</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/time/local-time-string</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <!-- TEXT POSITION LINES -->
+  <text>
+    <name>APT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/airport/closest-airport-id</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">LAT: %3.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/gps/indicated-latitude-deg</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LON</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">number-value</type>
+    <format type="string">LON %3.5f</format>
+    <truncate type="bool">false</truncate>
+    <property>instrumentation/gps/indicated-longitude-deg</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>LAT_D</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.011 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">string-value</type>
+    <truncate type="bool">false</truncate>
+    <property>position/latitude-string</property>
+  </text>
+
+  <text>
+    <name>LON_D</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.002 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">string-value</type>
+    <truncate type="bool">false</truncate>
+    <property>position/longitude-string</property>
+  </text>
+
+  <!-- TOUCH SCREEN-->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>TITLE_0</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/page</property>
+        <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>PREV</object-name>
+    <object-name>NEXT</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/page</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  2 </max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+
