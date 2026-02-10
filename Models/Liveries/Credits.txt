@@ -10,7 +10,7 @@ Uber
 ____________________
 Paolo Amoroso:
 AirGreen
-Avincis
+Avincis: I-HECO, I-SRNT
 Babcock
 Carabinieri
 Cyprus Air Force
@@ -18,7 +18,7 @@ Grey
 Guardia Costiera Italiana
 Guardia di Finanza
 HM Coast Guard
-Inaer
+Inaer: I-PAAA, I-AVCS
 ItAF
 Leonardo
 Polizia
