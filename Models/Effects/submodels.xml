@@ -60,7 +60,6 @@
     <expiry>true</expiry>
     <impact>true</impact>
     <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <impact-reports>sim/ai/aircraft/collision/cannon</impact-reports>
     <submodel-path>Aircraft/aw139/Models/Effects/guns/bullet/bullet-submodel.xml</submodel-path>
   </cannon>
 
@@ -88,7 +87,6 @@
     <expiry alias="../../cannon/expiry"/>
     <impact alias="../../cannon/impact"/>
     <impact-report alias="../../cannon/impact-report"/>
-    <impact-reports alias="../../cannon/impact-reports"/>
     <submodel-path alias="../../cannon/submodel-path"/>
   </submodel>
 
@@ -116,7 +114,6 @@
     <expiry alias="../../cannon/expiry"/>
     <impact alias="../../cannon/impact"/>
     <impact-report alias="../../cannon/impact-report"/>
-    <impact-reports alias="../../cannon/impact-reports"/>
     <submodel-path alias="../../cannon/submodel-path"/>
   </submodel>
 
