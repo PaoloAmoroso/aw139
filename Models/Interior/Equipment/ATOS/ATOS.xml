@@ -32,7 +32,7 @@
     </emission>
   </animation>
 
-  <!-- Attitude, Altimeter and Speed Indicator -->
+  <!-- CONSOLE INFO -->
   <model>
     <name>AI</name>
     <path>ai/ai.xml</path>
@@ -44,23 +44,7 @@
     </offsets>
   </model>
 
-  <text>
-    <name>APT</name>
-    <font>lcd.txf</font>
-    <character-size type="double">0.01</character-size>
-    <offsets>
-      <x-m> 0.213 </x-m>
-      <y-m> 0.262 </y-m>
-      <z-m> 0.219 </z-m>
-      <pitch-deg>31</pitch-deg>
-    </offsets>
-    <axis-alignment>yz-plane</axis-alignment>
-    <type>string</type>
-    <truncate type="bool">false</truncate>
-    <property>sim/airport/closest-airport-id</property>
-    <alignment>left-center</alignment>
-  </text>
-
+  <!-- Screen Text -->
   <text>
     <name>ALT</name>
     <font>lucida.txf</font>
@@ -170,6 +154,95 @@
   </text>
 
   <text>
+    <name>FLR_0</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.121190 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.063526 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">FLR: OFF</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>FLR_1</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.121190 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.063526 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">FLR: ON</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <type>select</type>
+    <object-name>FLR_0</object-name>
+    <condition>
+     <not>
+      <property>instrumentation/terrain-map/forward-looking</property>
+      <value>1</value>
+     </not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>FLR_1</object-name>
+    <condition>
+      <property>instrumentation/terrain-map/forward-looking</property>
+      <value>1</value>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>FLR_0</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/terrain-map/forward-looking</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/radar[0]/range</property>
+        <value>10</value>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>FLR_1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/terrain-map/forward-looking</property>
+        <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+  <text>
     <name>LAT</name>
     <font>lucida.txf</font>
     <character-size type="double">0.008</character-size>
@@ -231,6 +304,8 @@
     <object-name>GS</object-name>
     <object-name>RNG</object-name>
     <object-name>MDE</object-name>
+    <object-name>FLR_0</object-name>
+    <object-name>FLR_1</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
     <object-name>CLOCK</object-name>
@@ -244,6 +319,25 @@
       <blue>  0.80 </blue>
     </emission>
   </animation>
+
+  <!-- Control Display Text -->
+
+  <text>
+    <name>APT</name>
+    <font>lcd.txf</font>
+    <character-size type="double">0.01</character-size>
+    <offsets>
+      <x-m> 0.213 </x-m>
+      <y-m> 0.262 </y-m>
+      <z-m> 0.219 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/airport/closest-airport-id</property>
+    <alignment>left-center</alignment>
+  </text>
 
   <text>
     <name>DBS</name>
@@ -365,7 +459,8 @@
     </condition>
   </animation>
 
-  <!-- Radar -->
+  <!-- RADAR -->
+
   <model>
     <name>Radar_A</name>
     <path>radar/nd.xml</path>
@@ -402,7 +497,7 @@
     </offsets>
   </model>
 
-  <!-- Ground Map/Radar -->
+  <!-- GROUND RADAR -->
   <model>
     <name>Radar_G</name>
     <path>map/map.xml</path>
@@ -492,7 +587,7 @@
     </condition>
   </animation>
 
-    <animation>
+  <animation>
     <type>pick</type>
     <visible>true</visible>
     <object-name>manche</object-name>
@@ -529,7 +624,7 @@
   <!-- CONSOLE BUTTONS -->
 
   <!-- Radar Informations -->
-    <animation>
+  <animation>
     <type>pick</type>
     <visible>true</visible>
     <object-name>ButtonA1</object-name>
@@ -769,6 +864,8 @@
     <type>select</type>
     <object-name>Radar_R</object-name>
     <object-name>SAR</object-name>
+    <object-name>FLR_0</object-name>
+    <object-name>FLR_1</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
