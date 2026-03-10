@@ -654,6 +654,13 @@
         <value>0</value>
       </binding>
     </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Console Switch</tooltip-id>
+        <label>Console Switch</label>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
@@ -686,6 +693,13 @@
         <property>instrumentation/radar/info</property>
       </binding>
     </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Info</tooltip-id>
+        <label>Radar Info</label>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
@@ -836,6 +850,36 @@
     </axis>
   </animation>
 
+  <!-- Button for Radar TIlt -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ButtonA4</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-cycle</command>
+        <property>instrumentation/terrain-map/tilt-deg</property>
+        <value type="float">0</value>
+        <value type="float">-5</value>
+        <value type="float">-10</value>
+        <value type="float">-20</value>
+        <value type="float">-30</value>
+        <value type="float">-40</value>
+        <value type="float">-50</value>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Tilt</tooltip-id>
+        <label>Radar Tilt</label>
+      </binding>
+    </hovered>
+  </animation>
+
   <animation>
     <type>translate</type>
     <object-name>ButtonA4</object-name>
@@ -868,6 +912,13 @@
         <wrap>true</wrap>
       </binding>
     </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Radar Mode</tooltip-id>
+        <label>Radar Mode</label>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
@@ -955,6 +1006,13 @@
         <value>0</value>
       </binding>
     </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>Navigation Data</tooltip-id>
+        <label>Navigation Data</label>
+      </binding>
+    </hovered>
   </animation>
 
   <animation>
