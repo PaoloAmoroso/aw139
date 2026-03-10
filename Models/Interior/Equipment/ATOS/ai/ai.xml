@@ -5,7 +5,8 @@
   <path>ai.ac</path>
 
   <animation>
-    <object-name>background</object-name>
+    <object-name>Background</object-name>
+    <object-name>Symbol</object-name>
   </animation>
 
   <!-- working for Rembrandt -->
@@ -21,7 +22,8 @@
   
   <animation>
     <type>material</type>
-    <object-name>background</object-name>
+    <object-name>Background</object-name>
+    <object-name>Symbol</object-name>
     <condition>
       <property>controls/electric/battery-switch</property>
     </condition>
@@ -35,7 +37,7 @@
   
   <animation>
     <type>texmultiple</type>
-    <object-name>background</object-name>
+    <object-name>Background</object-name>
     <transform>
       <subtype>textranslate</subtype>
       <property>orientation/pitch-deg</property>
