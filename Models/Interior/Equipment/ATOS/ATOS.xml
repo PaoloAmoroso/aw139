@@ -86,7 +86,7 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.168670 </x-m>
+      <x-m>  0.163830 </x-m>
       <y-m> -0.058542 </y-m>
       <z-m>  0.133960 </z-m>
       <pitch-deg>31</pitch-deg>
@@ -104,7 +104,7 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.168670 </x-m>
+      <x-m>  0.159000 </x-m>
       <y-m> -0.058542 </y-m>
       <z-m>  0.125940 </z-m>
       <pitch-deg>31</pitch-deg>
@@ -122,9 +122,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.128270 </x-m>
+      <x-m>  0.131650 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.075250 </z-m>
+      <z-m>  0.080904 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -140,9 +140,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.121190 </x-m>
+      <x-m>  0.126360 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.063526 </z-m>
+      <z-m>  0.072108 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -158,9 +158,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.121190 </x-m>
+      <x-m>  0.126360 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.063526 </z-m>
+      <z-m>  0.072108 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -175,9 +175,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.121190 </x-m>
+      <x-m>  0.126360 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.063526 </z-m>
+      <z-m>  0.072108 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -238,6 +238,55 @@
         <command>property-assign</command>
         <property>instrumentation/terrain-map/forward-looking</property>
         <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+  <text>
+    <name>TILT</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.009</character-size>
+    <offsets>
+      <x-m>  0.121190 </x-m>
+      <y-m> -0.058542 </y-m>
+      <z-m>  0.063526 </z-m>
+      <pitch-deg>31</pitch-deg>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type>string</type>
+    <format type="string">TILT: %s DEG</format>
+    <property>instrumentation/terrain-map/tilt-deg</property>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-center</alignment>
+  </text>
+
+  <animation>
+    <type>select</type>
+    <object-name>TILT</object-name>
+    <condition>
+      <property>instrumentation/terrain-map/forward-looking</property>
+      <value>1</value>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>TILT</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-cycle</command>
+        <property>instrumentation/terrain-map/tilt-deg</property>
+        <value type="float">0</value>
+        <value type="float">-5</value>
+        <value type="float">-10</value>
+        <value type="float">-20</value>
+        <value type="float">-30</value>
+        <value type="float">-40</value>
+        <value type="float">-50</value>
+        <wrap>true</wrap>
       </binding>
     </action>
   </animation>
@@ -306,6 +355,7 @@
     <object-name>MDE</object-name>
     <object-name>FLR_0</object-name>
     <object-name>FLR_1</object-name>
+    <object-name>TILT</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
     <object-name>CLOCK</object-name>
@@ -866,6 +916,7 @@
     <object-name>SAR</object-name>
     <object-name>FLR_0</object-name>
     <object-name>FLR_1</object-name>
+    <object-name>TILT</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
