@@ -356,3 +356,130 @@ setlistener("sim/signals/fdm-initialized", func {
     FL_loop();
     FL_syncLoop();
 });
+
+#================================================================
+#                 MAGNETIC ANOMALY DETECTOR Mode
+#================================================================
+
+var MAD_PATH = "/instrumentation/mad/pixels/";
+var MAD_SIZE = 100;
+var MAD_RATE = 0.1;
+
+var MAD_RANGE_LAT = 0.01;   # 1.1 km
+var MAD_RANGE_LON = 0.01;
+var MAD_RANGE_ALT = 3000;   # in ft, with AGL
+
+for (var i = 0; i < MAD_SIZE; i += 1) {
+    setprop(MAD_PATH ~ "col[" ~ i ~ "]/elevation", 0);
+}
+
+var MAD_getTargets = func {
+
+    var root = props.globals.getNode("ai/models/");
+    var targetList = [];
+
+    if (root == nil) return targetList;
+
+    foreach (var t; root.getChildren("aircraft")) {
+        append(targetList, t);
+    }
+
+    foreach (var t; root.getChildren("multiplayer")) {
+        append(targetList, t);
+    }
+
+    foreach (var t; root.getChildren("carrier")) {
+        append(targetList, t);
+    }
+
+    return targetList;
+}
+
+var MAD_update = func {
+
+    var lat = getprop("/position/latitude-deg");
+    var lon = getprop("/position/longitude-deg");
+    var alt_agl = getprop("/position/altitude-agl-ft");
+    if (alt_agl == nil) alt_agl = 0;
+
+    if (alt_agl > MAD_RANGE_ALT) {
+
+    for (var i = 0; i < MAD_SIZE; i += 1) {
+        setprop(MAD_PATH ~ "col[" ~ i ~ "]/elevation", 0);
+    }
+
+    return;
+    }
+
+    var heading = getprop("/orientation/heading-magnetic-deg") * 0.01745329252;
+
+    var targets = MAD_getTargets();
+
+    for (var i = 0; i < MAD_SIZE; i += 1) {
+        setprop(MAD_PATH ~ "col[" ~ i ~ "]/elevation", 0);
+    }
+
+    foreach (var m; targets) {
+
+        var name  = m.getName();
+        var index = m.getIndex();
+
+        var base = "ai/models/" ~ name ~ "[" ~ index ~ "]/";
+
+        var tlat = getprop(base ~ "position/latitude-deg");
+        var tlon = getprop(base ~ "position/longitude-deg");
+        var talt = getprop(base ~ "position/altitude-ft");
+
+        if (tlat == nil or tlon == nil) continue;
+        if (talt == nil) talt = 0;
+
+        var dlat = tlat - lat;
+        var dlon = tlon - lon;
+
+        var scale = math.cos(lat * 0.01745329252);
+        if (scale < 0.01) scale = 0.01;
+
+        var x = -( (dlon * scale) * math.cos(heading)
+                 + (dlat)         * math.sin(heading) );
+
+        var y = -(dlon * scale) * math.sin(heading)
+               + (dlat)         * math.cos(heading);
+
+        var alt = getprop("/position/altitude-ft");
+        var dalt = alt - talt;
+
+        if (math.abs(x) < MAD_RANGE_LON and
+            math.abs(y) < MAD_RANGE_LAT and
+            math.abs(dalt) < MAD_RANGE_ALT) {
+
+            var pos = int((x / MAD_RANGE_LON + 0.5) * MAD_SIZE);
+
+            if (pos < 0) pos = 0;
+            if (pos >= MAD_SIZE) pos = MAD_SIZE - 1;
+
+            var dist = math.sqrt(x*x + y*y);
+
+            var norm = 1 - (dist / MAD_RANGE_LAT);
+            if (norm < 0) norm = 0;
+
+            var strength = norm * 0.09 + rand() * 0.02;
+
+            setprop(MAD_PATH ~ "col[" ~ pos ~ "]/elevation", strength);
+        }
+    }
+
+    for (var i = 0; i < MAD_SIZE; i += 5) {
+        var noise = (rand() - 0.5) * 0.01;
+        setprop(MAD_PATH ~ "col[" ~ i ~ "]/elevation",
+            getprop(MAD_PATH ~ "col[" ~ i ~ "]/elevation") + noise
+        );
+    }
+}
+
+var MAD_loop = func {
+    MAD_update();
+    settimer(MAD_loop, MAD_RATE);
+}
+
+MAD_loop();
+
