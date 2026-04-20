@@ -608,6 +608,27 @@
     </overlay>
   </model>
 
+  <!-- MAD -->
+
+  <model>
+    <name>MAD</name>
+    <path>MAD/MAD.xml</path>
+    <offsets>
+      <x-m>  0.14366 </x-m>
+      <y-m>  0.12106 </y-m>
+      <z-m> -0.13287 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>MAD</object-name>
+    <condition>
+      <property>sim/model/mad</property>
+    </condition>
+  </animation>
+
   <!-- MAP Activation (Turn On/Off) -->
   <animation>
     <type>select</type>
@@ -630,6 +651,7 @@
     <object-name>Radar_G</object-name>
     <object-name>Radar_S</object-name>
     <object-name>Radar_R</object-name>
+    <object-name>MAD</object-name>
     <object-name>List</object-name>
     <object-name>Data</object-name>
     <condition>
@@ -850,7 +872,7 @@
     </axis>
   </animation>
 
-  <!-- Button for Radar TIlt -->
+  <!-- Button for Radar Tilt -->
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -1018,6 +1040,43 @@
   <animation>
     <type>translate</type>
     <object-name>ButtonB1</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Button for MAD Data -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ButtonB2</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/mad</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>MAD Data</tooltip-id>
+        <label>MAD Data</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ButtonB2</object-name>
     <interpolation>
       <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
       <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
