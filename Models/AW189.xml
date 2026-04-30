@@ -41,19 +41,6 @@
   <sound>
   	<path>Aircraft/aw139/Sounds/mp-sound.xml</path>
   </sound>
-<!--
-<effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>frontglass</object-name>
-    <object-name>frnt-sideglass_L</object-name>
-    <object-name>frnt-sideglass_R</object-name>
-    <object-name>sideglassL</object-name>
-    <object-name>sideglassR</object-name>
-    <object-name>sideglass_L</object-name>
-    <object-name>sideglass_R</object-name>
-    <object-name>inspection-glass</object-name>
- </effect>
- -->
 
   <animation>
     <type>material</type>
@@ -68,6 +55,8 @@
     <object-name>airintake</object-name>
     <object-name>upperduct</object-name>
     <object-name>exhaust</object-name>
+    <object-name>Raft_1</object-name>
+    <object-name>Raft_M</object-name>
     <object-name>EAPS</object-name>
     <object-name>HIRSS</object-name>
     <object-name>HIRSS_Exaust</object-name>
@@ -83,6 +72,7 @@
     <object-name>wheelFR</object-name>
     <object-name>wheelL</object-name>
     <object-name>wheelR</object-name>
+    <object-name>Lights</object-name>
     <object-name>antenna</object-name>
     <object-name>antennaVOR</object-name>
     <object-name>antenna1</object-name>
@@ -141,6 +131,19 @@
     <object-name>crochet</object-name>
   </effect> -->
 
+<effect>
+  <inherits-from>Aircraft/aw139/Models/Effects/reflectglas-uber</inherits-from>
+  <object-name>frontglass</object-name>
+  <object-name>frnt-sideglass_L</object-name>
+  <object-name>frnt-sideglass_R</object-name>
+  <object-name>sideglassL</object-name>
+  <object-name>sideglassR</object-name>
+  <object-name>sideglass_L</object-name>
+  <object-name>sideglass_R</object-name>
+  <object-name>sideglass.2</object-name>
+  <object-name>LightsGlass</object-name>
+ </effect>
+
   <!-- Main Rotor -->
   <model>
     <path>Aircraft/aw139/Models/main-rotor/mainrotor.xml</path>
@@ -154,7 +157,7 @@
     </offsets>
   </model>
   
- <!-- tailrotor -->
+ <!-- Tail Rotor -->
   <model>
     <path>Aircraft/aw139/Models/tailrotor/tailrotor.xml</path>
     <offsets>
@@ -908,7 +911,7 @@
 	<type>select</type>
      <object-name>EAPS</object-name>
 	<condition>
-		<property>sim/model/EAPS</property>
+		<property>sim/model/aw189/EAPS</property>
 	</condition>
 </animation>
 
@@ -951,6 +954,33 @@
 	<object-name>HIRSS</object-name>
 	<condition>
 		<property>sim/model/aw189/HIRSS1</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Raft_1</object-name>
+     <object-name>Raft_M</object-name>
+	<condition>
+		<property>sim/model/aw189/raft</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Raft_1</object-name>
+	<condition>
+         <not>
+		<property>sim/model/aw189/AW149</property>
+         </not>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Raft_M</object-name>
+	<condition>
+		<property>sim/model/aw189/AW149</property>
 	</condition>
 </animation>
 
@@ -1068,14 +1098,6 @@
   </model>
 
 <!-- EFFECTS -->
-<effect>
-  <inherits-from>Aircraft/aw139/Models/Effects/reflectglas-uber</inherits-from>
-  <object-name>frnt-sideglass</object-name>
-  <object-name>sideglassL</object-name>
-  <object-name>sideglassR</object-name>
-  <object-name>front-sideglass</object-name>
-  <object-name>frontglass</object-name>
- </effect>
 
  <model>
     <name>Emergency_Floats</name>
@@ -1098,11 +1120,6 @@
   <!-- INTERIOR -->	
   <model>
     <path>Aircraft/aw139/Models/Interior/Interior_189.xml</path>
-    <offsets>
-      <x-m>  0.00 </x-m>
-      <y-m>  0.00 </y-m>
-      <z-m>  0.00 </z-m>
-    </offsets>
   </model>
 
   <!-- BOMBABLE -->
