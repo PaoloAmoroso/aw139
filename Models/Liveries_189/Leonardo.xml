@@ -20,6 +20,7 @@
            <winch>false</winch>
            <hook>false</hook>
            <floats>true</floats>
+           <raft>true</raft>
 		<searchlight_front>false</searchlight_front>
            <wirecutter>false</wirecutter>
            <Countermeasures>false</Countermeasures>

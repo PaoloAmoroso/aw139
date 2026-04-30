@@ -16,9 +16,11 @@
            <antenna1>true</antenna1>
            <antenna2>false</antenna2>
            <antenna3>false</antenna3>
+           <EAPS>false</EAPS>
            <FLIR>true</FLIR>
            <winch>true</winch>
            <floats>true</floats>
+           <raft>true</raft>
 		<searchlight_front>true</searchlight_front>
            <wirecutter>true</wirecutter>
            <Countermeasures>false</Countermeasures>
