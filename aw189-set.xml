@@ -448,10 +448,14 @@
         </binding>
       </item>
       <item>
+        <label>External Devices</label>
+        <enabled>false</enabled>
+      </item>
+      <item>
         <label>Air Intakes EAPS</label>
         <binding>
           <command>property-toggle</command>
-          <property>sim/model/EAPS</property>
+          <property>sim/model/aw189/EAPS</property>
         </binding>
       </item>
       <item>
@@ -460,6 +464,17 @@
           <command>property-toggle</command>
           <property>sim/model/Plates</property>
         </binding>
+      </item>
+      <item>
+        <label>Emergency Raft</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/aw189/raft</property>
+        </binding>
+      </item>
+      <item>
+        <label>Configuration</label>
+        <enabled>false</enabled>
       </item>
       <item>
         <label>HEMS Configuration</label>
@@ -538,20 +553,21 @@
 			<serviceable type="bool" archive="y">true</serviceable>
 		</hsi>
            <radar>
-    <serviceable                      type="bool" archive="y">true</serviceable>
-    <switch                           type="string" archive="y">off</switch>
-    <mode-control                     type="int" archive="y">3</mode-control>
-    <range                            type="int" archive="y">20</range>
-    <mode                             type="string" archive="y">WX</mode>
-    <heading-marker                   type="bool" archive="y">false</heading-marker>
-    <lightning                        type="bool" archive="y">false</lightning>
-    <display-mode                     type="string">ARC</display-mode>
+    <serviceable        type="bool" archive="y">true</serviceable>
+    <switch             type="string" archive="y">off</switch>
+    <mode-control       type="int" archive="y">3</mode-control>
+    <range              type="int" archive="y">20</range>
+    <mode               type="string" archive="y">WX</mode>
+    <heading-marker     type="bool" archive="y">false</heading-marker>
+    <lightning          type="bool" archive="y">false</lightning>
+    <display-mode       type="string">NOARC</display-mode>
     <display-controls>
-      <WX                             type="bool" archive="y">false</WX>
-      <data                           type="bool" archive="y">false</data>
-      <pos                            type="bool" archive="y">true</pos>
+      <WX               type="bool" archive="y">false</WX>
+      <data             type="bool" archive="y">false</data>
+      <pos              type="bool" archive="y">true</pos>
     </display-controls>
   </radar>
+
 	</instrumentation>
 
 	<input>
