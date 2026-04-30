@@ -7,6 +7,7 @@
 		<name type="string">I-GREE, Air Green</name>
 		<texture>Liveries/AirGreen.png</texture>
 	   </livery>
+
 	   <aw139>
            <Civilian type="bool">true</Civilian>
            <Military type="bool">false</Military>
@@ -16,10 +17,12 @@
            <antenna1>false</antenna1>
            <antenna2>false</antenna2>
            <antenna3>false</antenna3>
+           <EAPS>true</EAPS>
            <FLIR>false</FLIR>
            <winch>true</winch>
            <hook>false</hook>
            <floats>false</floats>
+           <raft>false</raft>
 		<searchlight_front>false</searchlight_front>
            <wirecutter>true</wirecutter>
            <Countermeasures>false</Countermeasures>
@@ -31,9 +34,11 @@
 		  </rotor>
 	   </aw139>
 	  </model>
+<!--
 	  <rendering>
          <refl_correction type="string">-0.5</refl_correction>
         </rendering>
+-->
 	</sim>
 
 </PropertyList>

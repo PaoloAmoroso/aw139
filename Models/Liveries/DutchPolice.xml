@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 				<livery>
-					<name type="string">DutchPolice</name>
+					<name type="string">Dutch National Police</name>
 					 <index type="int">1</index>
 					  <texture>Liveries/dutchpolaw139ext.png</texture>
 				</livery>
@@ -17,10 +17,12 @@
            <antenna1>false</antenna1>
            <antenna2>false</antenna2>
            <antenna3>false</antenna3>
+           <EAPS>false</EAPS>
            <FLIR>true</FLIR>
            <winch>true</winch>
            <hook>false</hook>
            <floats>false</floats>
+           <raft>true</raft>
 		<searchlight_front>true</searchlight_front>
            <wirecutter>true</wirecutter>
            <Countermeasures>false</Countermeasures>

@@ -16,16 +16,18 @@
            <antenna1>true</antenna1>
            <antenna2>false</antenna2>
            <antenna3>false</antenna3>
+           <EAPS>true</EAPS>
            <FLIR>true</FLIR>
            <winch>true</winch>
            <hook>false</hook>
            <floats>true</floats>
+           <raft>true</raft>
 		<searchlight_front>true</searchlight_front>
            <wirecutter>true</wirecutter>
            <Countermeasures>false</Countermeasures>
            <HIRSS>false</HIRSS>
 		<hide-gsdi>true</hide-gsdi>
-           <AW139M type="bool">true</AW139M>
+           <AW139M type="bool">false</AW139M>
              <rotor>
 		    <texture>black.png</texture>
 		  </rotor>
