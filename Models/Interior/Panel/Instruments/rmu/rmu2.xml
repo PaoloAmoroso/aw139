@@ -1016,5 +1016,16 @@
       </binding>
     </action>
   </animation>
+
+  <!-- TURN-OFF SCREEN -->
+  <animation>
+    <type>select</type>
+    <object-name>RMU.back</object-name>
+    <condition>
+      <not>
+        <property>controls/electric/battery-switch</property>
+      </not>
+    </condition>
+  </animation>
   
 </PropertyList>

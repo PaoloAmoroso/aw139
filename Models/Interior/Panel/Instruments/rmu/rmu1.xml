@@ -44,6 +44,7 @@
     <object-name>RMU.dme</object-name>
     
     <object-name>RMU.off</object-name>
+    <object-name>RMU.back</object-name>
     <object-name>RMU.lamp</object-name>
     <object-name>RMU.screen</object-name>
     <object-name>RMU.period</object-name>
@@ -1015,6 +1016,17 @@
         <max>1800</max>
       </binding>
     </action>
+  </animation>
+
+  <!-- TURN-OFF SCREEN -->
+  <animation>
+    <type>select</type>
+    <object-name>RMU.back</object-name>
+    <condition>
+      <not>
+        <property>controls/electric/battery-switch</property>
+      </not>
+    </condition>
   </animation>
   
 </PropertyList>
