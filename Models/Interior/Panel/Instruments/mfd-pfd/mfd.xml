@@ -16,6 +16,7 @@
     <object-name>MAP.btn</object-name>
     
     <object-name>MFD.bkg</object-name>
+    <object-name>MFD.back</object-name>
     <object-name>MFD.menu</object-name>
     <object-name>MFD.hsi</object-name>
     <object-name>MFD.staticplane</object-name>
@@ -156,6 +157,17 @@
       <green> 1 </green>
       <blue>  1 </blue>
     </emission>
+  </animation>
+
+  <!-- TURN-OFF SCREEN -->
+  <animation>
+    <type>select</type>
+    <object-name>MFD.back</object-name>
+    <condition>
+      <not>
+        <property>controls/electric/battery-switch</property>
+      </not>
+    </condition>
   </animation>
 
   <panel>

@@ -20,6 +20,7 @@
     <object-name>PFD.std</object-name>
 
     <object-name>PFD.screen</object-name>
+    <object-name>PFD.back</object-name>
     <object-name>PFD.ovspd</object-name>
     <object-name>rose</object-name>
     <object-name>att</object-name>
@@ -249,6 +250,17 @@
       <green> 1 </green>
       <blue>  1 </blue>
     </emission>
+  </animation>
+
+  <!-- TURN-OFF SCREEN -->
+  <animation>
+    <type>select</type>
+    <object-name>PFD.back</object-name>
+    <condition>
+      <not>
+        <property>controls/electric/battery-switch</property>
+      </not>
+    </condition>
   </animation>
 
   <!-- Text -->

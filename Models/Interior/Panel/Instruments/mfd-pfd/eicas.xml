@@ -14,6 +14,7 @@
     <object-name>btn</object-name>
     
     <object-name>EICAS.face</object-name>
+    <object-name>EICAS.back</object-name>
     <object-name>LH-N1</object-name>
     <object-name>RH-N1</object-name>
     <object-name>LH-ITT</object-name>
@@ -198,6 +199,17 @@
       <green> 1 </green>
       <blue>  1 </blue>
     </emission>
+  </animation>
+
+  <!-- TURN-OFF SCREEN -->
+  <animation>
+    <type>select</type>
+    <object-name>EICAS.back</object-name>
+    <condition>
+      <not>
+        <property>controls/electric/battery-switch</property>
+      </not>
+    </condition>
   </animation>
   
   <animation>
@@ -398,7 +410,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>LH-N1</object-name>
-    <property>engines/engine[0]/n1</property>
+    <!-- <property>engines/engine[0]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>  0.00000 </dep></entry>
       <entry><ind>  30 </ind><dep> -0.00622 </dep></entry>
@@ -418,7 +431,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>RH-N1</object-name>
-    <property>engines/engine[1]/n1</property>
+    <!-- <property>engines/engine[1]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>  0.00000 </dep></entry>
       <entry><ind>  30 </ind><dep> -0.00622 </dep></entry>
@@ -522,7 +536,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>LHn1-4</object-name>
-    <property>engines/engine/n1</property>
+    <!-- <property>engines/engine/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.001</factor>
     <step>100</step>
     <axis>
@@ -535,7 +550,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>LHn1-3</object-name>
-    <property>engines/engine/n1</property>
+    <!-- <property>engines/engine/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.01</factor>
     <step>10</step>
     <axis>
@@ -548,7 +564,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>LHn1-2</object-name>
-    <property>engines/engine/n1</property>
+    <!-- <property>engines/engine/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.1</factor>
     <step>1</step>
     <axis>
@@ -561,7 +578,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>LHn1-1</object-name>
-    <property>engines/engine/n1</property>
+    <!-- <property>engines/engine/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>1.0</factor>
     <step>0.1</step>
     <axis>
@@ -574,7 +592,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>RHn1-4</object-name>
-    <property>engines/engine[1]/n1</property>
+    <!-- <property>engines/engine[1]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.001</factor>
     <step>100</step>
     <axis>
@@ -587,7 +606,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>RHn1-3</object-name>
-    <property>engines/engine[1]/n1</property>
+    <!-- <property>engines/engine[1]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.01</factor>
     <step>10</step>
     <axis>
@@ -600,7 +620,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>RHn1-2</object-name>
-    <property>engines/engine[1]/n1</property>
+    <!-- <property>engines/engine[1]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>0.1</factor>
     <step>1</step>
     <axis>
@@ -613,7 +634,8 @@
   <animation>
     <type>textranslate</type>
     <object-name>RHn1-1</object-name>
-    <property>engines/engine[1]/n1</property>
+    <!-- <property>engines/engine[1]/n1</property> -->
+    <property>rotors/main/rpm</property>
     <factor>1.0</factor>
     <step>0.1</step>
     <axis>
