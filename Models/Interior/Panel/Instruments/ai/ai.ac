@@ -5,7 +5,7 @@ MATERIAL "ac3dmat8.001" rgb 0.000 0.000 0.000  amb 0.800 0.800 0.800  emis 0.000
 MATERIAL "Transparent" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.700
 OBJECT world
 name "Blender_exporter_v3.3__ai.ac"
-kids 4
+kids 5
 OBJECT poly
 name "background"
 data 10
@@ -25,6 +25,26 @@ refs 4
 0 0.716417 0.713728
 3 0.283583 0.713728
 2 0.283583 0.286272
+kids 0
+OBJECT poly
+name "background_OFF"
+data 14
+background.001
+crease 30.0
+texture "ai0.png"
+numvert 4
+0.00242 0.0341 -0.03412
+0.00242 -0.0333 -0.03413
+0.00242 -0.0333 0.03412
+0.00242 0.0341 0.03413
+numsurf 1
+SURF 0X0
+mat 1
+refs 4
+1 0.94424 0.92387
+0 0.94424 0.936157
+3 0.931799 0.936157
+2 0.931799 0.92387
 kids 0
 OBJECT poly
 name "fond"
