@@ -543,6 +543,12 @@
         <beacon type="bool">true</beacon>
 	   <nav-lights type="bool">true</nav-lights>
 	</lighting>
+
+     <electric>
+        <battery-switch>0</battery-switch>
+        <generator>0</generator>
+     </electric>
+
 	</controls>
 
 	<instrumentation>

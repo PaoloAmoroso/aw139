@@ -112,8 +112,11 @@
                  </turret>
 
 			<aw139>
-                   <lighting>
+                   <!-- <lighting>
                       <beacon-top type="bool">false</beacon-top>
+                   </lighting> -->
+                   <lighting>
+                      <beacon-top type="int">0</beacon-top>
                    </lighting>
 				<state type="int">0</state>
 				<rotor-step-deg type="float">-1.0</rotor-step-deg>
@@ -419,6 +422,11 @@
         <label>Autostart</label>
       <binding>
         <command>property-assign</command>
+        <property>controls/electric/battery-switch</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
         <property>controls/lighting/luminosite-lights</property>
         <value>1</value>
       </binding>
@@ -460,6 +468,11 @@
       </item>
       <item>
         <label>Autostop</label>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/battery-switch</property>
+        <value>0</value>
+      </binding>
       <binding>
         <command>property-assign</command>
         <property>controls/lighting/luminosite-lights</property>
@@ -613,6 +626,12 @@
         <beacon type="bool">true</beacon>
 	   <nav-lights type="bool">true</nav-lights>
 	</lighting>
+
+     <electric>
+        <battery-switch>0</battery-switch>
+        <generator>0</generator>
+     </electric>
+
 	</controls>
 
 	<instrumentation>
