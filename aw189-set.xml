@@ -53,15 +53,17 @@
 		</sound>
 
            <submodels>
-      <serviceable type="bool">true</serviceable>
-      <path>Aircraft/aw139/Models/Effects/submodels.xml</path>
-    </submodels>
+                <serviceable type="bool">true</serviceable>
+                <path>Aircraft/aw139/Models/Effects/submodels.xml</path>
+           </submodels>
 
 		<model>
 			<path archive="y">Aircraft/aw139/Models/AW189.xml</path>
+
 			<livery>
                        <file type="string">default</file>
                  </livery>
+
 			<aw189>
 				<state type="int">0</state>
 				<rotor-step-deg type="float">-1.0</rotor-step-deg>
@@ -330,6 +332,22 @@
     <desc>Deploy Emergency Floats</desc>
   </key>
   <key>
+    <name>l</name>
+    <desc>On/Off Landing lights</desc>
+  </key>
+  <key>
+    <name>k</name>
+    <desc>On/Off Beacon light</desc>
+  </key>
+  <key>
+    <name>Ctrl-k</name>
+    <desc>On/Off Navigation lights</desc>
+  </key>
+  <key>
+    <name>K</name>
+    <desc>On/Off Strobes lights</desc>
+  </key>
+  <key>
     <name>q</name>
     <desc>AW149: Flares Launch</desc>
   </key>
@@ -367,7 +385,7 @@
       </binding>
       <binding>
         <command>property-assign</command>
-        <property>controls/lighting/strobe-lights</property>
+        <property>controls/lighting/strobe</property>
         <value>1</value>
       </binding>
       <binding>
@@ -406,7 +424,7 @@
       </binding>
       <binding>
         <command>property-assign</command>
-        <property>controls/lighting/strobe-lights</property>
+        <property>controls/lighting/strobe</property>
         <value>0</value>
       </binding>
       <binding>
@@ -539,9 +557,10 @@
 
 	<lighting>
         <instrument-lights type="bool">false</instrument-lights>
-	   <strobe type="bool">true</strobe>
-        <beacon type="bool">true</beacon>
-	   <nav-lights type="bool">true</nav-lights>
+        <landing-lights type="bool">false</landing-lights>
+        <beacon type="bool">false</beacon>
+        <nav-lights type="bool">false</nav-lights>
+        <strobe type="bool">false</strobe>
 	</lighting>
 
      <electric>
@@ -834,12 +853,48 @@
       <script>aw139.cas.toggleEnable();</script>
     </binding>
 			</key>
+
+    <key n="108">
+      <name>l</name>
+      <desc>Landing lights</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/lighting/landing-lights</property>
+      </binding>
+    </key>
+
+    <key n="11">
+      <name>Ctrl-k</name>
+      <desc>Toggle Nav Lights</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+    </key>
+
+  <key n="75">
+      <name>K</name>
+      <desc>Toggle Strobe Lights</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/strobe</property>
+      </binding>
+    </key>
+
+  <key n="107">
+      <name>k</name>
+      <desc>Toggle Beacon</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
+    </key>
+
 		</keyboard>
 	</input>
 
 	<nasal>
 		<aw139>
-			<!-- file>Aircraft/aw139/Nasal/aw139.nas</file -->
 			<file>Aircraft/aw139/Nasal/fcs2.nas</file>
 			<file>Aircraft/aw139/Nasal/casdisable.nas</file>
                 <file>Aircraft/aw139/Nasal/map.nas</file>
@@ -847,6 +902,7 @@
 		<aw189>
 			<file>Aircraft/aw139/Nasal/aw189.nas</file>
                 <file>Aircraft/aw139/Nasal/doors.nas</file>
+			<file>Aircraft/aw139/Nasal/light.nas</file>
 		</aw189>
            <liveries>
                 <file>Aircraft/aw139/Nasal/liveries_189.nas</file>
