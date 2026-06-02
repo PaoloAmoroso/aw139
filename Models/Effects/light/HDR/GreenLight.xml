@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <light>
+    <name>navlightgreen</name>
+    <type>point</type>
+    <color>
+      <r> 0 </r>
+      <g> 1 </g>
+      <b> 0 </b>
+    </color>
+    <intensity> 15 </intensity>
+    <range-m> 25 </range-m>
+  </light>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>navlightgreen</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>navlightgreen</object-name>
+    <condition>
+      <property>controls/lighting/nav-lights</property>
+      <!-- <property>sim/multiplay/generic/bool[15]</property> -->
+    </condition>
+  </animation>
+
+</PropertyList>

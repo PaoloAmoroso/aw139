@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>RedLightNOALS</name>
+    <path>Classic/RedLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>RedLightNOALS</object-name>
+    <condition>
+      <or>
+        <property>/sim/rendering/shaders/skydome</property>
+        <not><property>/sim/rendering/shaders/skydome</property></not>
+        <property>/sim/rendering/hdr/hdr-enabled</property>
+      </or>
+    </condition>
+  </animation>
+
+  <model>
+    <name>RedLightALS</name>
+    <path>ALS/RedLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>RedLightALS</object-name>
+    <condition>
+      <property>/sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>RedLightHDR</name>
+    <path>HDR/RedLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>RedLightHDR</object-name>
+    <condition>
+      <property>/sim/rendering/hdr/hdr-enabled</property>
+    </condition>
+  </animation>
+
+</PropertyList>

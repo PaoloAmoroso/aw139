@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <light>
+    <name>strobeLlight</name>
+    <type>point</type>
+    <color>
+      <r> 1 </r>
+      <g> 1 </g>
+      <b> 1 </b>
+    </color>
+    <intensity> 15 </intensity>
+    <range-m> 25 </range-m>
+  </light>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>strobeLlight</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>strobeLlight</object-name>
+    <nopreview/>
+    <condition>
+      <property>controls/lighting/strobe</property>
+      <property>sim/model/lights/sbc1/state</property>
+      <!-- <property>sim/multiplay/generic/bool[13]</property>
+      <property>sim/multiplay/generic/bool[14]</property> -->
+    </condition>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>lightconeNOALS</name>
+    <path>Classic/light-cone.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>lightconeNOALS</object-name>
+    <condition>
+      <or>
+        <property>/sim/rendering/shaders/skydome</property>
+        <not><property>/sim/rendering/shaders/skydome</property></not>
+        <property>/sim/rendering/hdr/hdr-enabled</property>
+      </or>
+    </condition>
+  </animation>
+
+  <model>
+    <name>lightconeALS</name>
+    <path>ALS/light-cone.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>lightconeALS</object-name>
+    <condition>
+      <property>/sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>lightconeHDR</name>
+    <path>HDR/light-cone.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>lightconeHDR</object-name>
+    <condition>
+      <property>/sim/rendering/hdr/hdr-enabled</property>
+    </condition>
+  </animation>
+
+</PropertyList>

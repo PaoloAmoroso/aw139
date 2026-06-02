@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+ <PropertyList>
+
+  <light>
+    <name>lightconelight</name>
+    <type>spot</type>
+    <direction>
+      <lookat-x-m> -1 </lookat-x-m>
+      <lookat-y-m>  0 </lookat-y-m>
+      <lookat-z-m>  0 </lookat-z-m>
+    </direction>
+    <color>
+      <r> 1 </r>
+      <g> 1 </g>
+      <b> 1 </b>
+    </color>
+    <intensity> 5 </intensity>
+    <spot-exponent> 4 </spot-exponent>
+    <spot-cutoff> 40 </spot-cutoff>
+    <range-m> 450 </range-m>
+  </light>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>lightconelight</object-name>
+  </animation>
+
+   <animation>
+    <type>select</type>
+    <object-name>lightconelight</object-name>
+    <nopreview/>
+    <condition>
+      <property>controls/lighting/landing-lights</property>
+      <!-- <property>sim/multiplay/generic/bool[16]</property> -->
+    </condition>
+  </animation>
+
+</PropertyList>

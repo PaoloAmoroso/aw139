@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>strobelightNOALS</name>
+    <path>Classic/StrobeLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>strobelightNOALS</object-name>
+    <condition>
+      <or>
+        <property>/sim/rendering/shaders/skydome</property>
+        <not><property>/sim/rendering/shaders/skydome</property></not>
+        <property>/sim/rendering/hdr/hdr-enabled</property>
+      </or>
+    </condition>
+  </animation>
+
+  <model>
+    <name>strobelightALS</name>
+    <path>ALS/StrobeLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>strobelightALS</object-name>
+    <condition>
+      <property>/sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>strobelightHDR</name>
+    <path>HDR/StrobeLight.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>strobelightHDR</object-name>
+    <condition>
+      <property>/sim/rendering/hdr/hdr-enabled</property>
+    </condition>
+  </animation>
+
+</PropertyList>
