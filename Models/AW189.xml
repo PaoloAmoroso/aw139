@@ -1091,9 +1091,67 @@
   <model>
     <path>Aircraft/aw139/Models/Effects/light/beacon.xml</path>
     <offsets>
-      <x-m>  8.7686 </x-m>
-      <y-m> -0.1452 </y-m>
-      <z-m>  2.0430 </z-m>
+      <x-m>  8.7642 </x-m>
+      <y-m> -0.0169 </y-m>
+      <z-m>  2.0819 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  7.6013 </x-m>
+      <y-m> -2.0000 </y-m>
+      <z-m>  0.3644 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> 7.6013 </x-m>
+      <y-m> 2.0000 </y-m>
+      <z-m> 0.3644 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  7.6013 </x-m>
+      <y-m> -2.0000 </y-m>
+      <z-m>  0.3644 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> 7.6013 </x-m>
+      <y-m> 2.0000 </y-m>
+      <z-m> 0.3644 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/light-cone.xml</path>
+    <offsets>
+      <x-m>  0.7831 </x-m>
+      <y-m> -1.2331 </y-m>
+      <z-m> -1.2012 </z-m>
+      <heading-deg>3.2</heading-deg>
+      <pitch-deg>-13.2</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/aw139/Models/Effects/light/light-cone.xml</path>
+    <offsets>
+      <x-m>  0.7831 </x-m>
+      <y-m>  1.2331 </y-m>
+      <z-m> -1.2012 </z-m>
+      <heading-deg>-3.2</heading-deg>
+      <pitch-deg>-13.2</pitch-deg>
     </offsets>
   </model>
 
