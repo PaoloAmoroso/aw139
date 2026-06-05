@@ -22,6 +22,7 @@ Guardia di Finanza
 HM Coast Guard
 Inaer: I-PAAA, I-AVCS
 ItAF
+Japan Coast Guard
 Leonardo
 Polizia
 Vigili del Fuoco
