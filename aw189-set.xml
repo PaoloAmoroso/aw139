@@ -908,11 +908,8 @@
                 <file>Aircraft/aw139/Nasal/liveries_189.nas</file>
            </liveries>
            <radar>
-                <file>Aircraft/aw139/Nasal/radar.nas</file>
+                <file>Aircraft/aw139/Nasal/Radar.nas</file>
            </radar>
-           <terrain-map>
-                <file>Aircraft/aw139/Nasal/terrain-map.nas</file>
-           </terrain-map>
 	</nasal>
 
 	<rotors>
