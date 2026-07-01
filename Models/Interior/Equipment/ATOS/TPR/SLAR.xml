@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>SLAR.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Sfondo</object-name>
+    <object-name>Griglia</object-name>
+
+    <object-name>plots_s0</object-name>
+    <object-name>plots_s1</object-name>
+    <object-name>plots_s2</object-name>
+    <object-name>plots_s3</object-name>
+    <object-name>plots_s4</object-name>
+    <object-name>plots_s5</object-name>
+    <object-name>plots_s6</object-name>
+    <object-name>plots_s7</object-name>
+    <object-name>plots_s8</object-name>
+    <object-name>plots_s9</object-name>
+    <object-name>plots_s10</object-name>
+    <object-name>plots_s11</object-name>
+    <object-name>plots_s12</object-name>
+    <object-name>plots_s13</object-name>
+    <object-name>plots_s14</object-name>
+    <object-name>plots_s15</object-name>
+    <object-name>plots_s16</object-name>
+    <object-name>plots_s17</object-name>
+    <object-name>plots_s18</object-name>
+    <object-name>plots_s19</object-name>
+    <object-name>plots_s20</object-name>
+    <object-name>plots_s21</object-name>
+    <object-name>plots_s22</object-name>
+    <object-name>plots_s23</object-name>
+    <object-name>plots_s24</object-name>
+    <object-name>plots_s25</object-name>
+    <object-name>plots_s26</object-name>
+    <object-name>plots_s27</object-name>
+    <object-name>plots_s28</object-name>
+    <object-name>plots_s29</object-name>
+    <object-name>plots_s30</object-name>
+    <object-name>plots_s31</object-name>
+    <object-name>plots_s32</object-name>
+    <object-name>plots_s33</object-name>
+    <object-name>plots_s34</object-name>
+    <object-name>plots_s35</object-name>
+    <object-name>plots_s36</object-name>
+    <object-name>plots_s37</object-name>
+    <object-name>plots_s38</object-name>
+    <object-name>plots_s39</object-name>
+    <object-name>plots_s40</object-name>
+    <object-name>plots_s41</object-name>
+    <object-name>plots_s42</object-name>
+    <object-name>plots_s43</object-name>
+    <object-name>plots_s44</object-name>
+    <object-name>plots_s45</object-name>
+    <object-name>plots_s46</object-name>
+    <object-name>plots_s47</object-name>
+    <object-name>plots_s48</object-name>
+    <object-name>plots_s49</object-name>
+    <object-name>plots_s50</object-name>
+    <object-name>plots_s51</object-name>
+    <object-name>plots_s52</object-name>
+    <object-name>plots_s53</object-name>
+    <object-name>plots_s54</object-name>
+    <object-name>plots_s55</object-name>
+    <object-name>plots_s56</object-name>
+    <object-name>plots_s57</object-name>
+    <object-name>plots_s58</object-name>
+    <object-name>plots_s59</object-name>
+    <object-name>plots_s60</object-name>
+    <object-name>plots_s61</object-name>
+    <object-name>plots_s62</object-name>
+    <object-name>plots_s63</object-name>
+    <object-name>plots_s64</object-name>
+    <object-name>plots_s65</object-name>
+    <object-name>plots_s66</object-name>
+    <object-name>plots_s67</object-name>
+    <object-name>plots_s68</object-name>
+    <object-name>plots_s69</object-name>
+    <object-name>plots_s70</object-name>
+    <object-name>plots_s71</object-name>
+    <object-name>plots_s72</object-name>
+    <object-name>plots_s73</object-name>
+    <object-name>plots_s74</object-name>
+    <object-name>plots_s75</object-name>
+    <object-name>plots_s76</object-name>
+    <object-name>plots_s77</object-name>
+    <object-name>plots_s78</object-name>
+    <object-name>plots_s79</object-name>
+    <object-name>plots_s80</object-name>
+    <object-name>plots_s81</object-name>
+    <object-name>plots_s82</object-name>
+    <object-name>plots_s83</object-name>
+    <object-name>plots_s84</object-name>
+    <object-name>plots_s85</object-name>
+    <object-name>plots_s86</object-name>
+    <object-name>plots_s87</object-name>
+    <object-name>plots_s88</object-name>
+    <object-name>plots_s89</object-name>
+    <object-name>plots_s90</object-name>
+    <object-name>plots_s91</object-name>
+    <object-name>plots_s92</object-name>
+    <object-name>plots_s93</object-name>
+    <object-name>plots_s94</object-name>
+    <object-name>plots_s95</object-name>
+    <object-name>plots_s96</object-name>
+    <object-name>plots_s97</object-name>
+    <object-name>plots_s98</object-name>
+    <object-name>plots_s99</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <name>PLOTS</name>
+    <object-name>plots_s0</object-name>
+    <object-name>plots_s1</object-name>
+    <object-name>plots_s2</object-name>
+    <object-name>plots_s3</object-name>
+    <object-name>plots_s4</object-name>
+    <object-name>plots_s5</object-name>
+    <object-name>plots_s6</object-name>
+    <object-name>plots_s7</object-name>
+    <object-name>plots_s8</object-name>
+    <object-name>plots_s9</object-name>
+    <object-name>plots_s10</object-name>
+    <object-name>plots_s11</object-name>
+    <object-name>plots_s12</object-name>
+    <object-name>plots_s13</object-name>
+    <object-name>plots_s14</object-name>
+    <object-name>plots_s15</object-name>
+    <object-name>plots_s16</object-name>
+    <object-name>plots_s17</object-name>
+    <object-name>plots_s18</object-name>
+    <object-name>plots_s19</object-name>
+    <object-name>plots_s20</object-name>
+    <object-name>plots_s21</object-name>
+    <object-name>plots_s22</object-name>
+    <object-name>plots_s23</object-name>
+    <object-name>plots_s24</object-name>
+    <object-name>plots_s25</object-name>
+    <object-name>plots_s26</object-name>
+    <object-name>plots_s27</object-name>
+    <object-name>plots_s28</object-name>
+    <object-name>plots_s29</object-name>
+    <object-name>plots_s30</object-name>
+    <object-name>plots_s31</object-name>
+    <object-name>plots_s32</object-name>
+    <object-name>plots_s33</object-name>
+    <object-name>plots_s34</object-name>
+    <object-name>plots_s35</object-name>
+    <object-name>plots_s36</object-name>
+    <object-name>plots_s37</object-name>
+    <object-name>plots_s38</object-name>
+    <object-name>plots_s39</object-name>
+    <object-name>plots_s40</object-name>
+    <object-name>plots_s41</object-name>
+    <object-name>plots_s42</object-name>
+    <object-name>plots_s43</object-name>
+    <object-name>plots_s44</object-name>
+    <object-name>plots_s45</object-name>
+    <object-name>plots_s46</object-name>
+    <object-name>plots_s47</object-name>
+    <object-name>plots_s48</object-name>
+    <object-name>plots_s49</object-name>
+    <object-name>plots_s50</object-name>
+    <object-name>plots_s51</object-name>
+    <object-name>plots_s52</object-name>
+    <object-name>plots_s53</object-name>
+    <object-name>plots_s54</object-name>
+    <object-name>plots_s55</object-name>
+    <object-name>plots_s56</object-name>
+    <object-name>plots_s57</object-name>
+    <object-name>plots_s58</object-name>
+    <object-name>plots_s59</object-name>
+    <object-name>plots_s60</object-name>
+    <object-name>plots_s61</object-name>
+    <object-name>plots_s62</object-name>
+    <object-name>plots_s63</object-name>
+    <object-name>plots_s64</object-name>
+    <object-name>plots_s65</object-name>
+    <object-name>plots_s66</object-name>
+    <object-name>plots_s67</object-name>
+    <object-name>plots_s68</object-name>
+    <object-name>plots_s69</object-name>
+    <object-name>plots_s70</object-name>
+    <object-name>plots_s71</object-name>
+    <object-name>plots_s72</object-name>
+    <object-name>plots_s73</object-name>
+    <object-name>plots_s74</object-name>
+    <object-name>plots_s75</object-name>
+    <object-name>plots_s76</object-name>
+    <object-name>plots_s77</object-name>
+    <object-name>plots_s78</object-name>
+    <object-name>plots_s79</object-name>
+    <object-name>plots_s80</object-name>
+    <object-name>plots_s81</object-name>
+    <object-name>plots_s82</object-name>
+    <object-name>plots_s83</object-name>
+    <object-name>plots_s84</object-name>
+    <object-name>plots_s85</object-name>
+    <object-name>plots_s86</object-name>
+    <object-name>plots_s87</object-name>
+    <object-name>plots_s88</object-name>
+    <object-name>plots_s89</object-name>
+    <object-name>plots_s90</object-name>
+    <object-name>plots_s91</object-name>
+    <object-name>plots_s92</object-name>
+    <object-name>plots_s93</object-name>
+    <object-name>plots_s94</object-name>
+    <object-name>plots_s95</object-name>
+    <object-name>plots_s96</object-name>
+    <object-name>plots_s97</object-name>
+    <object-name>plots_s98</object-name>
+    <object-name>plots_s99</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Sfondo</object-name>
+    <object-name>Griglia</object-name>
+    <object-name>PLOTS</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Griglia</object-name>
+    <object-name>PLOTS</object-name>
+
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- GROUND RADAR FUNCTIONS -->
+  <animation>
+    <type>rotate</type>
+    <object-name>PLOTS</object-name>
+    <!-- <property>orientation/pitch-deg</property> -->
+    <property>orientation/roll-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- PLOTS ELEVATION -->
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s0</object-name>
+    <property>instrumentation/radar/pixels/col[0]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s1</object-name>
+    <property>instrumentation/radar/pixels/col[1]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s2</object-name>
+    <property>instrumentation/radar/pixels/col[2]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s3</object-name>
+    <property>instrumentation/radar/pixels/col[3]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s4</object-name>
+    <property>instrumentation/radar/pixels/col[4]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s5</object-name>
+    <property>instrumentation/radar/pixels/col[5]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s6</object-name>
+    <property>instrumentation/radar/pixels/col[6]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s7</object-name>
+    <property>instrumentation/radar/pixels/col[7]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s8</object-name>
+    <property>instrumentation/radar/pixels/col[8]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s9</object-name>
+    <property>instrumentation/radar/pixels/col[9]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s10</object-name>
+    <property>instrumentation/radar/pixels/col[10]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s11</object-name>
+    <property>instrumentation/radar/pixels/col[11]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s12</object-name>
+    <property>instrumentation/radar/pixels/col[12]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s13</object-name>
+    <property>instrumentation/radar/pixels/col[13]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s14</object-name>
+    <property>instrumentation/radar/pixels/col[14]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s15</object-name>
+    <property>instrumentation/radar/pixels/col[15]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s16</object-name>
+    <property>instrumentation/radar/pixels/col[16]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s17</object-name>
+    <property>instrumentation/radar/pixels/col[17]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s18</object-name>
+    <property>instrumentation/radar/pixels/col[18]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s19</object-name>
+    <property>instrumentation/radar/pixels/col[19]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s20</object-name>
+    <property>instrumentation/radar/pixels/col[20]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s21</object-name>
+    <property>instrumentation/radar/pixels/col[21]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s22</object-name>
+    <property>instrumentation/radar/pixels/col[22]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s23</object-name>
+    <property>instrumentation/radar/pixels/col[23]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s24</object-name>
+    <property>instrumentation/radar/pixels/col[24]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s25</object-name>
+    <property>instrumentation/radar/pixels/col[25]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s26</object-name>
+    <property>instrumentation/radar/pixels/col[26]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s27</object-name>
+    <property>instrumentation/radar/pixels/col[27]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s28</object-name>
+    <property>instrumentation/radar/pixels/col[28]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s29</object-name>
+    <property>instrumentation/radar/pixels/col[29]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s30</object-name>
+    <property>instrumentation/radar/pixels/col[30]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s31</object-name>
+    <property>instrumentation/radar/pixels/col[31]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s32</object-name>
+    <property>instrumentation/radar/pixels/col[32]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s33</object-name>
+    <property>instrumentation/radar/pixels/col[33]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s34</object-name>
+    <property>instrumentation/radar/pixels/col[34]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s35</object-name>
+    <property>instrumentation/radar/pixels/col[35]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s36</object-name>
+    <property>instrumentation/radar/pixels/col[36]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s37</object-name>
+    <property>instrumentation/radar/pixels/col[37]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s38</object-name>
+    <property>instrumentation/radar/pixels/col[38]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s39</object-name>
+    <property>instrumentation/radar/pixels/col[39]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s40</object-name>
+    <property>instrumentation/radar/pixels/col[40]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s41</object-name>
+    <property>instrumentation/radar/pixels/col[41]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s42</object-name>
+    <property>instrumentation/radar/pixels/col[42]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s43</object-name>
+    <property>instrumentation/radar/pixels/col[43]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s44</object-name>
+    <property>instrumentation/radar/pixels/col[44]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s45</object-name>
+    <property>instrumentation/radar/pixels/col[45]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s46</object-name>
+    <property>instrumentation/radar/pixels/col[46]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s47</object-name>
+    <property>instrumentation/radar/pixels/col[47]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s48</object-name>
+    <property>instrumentation/radar/pixels/col[48]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s49</object-name>
+    <property>instrumentation/radar/pixels/col[49]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s50</object-name>
+    <property>instrumentation/radar/pixels/col[50]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s51</object-name>
+    <property>instrumentation/radar/pixels/col[51]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s52</object-name>
+    <property>instrumentation/radar/pixels/col[52]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s53</object-name>
+    <property>instrumentation/radar/pixels/col[53]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s54</object-name>
+    <property>instrumentation/radar/pixels/col[54]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s55</object-name>
+    <property>instrumentation/radar/pixels/col[55]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s56</object-name>
+    <property>instrumentation/radar/pixels/col[56]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s57</object-name>
+    <property>instrumentation/radar/pixels/col[57]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s58</object-name>
+    <property>instrumentation/radar/pixels/col[58]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s59</object-name>
+    <property>instrumentation/radar/pixels/col[59]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s60</object-name>
+    <property>instrumentation/radar/pixels/col[60]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s61</object-name>
+    <property>instrumentation/radar/pixels/col[61]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s62</object-name>
+    <property>instrumentation/radar/pixels/col[62]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s63</object-name>
+    <property>instrumentation/radar/pixels/col[63]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s64</object-name>
+    <property>instrumentation/radar/pixels/col[64]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s65</object-name>
+    <property>instrumentation/radar/pixels/col[65]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s66</object-name>
+    <property>instrumentation/radar/pixels/col[66]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s67</object-name>
+    <property>instrumentation/radar/pixels/col[67]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s68</object-name>
+    <property>instrumentation/radar/pixels/col[68]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s69</object-name>
+    <property>instrumentation/radar/pixels/col[69]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s70</object-name>
+    <property>instrumentation/radar/pixels/col[70]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s71</object-name>
+    <property>instrumentation/radar/pixels/col[71]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s72</object-name>
+    <property>instrumentation/radar/pixels/col[72]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s73</object-name>
+    <property>instrumentation/radar/pixels/col[73]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s74</object-name>
+    <property>instrumentation/radar/pixels/col[74]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s75</object-name>
+    <property>instrumentation/radar/pixels/col[75]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s76</object-name>
+    <property>instrumentation/radar/pixels/col[76]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s77</object-name>
+    <property>instrumentation/radar/pixels/col[77]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s78</object-name>
+    <property>instrumentation/radar/pixels/col[78]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s79</object-name>
+    <property>instrumentation/radar/pixels/col[79]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s80</object-name>
+    <property>instrumentation/radar/pixels/col[80]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s81</object-name>
+    <property>instrumentation/radar/pixels/col[81]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s82</object-name>
+    <property>instrumentation/radar/pixels/col[82]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s83</object-name>
+    <property>instrumentation/radar/pixels/col[83]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s84</object-name>
+    <property>instrumentation/radar/pixels/col[84]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s85</object-name>
+    <property>instrumentation/radar/pixels/col[85]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s86</object-name>
+    <property>instrumentation/radar/pixels/col[86]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s87</object-name>
+    <property>instrumentation/radar/pixels/col[87]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s88</object-name>
+    <property>instrumentation/radar/pixels/col[88]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s89</object-name>
+    <property>instrumentation/radar/pixels/col[89]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s90</object-name>
+    <property>instrumentation/radar/pixels/col[90]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s91</object-name>
+    <property>instrumentation/radar/pixels/col[91]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s92</object-name>
+    <property>instrumentation/radar/pixels/col[92]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s93</object-name>
+    <property>instrumentation/radar/pixels/col[93]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s94</object-name>
+    <property>instrumentation/radar/pixels/col[94]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s95</object-name>
+    <property>instrumentation/radar/pixels/col[95]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s96</object-name>
+    <property>instrumentation/radar/pixels/col[96]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s97</object-name>
+    <property>instrumentation/radar/pixels/col[97]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s98</object-name>
+    <property>instrumentation/radar/pixels/col[98]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>plots_s99</object-name>
+    <property>instrumentation/radar/pixels/col[99]/elevation</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
