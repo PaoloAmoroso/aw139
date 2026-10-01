@@ -577,21 +577,22 @@
 		<hsi>
 			<serviceable type="bool" archive="y">true</serviceable>
 		</hsi>
+
            <radar>
-    <serviceable        type="bool" archive="y">true</serviceable>
-    <switch             type="string" archive="y">off</switch>
-    <mode-control       type="int" archive="y">3</mode-control>
-    <range              type="int" archive="y">20</range>
-    <mode               type="string" archive="y">WX</mode>
-    <heading-marker     type="bool" archive="y">false</heading-marker>
-    <lightning          type="bool" archive="y">false</lightning>
-    <display-mode       type="string">NOARC</display-mode>
-    <display-controls>
-      <WX               type="bool" archive="y">false</WX>
-      <data             type="bool" archive="y">false</data>
-      <pos              type="bool" archive="y">true</pos>
-    </display-controls>
-  </radar>
+             <enabled type="bool">true</enabled>
+             <az-field type="double">120</az-field>
+             <range type="double">20</range>
+             <range-factor type="double" archive="n"> 0.001888 </range-factor>
+             <range-selected type="double">40</range-selected>
+             <display-rdr type="bool">true</display-rdr>
+             <display-mode type="string">NOARC</display-mode>
+             <radar-standby type="int">0</radar-standby>
+             <minimized type="bool" archive="y">false</minimized>
+             <mode>
+               <rws type="bool">true</rws>
+               <tws-auto type="bool">false</tws-auto>
+             </mode>
+           </radar>
 
 	</instrumentation>
 
