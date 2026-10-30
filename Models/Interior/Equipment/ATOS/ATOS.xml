@@ -122,9 +122,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.131650 </x-m>
+      <x-m>  0.136980 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.080904 </z-m>
+      <z-m>  0.089700 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -140,9 +140,9 @@
     <font>lucida.txf</font>
     <character-size type="double">0.009</character-size>
     <offsets>
-      <x-m>  0.126360 </x-m>
+      <x-m>  0.131650 </x-m>
       <y-m> -0.058542 </y-m>
-      <z-m>  0.072108 </z-m>
+      <z-m>  0.080904 </z-m>
       <pitch-deg>31</pitch-deg>
     </offsets>
     <axis-alignment>yz-plane</axis-alignment>
@@ -649,7 +649,7 @@
   <!-- MAD -->
 
   <model>
-    <name>MAD</name>
+    <name>MAD_Display</name>
     <path>MAD/MAD.xml</path>
     <offsets>
       <x-m>  0.14366 </x-m>
@@ -661,7 +661,7 @@
 
   <animation>
     <type>select</type>
-    <object-name>MAD</object-name>
+    <object-name>MAD_Display</object-name>
     <condition>
       <property>sim/model/mad</property>
     </condition>
@@ -690,7 +690,7 @@
     <object-name>Radar_S</object-name>
     <object-name>Radar_F</object-name>
     <object-name>Radar_R</object-name>
-    <object-name>MAD</object-name>
+    <object-name>MAD_Display</object-name>
     <object-name>List</object-name>
     <object-name>Data</object-name>
     <condition>
@@ -1001,12 +1001,28 @@
     <type>select</type>
     <object-name>Radar_G</object-name>
     <object-name>DBS</object-name>
-    <object-name>MDE</object-name>
     <condition>
       <equals>
         <property>sim/model/RadarMode</property>
         <value>0</value>
       </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>MDE</object-name>
+    <condition>
+      <or>
+       <equals>
+         <property>sim/model/RadarMode</property>
+         <value>0</value>
+       </equals>
+       <equals>
+         <property>sim/model/RadarMode</property>
+         <value>1</value>
+       </equals>
+      </or>
     </condition>
   </animation>
 
