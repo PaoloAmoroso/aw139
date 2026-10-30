@@ -23,6 +23,8 @@
     <object-name>STABneedle</object-name>
     <object-name>oiltemp1</object-name>
     <object-name>oiltemp2</object-name>
+    <object-name>oilpsi1</object-name>
+    <object-name>oilpsi2</object-name>
     <object-name>gear0.annun</object-name>
     <object-name>gear1.annun</object-name>
     <object-name>gear2.annun</object-name>
@@ -127,6 +129,8 @@
     <object-name>STABneedle</object-name>
     <object-name>oiltemp1</object-name>
     <object-name>oiltemp2</object-name>
+    <object-name>oilpsi1</object-name>
+    <object-name>oilpsi2</object-name>
     <object-name>gear0.annun</object-name>
     <object-name>gear1.annun</object-name>
     <object-name>gear2.annun</object-name>
